@@ -318,62 +318,62 @@ MathJax.Hub.Config({
 <p>In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP) to instigate an Air Traffic Flow Management (ATFM) measure, or regulation. Aircraft expected to arrive during a period of congestion are given Air Traffic Flow Management delay at their departure airport, under the authority of the Network Manager, in order to regulate the flow of traffic into the constrained downstream en route sector or airport, thus ensuring safety. The resulting ATFM delays are calculated as the difference between the estimated take-off time calculated from the filed flight plan including updates and the calculated take-off time allocated by the central unit of ATFM. The reason for the regulation is indicated by the responsible Flow Management Position (FMP). The delay is attributed to the most constraining ATC unit.</p>
 <p>The calculation of En-route ATFM delay is based on a well established and commonly accepted algorithm and has been in use as a commonly agreed proxy for en-route capacity shortfalls since 1999.</p>
 <h2 id="fab-definitions">FAB definitions</h2>
-<p>The FAB level information is based on an aggregation of ANSPs (ENTITY_TYPE = FAB (AUA)).</p>
-<table style="width:246%;">
+<p>The FAB level information is based on an aggregation of Flight Information Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).</p>
+<table style="width:228%;">
 <colgroup>
 <col style="width: 26%" />
-<col style="width: 219%" />
+<col style="width: 201%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">FAB Name</th>
-<th style="text-align: left;">ANSP included</th>
+<th style="text-align: left;">FIRs included</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Baltic FAB</td>
-<td style="text-align: left;"><a href="/references/ANSP/Oro_Navigacija.html" title="Oro Navigacija">Oro Navigacija</a>, <a href="/references/ANSP/PANSA.html" title="PANSA">PANSA</a></td>
+<td style="text-align: left;">EPWWFIR, EYVLFIR, EYVLUIR</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">BLUE MED FAB</td>
-<td style="text-align: left;"><a href="/references/ANSP/DCAC_Cyprus.html" title="DCAC Cyprus">DCAC Cyprus</a>, <a href="/references/ANSP/HCAA.html" title="HCAA">HCAA</a>, <a href="/references/ANSP/ENAV.html" title="ENAV">ENAV</a>, <a href="/references/ANSP/MATS.html" title="MATS">MATS</a></td>
+<td style="text-align: left;">LCCCFIR, LCCCUIR, LGGGFIR, LGGGUIR, LIBBFIR, LIBBUIR, LIMMFIR, LIMMUIR, LIRRFIR, LIRRUIR, LMMMFIR, LMMMUIR</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">DANUBE FAB</td>
-<td style="text-align: left;"><a href="/references/ANSP/BULATSA.html" title="BULATSA">BULATSA</a>, <a href="/references/ANSP/ROMATSA.html" title="ROMATSA">ROMATSA</a></td>
+<td style="text-align: left;">LBSRFIR, LRBBFIR</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">DK-SE FAB</td>
-<td style="text-align: left;"><a href="/references/ANSP/NAVIAIR.html" title="NAVIAIR">NAVIAIR</a>, <a href="/references/ANSP/LFV.html" title="LFV">LFV</a></td>
+<td style="text-align: left;">EKDKFIR, ESAAFIR</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">FABEC</td>
-<td style="text-align: left;"><a href="/references/ANSP/Belgocontrol.html" title="Belgocontrol">Belgocontrol</a>, <a href="/references/ANSP/DSNA.html" title="DSNA">DSNA</a>, <a href="/references/ANSP/DFS.html" title="DFS">DFS</a>, <a href="/references/ANSP/ANA_LUX.html" title="ANA LUX">ANA LUX</a>, <a href="/references/ANSP/LVNL.html" title="LVNL">LVNL</a>, <a href="/references/ANSP/Skyguide.html" title="Skyguide">Skyguide</a>, <a href="/references/ANSP/MUAC.html" title="MUAC">MUAC</a></td>
+<td style="text-align: left;">EBBUFIR, EBURUIR, EDGGFIR, EDMMFIR, EDUUUIR, EDVVUIR, EDWWFIR, EHAAFIR, LFBBFIR, LFEEFIR, LFFFFIR, LFFFUIR, LFMMFIR, LFRRFIR, LSASFIR, LSASUIR</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">FAB CE</td>
-<td style="text-align: left;"><a href="/references/ANSP/Austro_Control.html" title="Austro Control">Austro Control</a>, <a href="/references/ANSP/BHANSA.html" title="BHANSA">BHANSA</a>, <a href="/references/ANSP/Croatia_Control.html" title="Croatia Control">Croatia Control</a>, <a href="/references/ANSP/ANS_CR.html" title="ANS CR">ANS CR</a>, <a href="/references/ANSP/HungaroControl.html" title="HungaroControl (EC)">HungaroControl (EC)</a>, <a href="/references/ANSP/LPS.html" title="LPS">LPS</a>, <a href="/references/ANSP/Slovenia_Control.html" title="Slovenia Control">Slovenia Control</a></td>
+<td style="text-align: left;">LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LQSBFIR, LQSBUIR, LZBBFIR</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">FAB CE (SES RP1)</td>
-<td style="text-align: left;"><a href="/references/ANSP/Austro_Control.html" title="Austro Control">Austro Control</a>, <a href="/references/ANSP/ANS_CR.html" title="ANS CR">ANS CR</a>, <a href="/references/ANSP/HungaroControl.html" title="HungaroControl (EC)">HungaroControl (EC)</a>, <a href="/references/ANSP/LPS.html" title="LPS">LPS</a>, <a href="/references/ANSP/Slovenia_Control.html" title="Slovenia Control">Slovenia Control</a></td>
+<td style="text-align: left;">LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">FAB CE (SES RP2)</td>
-<td style="text-align: left;"><a href="/references/ANSP/Austro_Control.html" title="Austro Control">Austro Control</a>, <a href="/references/ANSP/Croatia_Control.html" title="Croatia Control">Croatia Control</a>, <a href="/references/ANSP/ANS_CR.html" title="ANS CR">ANS CR</a>, <a href="/references/ANSP/HungaroControl.html" title="HungaroControl (EC)">HungaroControl (EC)</a>, <a href="/references/ANSP/LPS.html" title="LPS">LPS</a>, <a href="/references/ANSP/Slovenia_Control.html" title="Slovenia Control">Slovenia Control</a></td>
+<td style="text-align: left;">LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">NEFAB</td>
-<td style="text-align: left;"><a href="/references/ANSP/EANS.html" title="EANS">EANS</a>, <a href="/references/ANSP/Finavia.html" title="Finavia">Finavia</a>, <a href="/references/ANSP/LGS.html" title="LGS">LGS</a>, <a href="/references/ANSP/Avinor.html" title="Avinor">Avinor</a></td>
+<td style="text-align: left;">EETTFIR, EFINFIR, EFINUIR, ENOBFIR, ENORFIR, EVRRFIR</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SW FAB</td>
-<td style="text-align: left;"><a href="/references/ANSP/NAV_Portugal.html" title="NAV Portugal (Continental)">NAV Portugal (Continental)</a>, <a href="/references/ANSP/ENAIRE.html" title="ENAIRE">ENAIRE</a></td>
+<td style="text-align: left;">GCCCFIR, GCCCUIR, LECBFIR, LECBUIR, LECMFIR, LECMUIR, LPPCFIR</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">UK-Ireland FAB</td>
-<td style="text-align: left;"><a href="/references/ANSP/IAA.html" title="IAA">IAA</a>, <a href="/references/ANSP/NATS.html" title="NATS (Continental)">NATS (Continental)</a></td>
+<td style="text-align: left;">EGPXFIR, EGPXUIR, EGTTFIR, EGTTUIR, EISNFIR, EISNUIR</td>
 </tr>
 </tbody>
 </table>
