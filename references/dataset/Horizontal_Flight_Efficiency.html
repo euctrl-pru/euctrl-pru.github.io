@@ -19,11 +19,11 @@
 
 
 
-<link rel="canonical" href="https://euctrl-pru.github.io/references/dataset/Horizontal_Flight_Efficiency.html">
-<link rel="alternate" href="https://euctrl-pru.github.io/feed.xml" type="application/atom+xml" title="PRU Feed">
+<link rel="canonical" href="https://ansperformance.eu/references/dataset/Horizontal_Flight_Efficiency.html">
+<link rel="alternate" href="https://ansperformance.eu/feed.xml" type="application/atom+xml" title="PRU Feed">
 
 <!-- we are humans not machines -->
-<link type="text/plain" rel="author" href="https://euctrl-pru.github.io/humans.txt" />
+<link type="text/plain" rel="author" href="https://ansperformance.eu/humans.txt" />
 
 
 <!-- HTML5 Shiv and Media Query Support -->
@@ -56,24 +56,25 @@
 <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
 <!-- For all browsers (and overwrites bootstrap...) -->
-<link rel="stylesheet" href="/assets/table-91a771e70b40f344be6dbe678876aca1.css">
-<link rel="stylesheet" href="/assets/solarized-6cbce07e094150f6bc2a7e5c8249c7cf.css">
-<link rel="stylesheet" href="/assets/logo-35b0433c4a43954f4bfcfaad16795b9f.css">
-<link rel="stylesheet" href="/assets/general-5a6204284e11394238d99243db217a1d.css">
+<link rel="stylesheet" href="/assets/table-36c3a3dd5a8e24e3ade00561735981d6.css">
+<link rel="stylesheet" href="/assets/solarized-1e7b132b4b912551326a6a65610ec0b2.css">
+<link rel="stylesheet" href="/assets/logo-4e6034853f67de32a9782e5252dfca81.css">
+<link rel="stylesheet" href="/assets/general-d532e6af8148b39feec8f522570889c2.css">
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="https://euctrl-pru.github.io/favicon.ico">
+<link rel="shortcut icon" href="https://ansperformance.eu/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="https://euctrl-pru.github.io/favicon.png">
+<link rel="shortcut icon" href="https://ansperformance.eu/favicon.png">
 
 <!-- Google Analytics -->
 <script type="text/javascript">
 !function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-62697169-2","auto"),ga("send","pageview");
 </script>
   <!-- loadign and configuring MathJax -->
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
@@ -246,7 +247,7 @@ MathJax.Hub.Config({
       </button>
       <div class="navbar-brand">
         <a href="/#">
-          <img src="/assets/ec-logo-brand-449eeef19021340054db0c6b9ad14155.png" alt="PRU">
+          <img src="/assets/ec-logo-brand-a775c94482537ad9cea33dfceab62e2c.png" alt="PRU">
           <div id="logo"></div>
         </a>
       </div>
@@ -259,28 +260,35 @@ MathJax.Hub.Config({
           
               
           
-          <li><a href="https://euctrl-pru.github.io/posts/" >News</a></li>
+          <li><a href="https://ansperformance.eu/posts/" >News</a></li>
         
           
               
           
-          <li><a href="https://euctrl-pru.github.io/graphs/" >Graphs</a></li>
+          <li><a href="https://ansperformance.eu/graphs/" >Graphs</a></li>
         
           
               
           
-          <li><a href="https://euctrl-pru.github.io/data/" >Data</a></li>
+          <li><a href="https://ansperformance.eu/data/" >Data</a></li>
         
           
               
           
-          <li><a href="https://euctrl-pru.github.io/studies/" >Studies</a></li>
+          <li><a href="https://ansperformance.eu/studies/" >Studies</a></li>
         
-          
-              
-          
-          <li><a href="https://euctrl-pru.github.io/references/" >References</a></li>
-        
+          <li class="dropdown">
+              <a href="/references/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/references/dataset/">Datasets</a></li>
+                  <li><a href="/references/definition/">Definitions</a></li>
+                  <li><a href="/references/ANSP/">ANSP's</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/references/methodology/">Methodology</a></li>
+                   <li><a href="/references/bibliography.html">Bibliography</a></li>
+              </ul>
+          </li>
       </ul>
       <!-- let's keep About & C0. out of navigation.yml to have it right-aligned -->
       <ul class="nav navbar-nav navbar-right">
@@ -309,197 +317,277 @@ MathJax.Hub.Config({
   </div><!-- /.container-fluid -->
 </nav>
 
-<script src="/assets/active_navbar-86e2007606cfb6f85d17496a5ceee58a.js"></script>
-<script src="/assets/logo-5a59b4d3718192264bd77e2973dfd63c.js"></script>
-  <div class="container">
-    <h1 id="horizontal-flight-efficiency-dataset">Horizontal Flight Efficiency Dataset</h1>
-<h2 id="data-description">Data description</h2>
-<p>Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories to the corresponding “achieved” distance.</p>
-<p>The achieved distance apportions the Great Circle Distance (GCD) between two points within the European airspace (reference area). If the origin/ destination airport is located outside of European airspace, the entry/exit point into the reference area is used for the calculation.</p>
-<p>The planned trajectory is derived from the flight plans submitted by airspace users to the Network Manager. The actual flown trajectory is based on processed radar track data (Correlated Position Reports) submitted by ANSPs to the EUROCONTROL Enhanced Tactical Flow Management System (ETFMS).</p>
-<p>The methodology is fully consistent with the SES Performance Scheme.</p>
-<h2 id="fab-definitions">FAB definitions</h2>
-<p>The FAB level information is based on an aggregation of Flight Information Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).</p>
-<table>
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 88%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">FAB Name</th>
-<th style="text-align: left;">FIRs included</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Baltic FAB</td>
-<td style="text-align: left;">EPWWFIR, EYVLFIR, EYVLUIR</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">BLUE MED FAB</td>
-<td style="text-align: left;">LCCCFIR, LCCCUIR, LGGGFIR, LGGGUIR, LIBBFIR, LIBBUIR, LIMMFIR, LIMMUIR, LIRRFIR, LIRRUIR, LMMMFIR, LMMMUIR</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">DANUBE FAB</td>
-<td style="text-align: left;">LBSRFIR, LRBBFIR</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">DK-SE FAB</td>
-<td style="text-align: left;">EKDKFIR, ESAAFIR</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FABEC</td>
-<td style="text-align: left;">EBBUFIR, EBURUIR, EDGGFIR, EDMMFIR, EDUUUIR, EDVVUIR, EDWWFIR, EHAAFIR, LFBBFIR, LFEEFIR, LFFFFIR, LFFFUIR, LFMMFIR, LFRRFIR, LSASFIR, LSASUIR</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FAB CE</td>
-<td style="text-align: left;">LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LQSBFIR, LQSBUIR, LZBBFIR</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">FAB CE (SES RP1)</td>
-<td style="text-align: left;">LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">FAB CE (SES RP2)</td>
-<td style="text-align: left;">LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NEFAB</td>
-<td style="text-align: left;">EETTFIR, EFINFIR, EFINUIR, ENOBFIR, ENORFIR, EVRRFIR</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">SW FAB</td>
-<td style="text-align: left;">GCCCFIR, GCCCUIR, LECBFIR, LECBUIR, LECMFIR, LECMUIR, LPPCFIR</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">UK-Ireland FAB</td>
-<td style="text-align: left;">EGPXFIR, EGPXUIR, EGTTFIR, EGTTUIR, EISNFIR, EISNUIR</td>
-</tr>
-</tbody>
-</table>
-<h2 id="column-naming-and-types">Column naming and types</h2>
-<table style="width:100%;">
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 10%" />
-<col style="width: 11%" />
-<col style="width: 59%" />
-<col style="width: 7%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Column name</th>
-<th style="text-align: left;">Data source</th>
-<th style="text-align: left;">Label</th>
-<th style="text-align: left;">Column description</th>
-<th style="text-align: left;">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">YEAR</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">YEAR</td>
-<td style="text-align: left;">Reference year</td>
-<td style="text-align: left;">2014</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">MONTH_NUM</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">MONTH_NUM</td>
-<td style="text-align: left;">Month (numeric)</td>
-<td style="text-align: left;">9</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">MONTH_MON</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">MONTH_MON</td>
-<td style="text-align: left;">Month (3-letter code)</td>
-<td style="text-align: left;">SEP</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ENTRY_DATE</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">ENTRY_DATE</td>
-<td style="text-align: left;">The entry date considered</td>
-<td style="text-align: left;">06-Sep-14</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ENTITY_NAME</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">ENTITY_NAME</td>
-<td style="text-align: left;">Name of the entity to with the data refers</td>
-<td style="text-align: left;">FABEC</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ENTITY_TYPE</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">ENTITY_TYPE</td>
-<td style="text-align: left;">Type of the entity</td>
-<td style="text-align: left;">FAB (FIR)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">MODEL_TYPE</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">MODEL_TYPE</td>
-<td style="text-align: left;">The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)</td>
-<td style="text-align: left;">FTFM</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">DIST_FLOWN_KM</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">DIST_FLOWN_KM</td>
-<td style="text-align: left;">Sum of flown distances in kilometre</td>
-<td style="text-align: left;">8699586</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">DIST_DIRECT_KM</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">DIST_DIRECT_KM</td>
-<td style="text-align: left;">Sum of direct flown distances in kilometre</td>
-<td style="text-align: left;">8405033</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">DIST_ACHIEVED_KM</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">DIST_ACHIEVED_KM</td>
-<td style="text-align: left;">Sum of achieved distances in kilometre</td>
-<td style="text-align: left;">8255220</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T10_RUN_12M</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">T10_RUN_12M</td>
-<td style="text-align: left;">‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous 12 months</td>
-<td style="text-align: left;">B</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">END_DATE</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">END_DATE</td>
-<td style="text-align: left;">End date of the running 12 month (T10_RUN_12M)</td>
-<td style="text-align: left;">42216</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">T10_YYYY</td>
-<td style="text-align: left;">Network Manager</td>
-<td style="text-align: left;">T10_YYYY</td>
-<td style="text-align: left;">‘B’ (‘W’) if the day is one of the best (worst) days for the entity in the calendar year (the number of days increases proportionally to reach 10 at the end of the year)</td>
-<td style="text-align: left;">B</td>
-</tr>
-</tbody>
-</table>
-<h3 id="calculated-fields">Calculated Field(s)</h3>
-<p>The indicator is calculated as the ratio of the two sums (length of trajectories and achieved distances), over all flights considered:</p>
-<p><span class="math display">\[
-{HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %
-\]</span></p>
-<p>where <span class="math inline">\(L\)</span> is the length of the trajectory and <span class="math inline">\(H\)</span> is the achieved distance; the index <span class="math inline">\(f\)</span> is the flight, <span class="math inline">\(j\)</span> is the airspace and <span class="math inline">\(p\)</span> is the portion considered.</p>
-<p>From the table above <span class="math inline">\(L\)</span> is <span class="math inline">\(DIST\_FLOWN\_KM\)</span>, while <span class="math inline">\(H\)</span> is <span class="math inline">\(DIST\_ACHIEVED\_KM\)</span>.</p>
-<div id="refs" class="references">
+<script src="/assets/active_navbar-1e84c186919b1764f5f681943714efab.js"></script>
+<script src="/assets/logo-eb165b422665820a3d7049ce9652c068.js"></script>
 
+  <div class="container">
+    <style>
+td {
+  white-space: normal;
+}
+th:nth-child(1) {
+width: 11em;
+}
+
+.metatable th:nth-child(2) {
+width: 11em;
+}
+.metatable th:nth-child(5) {
+width: 7em;
+}
+
+</style>
+
+<h1 id="horizontal-flight-efficiency-dataset">Horizontal Flight Efficiency Dataset</h1>
+
+<h2 id="data-description">Data description</h2>
+<p>Horizontal en-route flight efficiency compares the length of actual or planned flight trajectories
+to the corresponding “achieved” distance.</p>
+
+<p>The achieved distance apportions the Great Circle Distance (GCD) between two points within
+the European airspace (reference area).
+If the origin/ destination airport is located outside of European airspace, the entry/exit point
+into the reference area is used for the calculation.</p>
+
+<p>The planned trajectory is derived from the flight plans submitted by airspace users to the Network Manager.
+The actual flown trajectory is based on processed radar track data (Correlated Position Reports)
+submitted by ANSPs to the EUROCONTROL Enhanced Tactical Flow Management System (ETFMS).</p>
+
+<p>The methodology is fully consistent with the SES Performance Scheme <a href="#pru:hfe">(Guastalla, 2014)</a>.</p>
+
+<h2 id="fab-definitions">FAB definitions</h2>
+
+<p>The FAB level information is based on an aggregation of Flight Information Regions (FIRs) (ENTITY_TYPE = FAB (FIR)).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>FAB Name</th>
+      <th>FIRs included</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Baltic FAB</td>
+      <td>EPWWFIR, EYVLFIR, EYVLUIR</td>
+    </tr>
+    <tr>
+      <td>BLUE MED FAB</td>
+      <td>LCCCFIR, LCCCUIR, LGGGFIR, LGGGUIR, LIBBFIR, LIBBUIR, LIMMFIR, LIMMUIR, LIRRFIR, LIRRUIR, LMMMFIR, LMMMUIR</td>
+    </tr>
+    <tr>
+      <td>DANUBE FAB</td>
+      <td>LBSRFIR, LRBBFIR</td>
+    </tr>
+    <tr>
+      <td>DK-SE FAB</td>
+      <td>EKDKFIR, ESAAFIR</td>
+    </tr>
+    <tr>
+      <td>FABEC</td>
+      <td>EBBUFIR, EBURUIR, EDGGFIR, EDMMFIR, EDUUUIR, EDVVUIR, EDWWFIR, EHAAFIR, LFBBFIR, LFEEFIR, LFFFFIR, LFFFUIR, LFMMFIR, LFRRFIR, LSASFIR, LSASUIR</td>
+    </tr>
+    <tr>
+      <td>FAB CE</td>
+      <td>LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LQSBFIR, LQSBUIR, LZBBFIR</td>
+    </tr>
+    <tr>
+      <td>FAB CE (SES RP1)</td>
+      <td>LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR</td>
+    </tr>
+    <tr>
+      <td>FAB CE (SES RP2)</td>
+      <td>LDZOFIR, LHCCFIR, LJLAFIR, LKAAFIR, LOVVFIR, LZBBFIR</td>
+    </tr>
+    <tr>
+      <td>NEFAB</td>
+      <td>EETTFIR, EFINFIR, EFINUIR, ENOBFIR, ENORFIR, EVRRFIR</td>
+    </tr>
+    <tr>
+      <td>SW FAB</td>
+      <td>GCCCFIR, GCCCUIR, LECBFIR, LECBUIR, LECMFIR, LECMUIR, LPPCFIR</td>
+    </tr>
+    <tr>
+      <td>UK-Ireland FAB</td>
+      <td>EGPXFIR, EGPXUIR, EGTTFIR, EGTTUIR, EISNFIR, EISNUIR</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="column-naming-and-types">Column naming and types</h2>
+
+<table class="metatable">
+  <thead>
+    <tr>
+      <th>Column name</th>
+      <th>Data source</th>
+      <th>Label</th>
+      <th>Column description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>YEAR</td>
+      <td>Network Manager</td>
+      <td>YEAR</td>
+      <td>Reference year</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <td>MONTH_NUM</td>
+      <td>Network Manager</td>
+      <td>MONTH_NUM</td>
+      <td>Month (numeric)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>MONTH_MON</td>
+      <td>Network Manager</td>
+      <td>MONTH_MON</td>
+      <td>Month (3-letter code)</td>
+      <td>SEP</td>
+    </tr>
+    <tr>
+      <td>ENTRY_DATE</td>
+      <td>Network Manager</td>
+      <td>ENTRY_DATE</td>
+      <td>The entry date considered</td>
+      <td>06-Sep-14</td>
+    </tr>
+    <tr>
+      <td>ENTITY_NAME</td>
+      <td>Network Manager</td>
+      <td>ENTITY_NAME</td>
+      <td>Name of the entity to with the data refers</td>
+      <td>FABEC</td>
+    </tr>
+    <tr>
+      <td>ENTITY_TYPE</td>
+      <td>Network Manager</td>
+      <td>ENTITY_TYPE</td>
+      <td>Type of the entity</td>
+      <td>FAB (FIR)</td>
+    </tr>
+    <tr>
+      <td>MODEL_TYPE</td>
+      <td>Network Manager</td>
+      <td>MODEL_TYPE</td>
+      <td>The type of trajectory used for the calculation (CPF=actual, FTFM=flight plan)</td>
+      <td>FTFM</td>
+    </tr>
+    <tr>
+      <td>DIST_FLOWN_KM</td>
+      <td>Network Manager</td>
+      <td>DIST_FLOWN_KM</td>
+      <td>Sum of flown distances in kilometre</td>
+      <td>8699586</td>
+    </tr>
+    <tr>
+      <td>DIST_DIRECT_KM</td>
+      <td>Network Manager</td>
+      <td>DIST_DIRECT_KM</td>
+      <td>Sum of direct flown distances in kilometre</td>
+      <td>8405033</td>
+    </tr>
+    <tr>
+      <td>DIST_ACHIEVED_KM</td>
+      <td>Network Manager</td>
+      <td>DIST_ACHIEVED_KM</td>
+      <td>Sum of achieved distances in kilometre</td>
+      <td>8255220</td>
+    </tr>
+    <tr>
+      <td>T10_RUN_12M</td>
+      <td>Network Manager</td>
+      <td>T10_RUN_12M</td>
+      <td>‘B’ (‘W’) if the day is one of the ten best (worst) days for the entity in the previous 12 months</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>END_DATE</td>
+      <td>Network Manager</td>
+      <td>END_DATE</td>
+      <td>End date of the running 12 month  (T10_RUN_12M)</td>
+      <td>42216</td>
+    </tr>
+    <tr>
+      <td>T10_YYYY</td>
+      <td>Network Manager</td>
+      <td>T10_YYYY</td>
+      <td>‘B’ (‘W’) if the day is one of the best (worst) days for the entity in the calendar year (the number of days increases proportionally to reach 10 at the end of the year)</td>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="calculated-fields">Calculated Field(s)</h3>
+<p>The indicator is calculated as the ratio of the two sums (length of trajectories and achieved distances),
+over all flights considered:</p>
+
+<script type="math/tex; mode=display">{HFE}_j = ( \frac{\sum_{f,p} L_{fjp}}{\sum_{f,p} H_{fjp}} - 1 ) %</script>
+
+<p>where <script type="math/tex">L</script> is the length of the trajectory and <script type="math/tex">H</script> is the achieved distance;
+the index <script type="math/tex">f</script> is the flight, <script type="math/tex">j</script> is the airspace and <script type="math/tex">p</script> is the portion considered.</p>
+
+<p>From the table above <script type="math/tex">L</script> is <script type="math/tex">DIST\_FLOWN\_KM</script>, while <script type="math/tex">H</script> is <script type="math/tex">DIST\_ACHIEVED\_KM</script>.</p>
+
+<p><br />
+<br />
+The map below shows all Eurocontrol Member States FIRs and the nine FABs relevant for <strong>SES RP2</strong>.</p>
+
+<p>Click to zoom in/out. Hoover with the mouse to get further information.</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+
+<link rel="stylesheet" href="/assets/fabs-f8e8799ce3df691f1634bce0f0b7d0f3.css" />
+
+<script src="/assets/fabs-d7ed1417a151567b95eebddfd71eb59e.js"></script>
+
+<div id="tooltip" class="hidden">
+    <p id="info"></p>
 </div>
+<div id="chart"></div>
+
+<script type="text/javascript">
+(function () {
+
+  // general design from
+  // http://www.jeromecukier.net/blog/2013/11/20/getting-beyond-hello-world-with-d3/
+  var params = {
+    refresh: false, // REMOVE, i.e. `false`, for production
+  	width: 800,
+  	height:580,
+  	scale: 530,
+    rotateLat:-53,
+    rotateLon: 0,
+    topo: "/assets/euctrl-firs-72a8a96430024cdccd582f0847a14146.json",
+  	world: "/assets/world-50m-2b65576059fc408d2972cc9ead0a5440.json"
+  };
+
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  vars.forEach(function(v) {
+      var p = v.split("=");
+      params[p[0]] = p[1];
+  })
+
+  vis.init(params);
+}());
+</script>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li>Guastalla, Guglielmo. <i><a href="/references/library/HFE_Methodology.pdf">Performance Indicator – Horizontal Flight Efficiency</a></i>.
+  2014.
+
+<p><small>Abstract: Description of the horizontal flight efficiency indicator and
+                  its two versions used in the Performance Scheme Regulation –
+                  KEP and KEA</small></p>
+</li></ol>
+
 
 
     <div id="footer">
@@ -509,7 +597,7 @@ MathJax.Hub.Config({
 		<span style="text-aligh:left">&copy; 2016 European Organisation for the Safety of Air Navigation (EUROCONTROL).</span> &nbsp; &mdash; &nbsp;
 		<span style="text-aligh:right">Subscribe via
 		<!-- text encoded (in _subscriber-href-encoded.txt) to avoid spammer robots via http://clickable-email.ezkode.com/ -->
-		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="https://euctrl-pru.github.io/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
+		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="https://ansperformance.eu/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
 	</small>
     <!-- see older versions for what can be put here. -->
 

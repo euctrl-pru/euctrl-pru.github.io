@@ -19,11 +19,11 @@
 
 
 
-<link rel="canonical" href="https://euctrl-pru.github.io/studies/flows-extra/">
-<link rel="alternate" href="https://euctrl-pru.github.io/feed.xml" type="application/atom+xml" title="PRU Feed">
+<link rel="canonical" href="https://ansperformance.eu/studies/flows-extra/">
+<link rel="alternate" href="https://ansperformance.eu/feed.xml" type="application/atom+xml" title="PRU Feed">
 
 <!-- we are humans not machines -->
-<link type="text/plain" rel="author" href="https://euctrl-pru.github.io/humans.txt" />
+<link type="text/plain" rel="author" href="https://ansperformance.eu/humans.txt" />
 
 
 <!-- HTML5 Shiv and Media Query Support -->
@@ -56,24 +56,25 @@
 <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
 <!-- For all browsers (and overwrites bootstrap...) -->
-<link rel="stylesheet" href="/assets/table-91a771e70b40f344be6dbe678876aca1.css">
-<link rel="stylesheet" href="/assets/solarized-6cbce07e094150f6bc2a7e5c8249c7cf.css">
-<link rel="stylesheet" href="/assets/logo-35b0433c4a43954f4bfcfaad16795b9f.css">
-<link rel="stylesheet" href="/assets/general-5a6204284e11394238d99243db217a1d.css">
+<link rel="stylesheet" href="/assets/table-36c3a3dd5a8e24e3ade00561735981d6.css">
+<link rel="stylesheet" href="/assets/solarized-1e7b132b4b912551326a6a65610ec0b2.css">
+<link rel="stylesheet" href="/assets/logo-4e6034853f67de32a9782e5252dfca81.css">
+<link rel="stylesheet" href="/assets/general-d532e6af8148b39feec8f522570889c2.css">
 
 <!-- Icons -->
 <!-- 16x16 -->
-<link rel="shortcut icon" href="https://euctrl-pru.github.io/favicon.ico">
+<link rel="shortcut icon" href="https://ansperformance.eu/favicon.ico">
 <!-- 32x32 -->
-<link rel="shortcut icon" href="https://euctrl-pru.github.io/favicon.png">
+<link rel="shortcut icon" href="https://ansperformance.eu/favicon.png">
 
 <!-- Google Analytics -->
 <script type="text/javascript">
 !function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-62697169-2","auto"),ga("send","pageview");
 </script>
   <!-- loadign and configuring MathJax -->
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   jax: ["input/TeX","output/HTML-CSS"],
@@ -246,7 +247,7 @@ MathJax.Hub.Config({
       </button>
       <div class="navbar-brand">
         <a href="/#">
-          <img src="/assets/ec-logo-brand-449eeef19021340054db0c6b9ad14155.png" alt="PRU">
+          <img src="/assets/ec-logo-brand-a775c94482537ad9cea33dfceab62e2c.png" alt="PRU">
           <div id="logo"></div>
         </a>
       </div>
@@ -259,28 +260,35 @@ MathJax.Hub.Config({
           
               
           
-          <li><a href="https://euctrl-pru.github.io/posts/" >News</a></li>
+          <li><a href="https://ansperformance.eu/posts/" >News</a></li>
         
           
               
           
-          <li><a href="https://euctrl-pru.github.io/graphs/" >Graphs</a></li>
+          <li><a href="https://ansperformance.eu/graphs/" >Graphs</a></li>
         
           
               
           
-          <li><a href="https://euctrl-pru.github.io/data/" >Data</a></li>
+          <li><a href="https://ansperformance.eu/data/" >Data</a></li>
         
           
               
           
-          <li><a href="https://euctrl-pru.github.io/studies/" >Studies</a></li>
+          <li><a href="https://ansperformance.eu/studies/" >Studies</a></li>
         
-          
-              
-          
-          <li><a href="https://euctrl-pru.github.io/references/" >References</a></li>
-        
+          <li class="dropdown">
+              <a href="/references/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/references/dataset/">Datasets</a></li>
+                  <li><a href="/references/definition/">Definitions</a></li>
+                  <li><a href="/references/ANSP/">ANSP's</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/references/methodology/">Methodology</a></li>
+                   <li><a href="/references/bibliography.html">Bibliography</a></li>
+              </ul>
+          </li>
       </ul>
       <!-- let's keep About & C0. out of navigation.yml to have it right-aligned -->
       <ul class="nav navbar-nav navbar-right">
@@ -309,13 +317,14 @@ MathJax.Hub.Config({
   </div><!-- /.container-fluid -->
 </nav>
 
-<script src="/assets/active_navbar-86e2007606cfb6f85d17496a5ceee58a.js"></script>
-<script src="/assets/logo-5a59b4d3718192264bd77e2973dfd63c.js"></script>
-  <div class="container">
-    <link href="/assets/vendor/normalize-e12b75c03a89464cdd97dff5bee37e2a.css" rel="stylesheet" media="all" property="stylesheet">
-<link href="/assets/vendor/styles-8bb0d54dc7ed90b3b1d03ace6154bb47.css" rel="stylesheet" media="all" property="stylesheet">
+<script src="/assets/active_navbar-1e84c186919b1764f5f681943714efab.js"></script>
+<script src="/assets/logo-eb165b422665820a3d7049ce9652c068.js"></script>
 
-<script src="/assets/vendor/circular-flows.min-e187aa0fa3ce4cb2188198c09936c10e.js"></script>
+  <div class="container">
+    <link href="/assets/vendor/normalize-a98c3c1636e2a3e223e49eea5c8cfe86.css" rel="stylesheet" media="all" property="stylesheet">
+<link href="/assets/vendor/styles-6c774b82588e7711c54c7515246f2e8e.css" rel="stylesheet" media="all" property="stylesheet">
+
+<script src="/assets/vendor/circular-flows.min-fb5e408405e9c4b99def289777f66770.js"></script>
 
 
   <div id=dia-container class="container">
@@ -431,16 +440,16 @@ MathJax.Hub.Config({
         <div class="column-2">
           <h3>Credits</h3>
           <p>Provided by
-          <a href="https://euctrl-pru.github.io"><img src="/assets/pru-logo-a7f75fee4baf11b61dbfad09c2cea59e.png" alt="Performance Review Unit"></a>
-          <a href="http://www.eurocontrol.int"><img src="/assets/ec-logo-32x32-953f44a1cf911d4580a01c6e257c7d8b.png" alt="Eurocontrol"></a>
+          <a href="https://ansperformance.eu"><img src="/assets/pru-logo-11016155511b462c95fa6dc15ae65c51.png" alt="Performance Review Unit"></a>
+          <a href="http://www.eurocontrol.int"><img src="/assets/ec-logo-32x32-b6f06ec8ef30a1b18b041669358e6293.png" alt="Eurocontrol"></a>
           </p>
           <p>Many thanks to all Eurocontrol collegues for the decades spent in setting up the institutional and operational links with so many countries in and out of Europe, for managing the flows and capacities (<a href="https://www.eurocontrol.int/network-manager">Network Manager</a>), controlling flights (<a href="https://www.eurocontrol.int/muac">MUAC</a>), and for all other pre- (i.e. <a href="https://www.eurocontrol.int/sesar-research">Research and SESAR</a>) and post-ops (i.e. <a href="https://www.eurocontrol.int/crco">CRCO</a>, <a href="https://www.eurocontrol.int/forecast-monitoring-analysis">STATFOR, CODA, ...</a>) activities so necessary to help European aviation aiming at performing better and better.</p>
           <p>
             Thanks to
-            <a href="http://www.wittgensteincentre.org"><img src="/assets/wittgenstein-9cb94540de345d18fb87d03bdf4a0bba.png" alt="Wittgenstein Centre"></a>
-            , <a href="http://www.oeaw.ac.at/vid/"><img src="/assets/vid-7ec87f711dfe40a841d36e54b7949735.png" alt="Vienna Institute of Demography"></a>
+            <a href="http://www.wittgensteincentre.org"><img src="/assets/wittgenstein-5b83821b176b976ea648fbc096f8fc4a.png" alt="Wittgenstein Centre"></a>
+            , <a href="http://www.oeaw.ac.at/vid/"><img src="/assets/vid-719bce05bb304addd91217f1b6bfc15d.png" alt="Vienna Institute of Demography"></a>
             for having made their work publicly available (even in <a href="http://github.com/null2/globalmigration">source code</a>! Which allowed us to propose little contributions.)
-          <p>Circular plot library coded by <a href="http://null2.net"><img src="/assets/null2-b5e36a7a11bf302a5b1fe937d3a11c2a.png" alt="Null2"></a>
+          <p>Circular plot library coded by <a href="http://null2.net"><img src="/assets/null2-49e84eeafe9f4a0f5b52201a300b2259.png" alt="Null2"></a>
           and inspired by Martin Krzywinski's <a href="http://circos.ca/">Circos</a> and Mike Bostock’s <a href="http://d3js.org/">D3.js library</a>.</p>
 
           <h3>Special thanks</h3>
@@ -466,7 +475,7 @@ MathJax.Hub.Config({
         <div class="tab">How to read the plot</div>
         <div class="help-content">
           <h3>How to read the plot</h3>
-          <img src="/assets/help-c651b03a0bf4b036696a600b1fd866c2.png" alt="help" class="left">
+          <img src="/assets/help-58b6b33871b12aea680a4cd00823c0c3.png" alt="help" class="left">
           <p>
             Origins and destinations are represented by the circle’s segments.
             Each region/country is assigned a colour.
@@ -614,7 +623,7 @@ MathJax.Hub.Config({
 		<span style="text-aligh:left">&copy; 2016 European Organisation for the Safety of Air Navigation (EUROCONTROL).</span> &nbsp; &mdash; &nbsp;
 		<span style="text-aligh:right">Subscribe via
 		<!-- text encoded (in _subscriber-href-encoded.txt) to avoid spammer robots via http://clickable-email.ezkode.com/ -->
-		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="https://euctrl-pru.github.io/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
+		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="https://ansperformance.eu/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
 	</small>
     <!-- see older versions for what can be put here. -->
 
