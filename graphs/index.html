@@ -13,7 +13,7 @@
 <meta name="MobileOptimized" content="320">
 
 <title>Graphs &#8211; PRU</title>
-<meta name="description" content="Performance Review Unit interactive dashboard on European Air Transport.">
+<meta name="description" content="Performance Review Unit MetaData Definitions.">
 <meta name="keywords" content="">
 
 
@@ -59,7 +59,7 @@
 <link rel="stylesheet" href="/assets/table-36c3a3dd5a8e24e3ade00561735981d6.css">
 <link rel="stylesheet" href="/assets/solarized-1e7b132b4b912551326a6a65610ec0b2.css">
 <link rel="stylesheet" href="/assets/logo-4e6034853f67de32a9782e5252dfca81.css">
-<link rel="stylesheet" href="/assets/general-d532e6af8148b39feec8f522570889c2.css">
+<link rel="stylesheet" href="/assets/general-61960d6b51c66909d3a265e157d9b831.css">
 
 <!-- Icons -->
 <!-- 16x16 -->
@@ -256,30 +256,23 @@ MathJax.Hub.Config({
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/posts/" >News</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/graphs/" >Graphs</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/data/" >Data</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/studies/" >Studies</a></li>
-        
+          <li class=""><a href="/posts/#">News</a></li>
           <li class="dropdown">
-              <a href="/references/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <a href="/graphs/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Graphs</a>
+              <ul class="dropdown-menu">
+                  <li><a href="/graphs/safety/">Safety</a></li>
+                  <li><a href="/graphs/traffic/">Traffic</a></li>
+                  <li><a href="/graphs/capacity/">Capacity</a></li>
+                  <li><a href="/graphs/environment/">Environment</a></li>
+                  <li><a href="/graphs/cost-efficiency/">Cost Efficiency</a></li>
+              </ul>
+          </li>
+          <li class=""><a href="/data/#">Data</a></li>
+          <li class=""><a href="/studies/#">Studies</a></li>
+          <li class="dropdown">
+              <a href="/references/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References</a>
               <ul class="dropdown-menu">
                   <li><a href="/references/dataset/">Datasets</a></li>
                   <li><a href="/references/definition/">Definitions</a></li>
@@ -296,7 +289,7 @@ MathJax.Hub.Config({
           <!-- a search box for the content of this site -->
           <!-- inspired by http://hardik.org/2013/06/01/stylising-duckduckgo-site-search/ -->
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
-            <input type="hidden" name="sites" value="euctrl-pru.github.io"/>
+              <input type="hidden" name="sites" value="ansperformance.eu,euctrl-pru.github.io"/>
             <input type="hidden" name="ka" value="h"/>
             <input type="hidden" name="k7" value="#fafafa"/>
             <input type="hidden" name="kj" value="#2e86c6"/>
@@ -321,173 +314,16 @@ MathJax.Hub.Config({
 <script src="/assets/logo-eb165b422665820a3d7049ce9652c068.js"></script>
 
   <div class="container">
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <h1 id="graphs">Graphs</h1>
 
-<script type="text/javascript">
-  // load the visualisation API
-  google.load('visualization', '1', { packages: ['corechart', 'controls'] });
-</script>
-<a href="" id="top"></a>
-<h1>Pan-European ANS performance</h1>
-
-<p>This data is published by the Performance Review Unit (PRU).</p>
-<p> Every effort has been made to ensure that the information and analysis contained on this website are as accurate and complete as possible. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to the Performance Review Unit’s attention.
-</p>
-
-
-<ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" href="/graphs/index.html#safety-tab">Safety</a></li>
-  <li><a data-toggle="tab" href="/graphs/index.html#traffic-tab">Traffic</a></li>
-  <li><a data-toggle="tab" href="/graphs/index.html#capacity-tab">Capacity</a></li>
-  <li><a data-toggle="tab" href="/graphs/index.html#environment-tab">Environment</a></li>
-  <li><a data-toggle="tab" href="/graphs/index.html#cost-efficiency-tab">Cost Efficiency</a></li>
+<ul>
+  <li><a href="/graphs/safety/">Safety</a></li>
+  <li><a href="/graphs/traffic/">Traffic</a></li>
+  <li><a href="/graphs/capacity/">Capacity</a></li>
+  <li><a href="/graphs/environment/">Environment</a></li>
+  <li><a href="/graphs/cost-efficiency/">Cost Efficiency</a></li>
 </ul>
 
-
-<div class="tab-content">
-  <div id="safety-tab" class="tab-pane fade in active">
-    <h2>Safety</h2>
-    <div class="row">
-      <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <div id="crt_saf_smi_YY" style="width:400px; height:250px;"></div>
-        <br>
-        <div id="crt_saf_ri_YY" style="width:400px; height:250px;"></div>
-      </div>
-      <div class="col-lg-6 offset-10 text-justified">
-        <h5>EUROCONTROL Area</h5>
-        <div id="crt_saf_upa_YY" style="width:400px; height:250px;"></div>
-        <br>
-        <div id="crt_saf_aso_YY" style="width:400px; height:250px;"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="traffic-tab" class="tab-pane fade">
-    <h2>Traffic</h2>
-    <h3 id="ert_flt">Flights</h3>
-    <div class="row">
-      <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <br>
-        <div id="crt_flts_YY"></div>
-        <div id="crt_flts_MM"></div>
-      </div>
-      <div class="col-lg-6 offset-10 text-justified">
-        <h5>Flights by entity (Jan. 2016)</h5>
-        <div id="tbl_flts_YY"></div>
-      </div>
-    </div>
-
-    <h3 id="ert_sun">En-route service units (SU)</h3>
-    <div class="row">
-      <div class="col-lg-6">
-        <h5>CRCO Area</h5>
-        <br>
-        <div id="crt_ertSU_YY"></div>
-        <div id="crt_ertSU_MM"></div>
-      </div>
-      <div class="col-lg-6 offset-10 text-justified">
-        <h5>En-route SU by charging zone (Jan.-Jan. 2016)</h5>
-        <div id="tbl_ertSU_YY"></div>
-      </div>
-    </div>
-    <p>For further details and drill down analysis, please refer to the <a href="http://www.eurocontrol.int/ServiceUnits/Dashboard/">Service Unit Dashboard</a>.
-    </p>
-  </div>
-
-
-  <div id="capacity-tab" class="tab-pane fade">
-    <h2 id='capacity'>Capacity</h2>
-    <h3 id="ert_dly">En-route ATFM delays</h3>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <div id="crt_cap_ert_YY"></div>
-        <div id="crt_cap_ert_MM"></div>
-      </div>
-      <div class="col-lg-6 offset-10">
-        <h5>En-route ATFM delays by <a href="http://ansperformance.eu/references/definition/fab.html">FAB (FIR)</a> (2015 Final; 2016 - YTD)</h5>
-        <div id="tbl_cap_fir_ert_YY"></div>
-        <br>
-        <h5>En-route ATFM delays by Entity (Jan. 2016)</h5>
-        <div id="tbl_cap_ert_YY"></div>
-      </div>
-    </div>
-
-    <h3 id="apt_dly">Airport Arrival ATFM Delays</h3>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <div id="crt_cap_apt_YY"></div>
-        <div id="crt_cap_apt_MM"></div>
-      </div>
-      <div class="col-lg-6 offset-10">
-        <h5>Airport Arrival ATFM Delays by Airport (Jan. 2016)</h5>
-        <div id="tbl_cap_apt_YY"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="environment-tab" class="tab-pane fade">
-    <h2>Environment</h2>
-    <h3 id="hfe">Horizontal En-route Flight Efficiency (HFE)</h3>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <h5>EUROCONTROL Area</h5>
-        <div id="crt_hfe_YY"></div>
-        <div id="crt_hfe_MM"></div>
-      </div>
-
-      <div class="col-lg-6 offset-10">
-        <h5>Horizontal En-route Flight Efficiency by Entity (Jan. 2016)</h5>
-        <div id="tbl_hfe_YY"></div>
-      </div>
-    </div>
-
-    <h3 id="asma">Additional ASMA Time</h3>
-    *This section is still under development. Please visit us again soon!*
-
-    <h3 id="txo">Additional Taxi-out Time</h3>
-    *This section is still under development. Please visit us again soon!*
-  </div>
-
-  <div id="cost-efficiency-tab" class="tab-pane fade">
-    <h2 id="costeff">Cost Efficiency</h2>
-    *This section is still under development. Please visit us again soon!*
-  </div>
-
-</div>
-
-
-
-
-<script src="/assets/crt_saf_aso_YY-4816397c7d2baf5aca86c70ded024b52.js"></script>
-<script src="/assets/crt_saf_ri_YY-fda7a43562e330e4e087bae9aef1c630.js"></script>
-<script src="/assets/crt_saf_smi_YY-8f9dae68829a26f691d9073e250b9bc4.js"></script>
-<script src="/assets/crt_saf_upa_YY-0dc555aa43815fecdeaf401e34984ccf.js"></script>
-
-<script src="/assets/crt_flts_YY-ce732a2bb558e0ff72df977e0b34323c.js"></script>
-<script src="/assets/crt_flts_MM-6e4da78d742505d623af18070e86259d.js"></script>
-<script src="/assets/tbl_flts_YY-c711d4543bf0583e030a9de574561fac.js"></script>
-<script src="/assets/crt_ertSU_YY-6d4075bee6fd195e1a885f3334ff6e26.js"></script>
-<script src="/assets/crt_ertSU_MM-0ccccb19b34188eb0bc0975789033421.js"></script>
-<script src="/assets/tbl_ertSU_YY-e043dca469d9e70e0d8e85d9548604ec.js"></script>
-
-<script src="/assets/crt_cap_ert_YY-83fef49e7dad1a5c532f59bfcd51c16e.js"></script>
-<script src="/assets/crt_cap_ert_MM-f67024de2f56954f4eca40311eaf9d15.js"></script>
-<script src="/assets/tbl_cap_ert_YY-b06f9b9199a300fbf86e56c50b078ac5.js"></script>
-<script src="/assets/tbl_cap_fir_ert_YY-62dffa22e2af3a3321ad992abb49940e.js"></script>
-<script src="/assets/crt_cap_apt_YY-c4ee7da09394ac961c7b8a174ac93a68.js"></script>
-<script src="/assets/crt_cap_apt_MM-3b35b563064882ac88a84312716f2e14.js"></script>
-<script src="/assets/tbl_cap_apt_YY-c83d23d437194470278faf376dedeec1.js"></script>
-
-<script src="/assets/crt_hfe_YY-669523ed513c2a77f8a748273d164666.js"></script>
-<script src="/assets/crt_hfe_MM-0b2eb35e2f9db641535b4629b5b66e5d.js"></script>
-<script src="/assets/tbl_hfe_YY-e63a15869bdc8e35b3f45d3700d4052a.js"></script>
 
 
 

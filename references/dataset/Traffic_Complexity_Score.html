@@ -59,7 +59,7 @@
 <link rel="stylesheet" href="/assets/table-36c3a3dd5a8e24e3ade00561735981d6.css">
 <link rel="stylesheet" href="/assets/solarized-1e7b132b4b912551326a6a65610ec0b2.css">
 <link rel="stylesheet" href="/assets/logo-4e6034853f67de32a9782e5252dfca81.css">
-<link rel="stylesheet" href="/assets/general-d532e6af8148b39feec8f522570889c2.css">
+<link rel="stylesheet" href="/assets/general-61960d6b51c66909d3a265e157d9b831.css">
 
 <!-- Icons -->
 <!-- 16x16 -->
@@ -256,30 +256,23 @@ MathJax.Hub.Config({
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/posts/" >News</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/graphs/" >Graphs</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/data/" >Data</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/studies/" >Studies</a></li>
-        
+          <li class=""><a href="/posts/#">News</a></li>
           <li class="dropdown">
-              <a href="/references/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <a href="/graphs/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Graphs</a>
+              <ul class="dropdown-menu">
+                  <li><a href="/graphs/safety/">Safety</a></li>
+                  <li><a href="/graphs/traffic/">Traffic</a></li>
+                  <li><a href="/graphs/capacity/">Capacity</a></li>
+                  <li><a href="/graphs/environment/">Environment</a></li>
+                  <li><a href="/graphs/cost-efficiency/">Cost Efficiency</a></li>
+              </ul>
+          </li>
+          <li class=""><a href="/data/#">Data</a></li>
+          <li class=""><a href="/studies/#">Studies</a></li>
+          <li class="dropdown">
+              <a href="/references/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References</a>
               <ul class="dropdown-menu">
                   <li><a href="/references/dataset/">Datasets</a></li>
                   <li><a href="/references/definition/">Definitions</a></li>
@@ -296,7 +289,7 @@ MathJax.Hub.Config({
           <!-- a search box for the content of this site -->
           <!-- inspired by http://hardik.org/2013/06/01/stylising-duckduckgo-site-search/ -->
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
-            <input type="hidden" name="sites" value="euctrl-pru.github.io"/>
+              <input type="hidden" name="sites" value="ansperformance.eu,euctrl-pru.github.io"/>
             <input type="hidden" name="ka" value="h"/>
             <input type="hidden" name="k7" value="#fafafa"/>
             <input type="hidden" name="kj" value="#2e86c6"/>
@@ -349,18 +342,24 @@ the potential interactions between aircraft on different headings.
 The indicator is defined as the ratio of the duration of horizontal interactions to the total
 duration of all interactions.</p>
 
+<p><img src="/assets/cplx_horizontal-fcbbede408736a8a272706e5bde98016.png" style="width: 150px" alt="Horizontal interactions" /></p>
+
 <p><strong>Vertical interactions index:</strong> A measure of the complexity arising from aircraft in vertical
 evolution based on the potential interactions between climbing, cruising and descending aircraft.
 The indicator is defined as the ratio of the duration of vertical interactions to the total
 duration of all interactions.</p>
+
+<p><img src="/assets/cplx_vertical-6f87689fa072dbf8dd736a2c973a58c0.png" style="width: 150px" alt="Vertical interactions" /></p>
 
 <p><strong>Speed interactions indicator:</strong> A measure of the complexity arising from the aircraft mix
 based on the potential interactions between aircraft of different speeds.
 The indicator is defined as the ratio of the duration of speed interactions to the
 total duration of all interactions.</p>
 
+<p><img src="/assets/cplx_speed-bc3eeba68e0658484f69e2409a4442c1.png" style="width: 150px" alt="Speed interactions" /></p>
+
 <p>More information on the methodologies used for the computation of the complexity score
-see <a href="#complexitymetrics">(ACE Working Group on Complexity, 2006)</a> in the References.</p>
+see <a href="#complexitymetrics">(ACE Working Group on Complexity 2006)</a> in the References.</p>
 
 <h2 id="column-naming-and-types">Column naming and types</h2>
 
@@ -474,9 +473,7 @@ see <a href="#complexitymetrics">(ACE Working Group on Complexity, 2006)</a> in 
 
 <h2 id="references">References</h2>
 
-<ol class="bibliography"><li>ACE Working Group on Complexity. <i><a href="http://www.eurocontrol.int/sites/default/files/publication/files/complexity-report.pdf">Report on Complexity Metrics for ANSP Benchmarking Analysis</a></i>.
-  2006.
-
+<ol class="bibliography"><li><span id="complexitymetrics">ACE Working Group on Complexity. 2006. “Report On Complexity Metrics for ANSP Benchmarking Analysis.” <a href="http://www.eurocontrol.int/sites/default/files/publication/files/complexity-report.pdf">URL</a>.</span>
 
 </li></ol>
 

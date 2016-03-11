@@ -59,7 +59,7 @@
 <link rel="stylesheet" href="/assets/table-36c3a3dd5a8e24e3ade00561735981d6.css">
 <link rel="stylesheet" href="/assets/solarized-1e7b132b4b912551326a6a65610ec0b2.css">
 <link rel="stylesheet" href="/assets/logo-4e6034853f67de32a9782e5252dfca81.css">
-<link rel="stylesheet" href="/assets/general-d532e6af8148b39feec8f522570889c2.css">
+<link rel="stylesheet" href="/assets/general-61960d6b51c66909d3a265e157d9b831.css">
 
 <!-- Icons -->
 <!-- 16x16 -->
@@ -256,30 +256,23 @@ MathJax.Hub.Config({
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/posts/" >News</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/graphs/" >Graphs</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/data/" >Data</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/studies/" >Studies</a></li>
-        
+          <li class=""><a href="/posts/#">News</a></li>
           <li class="dropdown">
-              <a href="/references/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <a href="/graphs/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Graphs</a>
+              <ul class="dropdown-menu">
+                  <li><a href="/graphs/safety/">Safety</a></li>
+                  <li><a href="/graphs/traffic/">Traffic</a></li>
+                  <li><a href="/graphs/capacity/">Capacity</a></li>
+                  <li><a href="/graphs/environment/">Environment</a></li>
+                  <li><a href="/graphs/cost-efficiency/">Cost Efficiency</a></li>
+              </ul>
+          </li>
+          <li class=""><a href="/data/#">Data</a></li>
+          <li class=""><a href="/studies/#">Studies</a></li>
+          <li class="dropdown">
+              <a href="/references/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References</a>
               <ul class="dropdown-menu">
                   <li><a href="/references/dataset/">Datasets</a></li>
                   <li><a href="/references/definition/">Definitions</a></li>
@@ -296,7 +289,7 @@ MathJax.Hub.Config({
           <!-- a search box for the content of this site -->
           <!-- inspired by http://hardik.org/2013/06/01/stylising-duckduckgo-site-search/ -->
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
-            <input type="hidden" name="sites" value="euctrl-pru.github.io"/>
+              <input type="hidden" name="sites" value="ansperformance.eu,euctrl-pru.github.io"/>
             <input type="hidden" name="ka" value="h"/>
             <input type="hidden" name="k7" value="#fafafa"/>
             <input type="hidden" name="kj" value="#2e86c6"/>
@@ -325,23 +318,31 @@ MathJax.Hub.Config({
 
 <h2 id="data-description">Data description</h2>
 
-<p>The measure provides an indication of ATFM delays on the ground due to constraints at airports.</p>
+<p>The <em>Airport Arrival ATFM Delay</em> provides an indication of
+<a href="/references/definition/atfm_delay.html">ATFM delays</a> on the ground due to
+constraints at airports.</p>
 
-<p>In Europe, when traffic demand is anticipated to exceed the available capacity in en route centres
-or at airports, Air Traffic Control (ATC) units may request the local Flow Management Position (FMP)
-to instigate an Air Traffic Flow Management (ATFM) measure, or regulation.
-Aircraft expected to arrive during a period of congestion are given Air Traffic Flow Management delay
-at their departure airport, under the authority of the Network Manager, in order to regulate the flow
-of traffic into the constrained downstream en route sector or airport, thus ensuring safety.
-The resulting ATFM delays are calculated as the difference between the estimated take-off time
-calculated from the filed flight plan including updates and the calculated take-off time
-allocated by the central unit of ATFM.
-The reason for the regulation is indicated by the responsible Flow Management Position (FMP).
+<p>In Europe, when traffic demand is anticipated to exceed the available capacity
+in en route centres or at airports, Air Traffic Control
+(<a href="/references/definition/atc.html">ATC</a>) units may request
+the local Flow Management Position (<a href="/references/definition/fmp.html">FMP</a>) to
+instigate an Air Traffic Flow Management
+(<a href="/references/definition/atfm.html">ATFM</a>) measure, or
+<a href="/references/definition/regulation.html">regulation</a>.
+Aircraft expected to arrive during a period of congestion are given ATFM delay
+at their departure airport, under the authority of the
+Network Manager, in order to regulate the flow of traffic into the constrained
+downstream en route sector or airport, thus ensuring safety.</p>
+
+<p>The resulting ATFM delays are calculated as the difference between the estimated
+take-off time calculated from the filed flight plan including updates and the
+calculated take-off time allocated by the central unit of ATFM.
+The reason for the regulation is indicated by the responsible FMP.
 The delay is attributed to the most constraining ATC unit.</p>
 
-<p>The calculation of Airport arrival ATFM delay is based on a well established and commonly
-accepted algorithm and has been in use as a commonly agreed proxy for airport capacity
-shortfalls since 2009.</p>
+<p>The calculation of Airport arrival ATFM delay is based on a well established and
+commonly accepted algorithm and has been in use as a commonly agreed proxy for
+airport capacity shortfalls since 2009.</p>
 
 <h2 id="column-naming-and-types">Column naming and types</h2>
 

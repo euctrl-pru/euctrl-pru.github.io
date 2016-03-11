@@ -59,7 +59,7 @@
 <link rel="stylesheet" href="/assets/table-36c3a3dd5a8e24e3ade00561735981d6.css">
 <link rel="stylesheet" href="/assets/solarized-1e7b132b4b912551326a6a65610ec0b2.css">
 <link rel="stylesheet" href="/assets/logo-4e6034853f67de32a9782e5252dfca81.css">
-<link rel="stylesheet" href="/assets/general-d532e6af8148b39feec8f522570889c2.css">
+<link rel="stylesheet" href="/assets/general-61960d6b51c66909d3a265e157d9b831.css">
 
 <!-- Icons -->
 <!-- 16x16 -->
@@ -256,30 +256,23 @@ MathJax.Hub.Config({
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/posts/" >News</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/graphs/" >Graphs</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/data/" >Data</a></li>
-        
-          
-              
-          
-          <li><a href="http://ansperformance.eu/studies/" >Studies</a></li>
-        
+          <li class=""><a href="/posts/#">News</a></li>
           <li class="dropdown">
-              <a href="/references/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <a href="/graphs/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Graphs</a>
+              <ul class="dropdown-menu">
+                  <li><a href="/graphs/safety/">Safety</a></li>
+                  <li><a href="/graphs/traffic/">Traffic</a></li>
+                  <li><a href="/graphs/capacity/">Capacity</a></li>
+                  <li><a href="/graphs/environment/">Environment</a></li>
+                  <li><a href="/graphs/cost-efficiency/">Cost Efficiency</a></li>
+              </ul>
+          </li>
+          <li class=""><a href="/data/#">Data</a></li>
+          <li class=""><a href="/studies/#">Studies</a></li>
+          <li class="dropdown">
+              <a href="/references/#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References</a>
               <ul class="dropdown-menu">
                   <li><a href="/references/dataset/">Datasets</a></li>
                   <li><a href="/references/definition/">Definitions</a></li>
@@ -296,7 +289,7 @@ MathJax.Hub.Config({
           <!-- a search box for the content of this site -->
           <!-- inspired by http://hardik.org/2013/06/01/stylising-duckduckgo-site-search/ -->
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
-            <input type="hidden" name="sites" value="euctrl-pru.github.io"/>
+              <input type="hidden" name="sites" value="ansperformance.eu,euctrl-pru.github.io"/>
             <input type="hidden" name="ka" value="h"/>
             <input type="hidden" name="k7" value="#fafafa"/>
             <input type="hidden" name="kj" value="#2e86c6"/>
@@ -326,11 +319,17 @@ MathJax.Hub.Config({
 <h2 id="introduction">Introduction</h2>
 
 <p>The actual time spent by a flight between its last entry in the
-<a href="/references/definition/asma.html">ASMA</a> (Entry-time at 40 NM upstream) and the
-actual landing time (ALDT) is denoted <em>ASMA transit time</em>.</p>
+<a href="/references/definition/asma.html">ASMA</a> (Entry-time at 40 NM upstream -
+<script type="math/tex">A_{LET}</script>) and the actual landing time
+(<a href="/references/definition/aldt.html"><script type="math/tex">A_{ALDT}</script></a>) is denoted
+<em><a href="/references/definition/asma_transit_time.html">ASMA transit time</a></em>
+(<script type="math/tex">A_{TT}</script>).</p>
 
-<p>The <em>unimpeded ASMA time</em> is the ASMA transit time in non congested conditions
-at arrival airports. The unimpeded ASMA time is used in the calculation of the
+<script type="math/tex; mode=display">A_{TT} = A_{LET} - A_{ALDT}</script>
+
+<p>The <em><a href="/references/definition/unimpeded_asma_time.html">unimpeded ASMA time</a></em> is the
+ASMA transit time in non congested conditions at arrival airports.
+The unimpeded ASMA time is used in the calculation of the
 <a href="/references/definition/additional_asma_time.html">Arrival sequencing and metering area (ASMA) additional time</a>.</p>
 
 <p>This technical note describes the methodology used in order to calculate the
@@ -422,7 +421,7 @@ departures do not affect congestion level for unimpeded ASMA time.</li>
     <tr>
       <td>ASMA entry-point</td>
       <td>Date-time + bearing from airport reference point (long. &amp; lat.)</td>
-      <td>Actual trajectory from [http://atmlexicon.eurocontrol.int/lexicon/en/index.php/CPR Correlated Position Report(CPR)] provided by NM</td>
+      <td>Actual trajectory from <a href="http://atmlexicon.eurocontrol.int/lexicon/en/index.php/CPR">Correlated Position Report (CPR)</a> provided by NM</td>
     </tr>
     <tr>
       <td>Aircraft type</td>
@@ -519,7 +518,8 @@ triplet.</li>
   <li>Identification of the unimpeded flights
 For each triplet (arrival runway, aircraft class, ASMA sector):
     <ul>
-      <li>Selection of flights with a congestion index &lt;= 0.5 * Saturation level</li>
+      <li>Selection of flights with a <script type="math/tex">% <![CDATA[
+{congestion\ index} <= 0.5 * {saturation\ level} %]]></script></li>
     </ul>
   </li>
   <li>Computation of the unimpeded time
@@ -568,14 +568,14 @@ centered around zero and with a standard deviation smaller than 3 minutes.</p>
 
 <ul>
   <li>
-    <p><em>Evolution of the additional ASMA time with the congestion level</em>
+    <p>Evolution of the additional ASMA time with the congestion level*
 In order to be able to consolidate in a single graph for a given airport with
 different triplet (arrival runway, aircraft class, ASMA sector) and different
 saturation levels, the data has to be normalised.</p>
 
-    <p>For this reason a congestion index is defined as</p>
+    <p>For this reason a <script type="math/tex">congestion index</script> is defined as</p>
 
-    <script type="math/tex; mode=display">Congestion index  = 100 * Congestion level / saturation level</script>
+    <script type="math/tex; mode=display">{congestion\ index}  = 100 * \frac{congestion\ level}{saturation\ level}</script>
 
     <p>A value of 100 of the congestion index corresponds to a saturation level
 independent of arrival runway and ASMA Sector.</p>
