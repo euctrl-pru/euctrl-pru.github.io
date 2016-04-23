@@ -1,0 +1,21 @@
+/* TEAM */
+Creator: Enrico Spinielli
+Contact: enrico.spinielli [at] eurocontrol.int
+Twitter: @espinielli
+Location: Brussels, Belgium
+
+Contributor: Holger Hegendorfer
+Contact: holger.hegendorfer [at] eurocontrol.int
+Location: Munich, Germany
+
+Contributor: Muriel Tholome
+Contact: muriel.tholome [at] eurocontrol.int
+Location: Brussels, Belgium
+
+/* THANKS */
+To the Internet and the Long Tail.
+
+/* SITE */
+Last Update: 2016-03-24
+Standards: HTML5, SCSS
+Software: Jekyll, pandoc, MathJax, d3.js, dc.js, crossfilter
