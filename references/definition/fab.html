@@ -2,300 +2,120 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-
 <title>FAB - Functional Airspace Blocks &#8211; PRU</title>
 <meta name="description" content="Performance Review Unit MetaData Definitions.">
 <meta name="keywords" content="">
-
-
-
-
 <link rel="canonical" href="http://ansperformance.eu/references/definition/fab.html">
 <link rel="alternate" href="http://ansperformance.eu/feed.xml" type="application/atom+xml" title="PRU Feed">
-
-<!-- we are humans not machines -->
 <link type="text/plain" rel="author" href="http://ansperformance.eu/humans.txt" />
-
-
-<!-- HTML5 Shiv and Media Query Support -->
 <!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-
-<!-- Bootstrap & JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.11/crossfilter.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
-
-<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-
-<!-- Modernizr -->
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-
-<!-- For all browsers (and overwrites bootstrap...) -->
-<link rel="stylesheet" href="/assets/table-00801e081553f4d95a5e55bab7f1bbb3.css">
-<link rel="stylesheet" href="/assets/solarized-1e7b132b4b912551326a6a65610ec0b2.css">
-<link rel="stylesheet" href="/assets/logo-4e6034853f67de32a9782e5252dfca81.css">
-<link rel="stylesheet" href="/assets/general-61960d6b51c66909d3a265e157d9b831.css">
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="http://ansperformance.eu/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="http://ansperformance.eu/favicon.png">
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-62697169-2","auto"),ga("send","pageview");
+<link type="text/css" rel="stylesheet" href="/assets/table-0849d8a581c0b5a73867bb9a8fd2c759f4cd2abbe533a5423f7fd1ee6cadf2a2.css">
+<link type="text/css" rel="stylesheet" href="/assets/solarized-e69a0f19a8424b964f64b60a41d6cf9d3c62d127e5519a4dbe9ad596cf0c468f.css">
+<link type="text/css" rel="stylesheet" href="/assets/logo-3a7eb4382971c540181ccedc15fbfa406a3f5c98eed1f4dc401fb9e9c3be5dd0.css">
+<link type="text/css" rel="stylesheet" href="/assets/general-f8dc20cea672fb074b442b3ab1d59c7ad93af07aa78274a7af0309d0c6c5d814.css">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v2.5.0=BGG6eR0wxq">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v2.5.0=BGG6eR0wxq">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v2.5.0=BGG6eR0wxq">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v2.5.0=BGG6eR0wxq">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v2.5.0=BGG6eR0wxq">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v2.5.0=BGG6eR0wxq">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v2.5.0=BGG6eR0wxq">
+<link rel="icon" type="image/png" href="/favicon-32x32.png?v2.5.0=BGG6eR0wxq" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png?v2.5.0=BGG6eR0wxq" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png?v2.5.0=BGG6eR0wxq" sizes="16x16">
+<link rel="manifest" href="/manifest.json?v2.5.0=BGG6eR0wxq">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v2.5.0=BGG6eR0wxq" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon.ico?v2.5.0=BGG6eR0wxq">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png?v2.5.0=BGG6eR0wxq">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript" async>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-62697169-2', 'auto');
+ga('send', 'pageview');
 </script>
-
-  <!-- loadign and configuring MathJax -->
-<script type="text/javascript" async
-        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  jax: ["input/TeX","output/HTML-CSS"],
-  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
-  tex2jax:
-    {
-      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-      displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
-      processEscapes: true
-    },
-  TeX:
-    {
-      equationNumbers: { autoNumber: "AMS" },
-      extensions: ["AMSmath.js", "AMSsymbols.js"],
-      TagSide: "left",
-      Macros:
-        {
-          b: ['\\overline{#1}',1],
-          h: ['\\widehat{#1}',1],
-          til: ['\\widetilde{#1}',1],
-        bold: ['\\mathbf{#1}',1],
-          sans: ['\\mathsf{#1}',1],
-        vect: ['\\boldsymbol{\\mathbf{#1}}',1],
-        zeros: ['\\mathbf{0}'],
-        ones: ['\\mathbf{1}'],
-        complex: ['\\mathbf{C}'],
-        C: ['\\mathsf{c}'],
-        d: ['\\,d'],
-        expect: ['\\mathbf{E}'],
-        emf: ['\\mathscr{E}'],
-        ft: ['\\mathcal{F}'],
-        Lagrange: ['\\mathscr{L}'],
-        naturals: ['\\mathbf{N}'],
-        normal: ['\\mathcal{N}'],
-        prob: ['\\mathbf{P}'],
-        pset: ['\\mathcal{P}'],
-        rationals: ['\\mathbf{Q}'],
-        reals: ['\\mathbf{R}'],
-        ereals: ['\\overline{\\mathbf{R}}'],
-        risk: ['\\mathcal{R}'],
-        integers: ['\\mathbf{Z}'],
-        symdiff: ['\\,\\Delta\\,'],
-        grad: ['\\nabla'],
-        emptyset: ['\\varnothing'],
-        ortho: ['{\\bot}'],
-        deq: [':='],
-        given: ['\\mid'],
-        midgiven: ['\\;\\middle\\vert\\;'],
-        set: ['\\{\\, #1 \\,\\}', 1],
-        inner: ['\\langle#1,#2\\rangle', 2],
-        ave: ['\\langle #1 \\rangle', 1],
-        innerlr: ['\\left\\langle#1,#2\\right\\rangle', 2],
-        avelr: ['\\left\\langle#1\\right\\rangle', 1],
-        T: ['\\top'],
-        abs: ['\\lvert#1\\rvert', 1],
-        abslr:['\\left\\lvert#1\\right\\rvert', 1],
-        norm: ['\\lVert#1\\rVert', 1],
-        normlr: ['\\left\\lVert#1\\right\\rVert', 1],
-        zeronorm: ['\\norm{#1}_0', 1],
-        zeronormlr: ['\\normlr{#1}_0', 1],
-        onenorm: ['\\norm{#1}_1', 1],
-        onenormlr: ['\\normlr{#1}_1', 1],
-        twonorm: ['\\norm{#1}_2', 1],
-        twonormlr: ['\\normlr{#1}_2', 1],
-        inftynorm: ['\\norm{#1}_\\infty', 1],
-        inftynormlr: ['\\normlr{#1}_\\infty', 1],
-        pnorm: ['\\norm{#1}_p', 1],
-        pnormlr: ['\\normlr{#1}_p', 1],
-        Frobnorm: ['\\norm{#1}_\\mathrm{F}', 1],
-        Frobnormlr: ['\\normlr{#1}_\\mathrm{F}', 1],
-        maxnorm: ['\\norm{#1}_\\mathrm{max}', 1],
-        maxnormlr:  ['\\normlr{#1}_\\mathrm{max}', 1],
-        tvnorm: ['\\norm{#1}_\\mathrm{TV}', 1],
-        tvnormlr: ['\\normlr{#1}_\\mathrm{TV}', 1],
-        ind: ['\\mathbf{I}_{\\{ #1 \\} }', 1],
-        pind: ['\\mathbf{I}(#1)', 1],
-        argmin: ['\\mathop{\\mathrm{arg\\,min}}'],
-        argmax: ['\\mathop{\\mathrm{arg}\\,\\max}'],
-        bdiag: ['\\mathop{\\mathrm{bdiag}}'],
-        bd: ['\\mathop{\\mathrm{bd}}'],
-        comb: ['\\mathop{\\mathrm{comb}}'],
-        codom: ['\\mathop{\\mathrm{codim}}'],
-        diag: ['\\mathop{\\mathrm{diag}}'],
-        dom: ['\\mathop{\\mathrm{dom}}'],
-        epi: ['\\mathop{\\mathrm{epi}}'],
-        hard: ['\\mathop{\\mathrm{hard}}'],
-        interior: ['\\mathop{\\mathrm{int}}'],
-        MSE: ['\\mathop{\\mathrm{MSE}}'],
-        modop: ['\\mathop{\\mathrm{mod}}'],
-        minimize: ['\\mathop{\\mathrm{minimize}}'],
-        maximize: ['\\mathop{\\mathrm{maximize}}'],
-        midop: ['\\mathop{\\mathrm{mid}}'],
-        nint: ['\\mathop{\\mathrm{nint}}'],
-        pen: ['\\mathop{\\mathrm{pen}}'],
-        Poisson: ['\\mathop{\\mathrm{Poisson}}'],
-        rect: ['\\mathop{\\mathrm{rect}}'],
-        RMSE: ['\\mathop{\\mathrm{RMSE}}'],
-        range: ['\\mathop{\\mathrm{range}}'],
-        relint: ['\\mathop{\\mathrm{relint}}'],
-        rank: ['\\mathop{\\mathrm{rank}}'],
-        st: ['\\mathop{\\mathrm{subject\\ to}}'],
-        sinc: ['\\mathop{\\mathrm{sinc}}'],
-        sign: ['\\mathop{\\mathrm{sign}}'],
-        sgn: ['\\mathop{\\mathrm{sgn}}'],
-        soft: ['\\mathop{\\mathrm{soft}}'],
-        skewop: ['\\mathop{\\mathrm{skewop}}'],
-        symop: ['\\mathop{\\mathrm{symop}}'],
-        SNR: ['\\mathop{\\mathrm{SNR}}'],
-        spanop: ['\\mathop{\\mathrm{span}}'],
-        tr: ['\\mathop{\\mathrm{tr}}'],
-        var: ['\\mathop{\\mathrm{var}}'],
-        MinProb: ['\\begin{aligned}' +
-          '&\\minimize_{#1} & & {#2}' +
-          '\\end{aligned}', 2],
-        ConMinProb: ['\\begin{aligned}' +
-          '&\\minimize_{#1} & & #2 \\\\' +
-          '&\\st & & #3' +
-          '\\end{aligned}', 3],
-        MaxProb: ['\\begin{aligned}' +
-          '&\\maximize_{#1} & & {#2}' +
-          '\\end{aligned}', 2],
-        ConMaxProb: ['\\begin{aligned}' +
-          '&\\maximize_{#1} & & #2 \\\\' +
-          '&\\st & & #3' +
-          '\\end{aligned}', 3],
-        ArgMinProb: ['\\begin{aligned}' +
-          '#1 = &\\argmin_{#2} & & {#3}' +
-          '\\end{aligned}', 3],
-        ArgConMinProb: ['\\begin{aligned}' +
-          '#1 = &\\argmin_{#2} & & {#3} \\\\' +
-          '&\\st & & #4' +
-          '\\end{aligned}', 4],
-        ArgMaxProb: ['\\begin{aligned}' +
-          '#1 = &\\argmax_{#2} & & {#3}' +
-          '\\end{aligned}', 3],
-        ArgConMaxProb: ['\\begin{aligned}' +
-          '#1 = &\\argmax_{#2} & & {#3} \\\\' +
-          '&\\st & & #4' +
-          '\\end{aligned}', 4]
-        }
-    },
-  "HTML-CSS": { availableFonts: ["TeX"] }
-});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    // Fix <code> tags after MathJax finishes running. This is a
-    // hack to overcome a shortcoming of Markdown. Discussion at
-    // https://github.com/mojombo/jekyll/issues/199
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
-
 </head>
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
-<body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+ <nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container-fluid">
+   <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="navbar-brand">
+     <div class="navbar-brand">
           <a href="http://ansperformance.eu">
-          <img src="/assets/ec-logo-brand-a775c94482537ad9cea33dfceab62e2c.png" alt="PRU">
-          <div id="logo"></div>
+          <img src="/assets/ec-logo-brand-a37c88531431fd766c40b47e165665c6d9acb0fa97469728f7cc6d0b2260ee74.png"alt=PRU width="41" height="36" alt="ec-logo-brand.png">
+         <div id="logo"></div>
         </a>
-      </div>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-          <li class=""><a href="http://ansperformance.eu/posts/">News</a></li>
-          <li class="dropdown">
+     </div>
+   </div>
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav">
+         <li class=""><a href="http://ansperformance.eu/posts/">News</a></li>
+         <li class="dropdown">
               <a href="http://ansperformance.eu/graphs/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
                  aria-haspopup="true" aria-expanded="false">Graphs</a>
-              <ul class="dropdown-menu">
-                  <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
-                  <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
-                  <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>
-                  <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
-                  <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
-              </ul>
-          </li>
-
-          <li class="dropdown">
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
+             </ul>
+         </li>
+         <li class="dropdown">
             <a href="http://ansperformance.eu/data/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
               aria-haspopup="true" aria-expanded="false">Data</a>
-            <ul class="dropdown-menu">
-              <li><a href="http://ansperformance.eu/data/performancearea/">by Performance Area</a></li>
-            </ul>
-          </li>
-          <li class=""><a href="http://ansperformance.eu/studies/">Studies</a></li>
-          <li class="dropdown">
+           <ul class="dropdown-menu">
+             <li><a href="http://ansperformance.eu/data/performancearea/">by Performance Area</a></li>
+           </ul>
+         </li>
+         <li class=""><a href="http://ansperformance.eu/studies/">Studies</a></li>
+         <li class="dropdown">
               <a href="http://ansperformance.eu/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
                  aria-haspopup="true" aria-expanded="false">References</a>
-              <ul class="dropdown-menu">
-                  <li><a href="http://ansperformance.eu/references/dataset/">Datasets</a></li>
-                  <li><a href="http://ansperformance.eu/references/definition/">Definitions</a></li>
-                  <li><a href="http://ansperformance.eu/references/ANSP/">ANSP's</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="http://ansperformance.eu/references/methodology/">Methodology</a></li>
-                   <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
-              </ul>
-          </li>
-      </ul>
-      <!-- let's keep About & C0. out of navigation.yml to have it right-aligned -->
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <!-- a search box for the content of this site -->
-          <!-- inspired by http://hardik.org/2013/06/01/stylising-duckduckgo-site-search/ -->
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/references/dataset/">Datasets</a></li>
+                 <li><a href="http://ansperformance.eu/references/definition/">Definitions</a></li>
+                 <li><a href="http://ansperformance.eu/references/ANSP/">ANSP's</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/references/methodology/">Methodology</a></li>
+                  <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
+             </ul>
+         </li>
+     </ul>
+     <ul class="nav navbar-nav navbar-right">
+       <li>
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
               <input type="hidden" name="sites" value="ansperformance.eu,euctrl-pru.github.io"/>
             <input type="hidden" name="ka" value="h"/>
@@ -304,25 +124,23 @@ MathJax.Hub.Config({
             <input type="hidden" name="ky" value="#fafafa"/>
             <input type="hidden" name="kx" value="b"/>
             <input type="hidden" name="kt" value="Helvetica"/>
-            <div class="input-group">
+           <div class="input-group">
               <input type="text" class="form-control" placeholder="Search this site" name="q" id="srch-term">
-              <div class="input-group-btn">
+             <div class="input-group-btn">
                 <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-              </div>
-            </div>
+             </div>
+           </div>
           </form>
-        </li>
-        <li class=""><a href="http://ansperformance.eu/about/">About</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+       </li>
+       <li class=""><a href="http://ansperformance.eu/about/">About</a></li>
+     </ul>
+   </div>
+ </div>
 </nav>
-
-<script src="/assets/active_navbar-1e84c186919b1764f5f681943714efab.js"></script>
-<script src="/assets/logo-c0e2b076e2e06cd67aefea01b4cd31a7.js"></script>
-
-  <div class="container main">
-    <style>
+<script type="text/javascript" src="/assets/active_navbar-5391b77aac8e19082c7e73e96326b1901fd82c545f506bcd88233a31bb699385.js"></script>
+<script type="text/javascript" src="/assets/logo-955621820e8c530dcff48e58788fb2e3d0b6568ccd6aa01f1b551b2f54bd1901.js"></script>
+ <div class="container main">
+   <style>
 td {
   white-space: nowrap;
 }
@@ -333,98 +151,84 @@ th:nth-child(2) {
 width: 20em;
 }
 </style>
-
 <h1 id="fab---functional-airspace-blocks">FAB - Functional Airspace Blocks</h1>
-
 <p>The <a href="http://www.eurocontrol.int/dossiers/fabs" target="_blank">FAB</a>
 concept was developed in the 1st legislative package of the Single European Sky
 (SES I) as one of the main means for reducing airspace fragmentation. The 2nd
 legislative package (SES II) tackled the creation of FABs in terms of service
 provision, in addition to the airspace organisation issues.</p>
-
 <p>The twofold objective of the legislative packagers is to optimise air traffic
 flows and increase the efficiency of air traffic services in Europe.</p>
-
 <p>SES II lays down a definite commitment date for the Member States to improve
 performance by implementing FABs, i.e. 4 December 2012. Nine FAB initiatives
 have been taken:</p>
-
 <table>
-  <thead>
-    <tr>
-      <th>Short name</th>
-      <th>Name</th>
-      <th>Countries</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>NEFAB</td>
-      <td>North European FAB</td>
-      <td>Estonia, Finland, Latvia, Norway</td>
-    </tr>
-    <tr>
-      <td>Denmark-Sweden</td>
-      <td>Denmark-Sweden</td>
-      <td>Denmark, Sweden</td>
-    </tr>
-    <tr>
-      <td>BALTIC FAB</td>
-      <td>BALTIC FAB</td>
-      <td>Poland, Lithuania</td>
-    </tr>
-    <tr>
-      <td>FABEC</td>
-      <td>FAB Europe Central</td>
-      <td>France, Germany, Belgium, Netherlands, Luxembourg, and Switzerland</td>
-    </tr>
-    <tr>
-      <td>FABCE</td>
-      <td>FAB Central Europe</td>
-      <td>Czech Republic, Slovak Republic, Austria, Hungary, Croatia, Slovenia, Bosnia and Herzegovina</td>
-    </tr>
-    <tr>
-      <td>DANUBE</td>
-      <td>DANUBE</td>
-      <td>Bulgaria, Romania</td>
-    </tr>
-    <tr>
-      <td>BLUE MED</td>
-      <td>BLUE MED</td>
-      <td>Italy, Malta, Greece, Cyprus, (and Egypt, Tunisia, Albania, Jordan as observers)</td>
-    </tr>
-    <tr>
-      <td>UK-IRELAND FAB</td>
-      <td>UK-IRELAND FAB</td>
-      <td>United Kingdom, Ireland</td>
-    </tr>
-    <tr>
-      <td>SW FAB</td>
-      <td>South West FAB</td>
-      <td>Portugal, Spain</td>
-    </tr>
-  </tbody>
+<thead>
+   <tr>
+     <th>Short name</th>
+     <th>Name</th>
+     <th>Countries</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>NEFAB</td>
+     <td>North European FAB</td>
+     <td>Estonia, Finland, Latvia, Norway</td>
+   </tr>
+   <tr>
+     <td>Denmark-Sweden</td>
+     <td>Denmark-Sweden</td>
+     <td>Denmark, Sweden</td>
+   </tr>
+   <tr>
+     <td>BALTIC FAB</td>
+     <td>BALTIC FAB</td>
+     <td>Poland, Lithuania</td>
+   </tr>
+   <tr>
+     <td>FABEC</td>
+     <td>FAB Europe Central</td>
+     <td>France, Germany, Belgium, Netherlands, Luxembourg, and Switzerland</td>
+   </tr>
+   <tr>
+     <td>FABCE</td>
+     <td>FAB Central Europe</td>
+     <td>Czech Republic, Slovak Republic, Austria, Hungary, Croatia, Slovenia, Bosnia and Herzegovina</td>
+   </tr>
+   <tr>
+     <td>DANUBE</td>
+     <td>DANUBE</td>
+     <td>Bulgaria, Romania</td>
+   </tr>
+   <tr>
+     <td>BLUE MED</td>
+     <td>BLUE MED</td>
+     <td>Italy, Malta, Greece, Cyprus, (and Egypt, Tunisia, Albania, Jordan as observers)</td>
+   </tr>
+   <tr>
+     <td>UK-IRELAND FAB</td>
+     <td>UK-IRELAND FAB</td>
+     <td>United Kingdom, Ireland</td>
+   </tr>
+   <tr>
+     <td>SW FAB</td>
+     <td>South West FAB</td>
+     <td>Portugal, Spain</td>
+   </tr>
+ </tbody>
 </table>
-
-
-
-
-    <div id="footer">
-      <div class="container-fluid">
-        <p class="muted credit" style="text-align:center; margin-top:3em">
+   <div id="footer">
+     <div class="container-fluid">
+       <p class="muted credit" style="text-align:center; margin-top:3em">
 	<small>
 		<span style="text-aligh:left">&copy; 2016 European Organisation for the Safety of Air Navigation (EUROCONTROL).</span> &nbsp; &mdash; &nbsp;
 		<span style="text-aligh:right">Subscribe via
-		<!-- text encoded (in _subscriber-href-encoded.txt) to avoid spammer robots via http://clickable-email.ezkode.com/ -->
 		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="http://ansperformance.eu/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
 	</small>
-    <!-- see older versions for what can be put here. -->
-
 </p>
-
-      </div>
-    </div>
-
-  </div>
+     </div>
+   </div>
+ </div>
 </body>
 </html>
