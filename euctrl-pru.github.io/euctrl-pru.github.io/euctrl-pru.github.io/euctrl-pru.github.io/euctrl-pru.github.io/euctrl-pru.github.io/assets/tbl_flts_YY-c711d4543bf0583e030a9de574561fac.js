@@ -1,1 +1,0 @@
-!function(){function e(){var e=new google.visualization.ChartWrapper({chartType:"Table",containerId:"tbl_flts_YY",dataSourceUrl:"https://docs.google.com/spreadsheets/d/1Ap6_pXhVLZcgfUcdbqsUBvZaI_AdVsT35XLY1oPKyJ4/edit?usp=sharing&alt=json&sheet=ERT_FLTS_ANSP&range=A1:D41&headers=1",options:{width:550,height:440},view:{columns:[0,1,2,3]}});e.draw()}google.setOnLoadCallback(e)}();
