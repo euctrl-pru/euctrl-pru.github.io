@@ -36,7 +36,7 @@
 <link type="text/css" rel="stylesheet" href="/assets/table-0849d8a581c0b5a73867bb9a8fd2c759f4cd2abbe533a5423f7fd1ee6cadf2a2.css">
 <link type="text/css" rel="stylesheet" href="/assets/solarized-e69a0f19a8424b964f64b60a41d6cf9d3c62d127e5519a4dbe9ad596cf0c468f.css">
 <link type="text/css" rel="stylesheet" href="/assets/logo-3a7eb4382971c540181ccedc15fbfa406a3f5c98eed1f4dc401fb9e9c3be5dd0.css">
-<link type="text/css" rel="stylesheet" href="/assets/general-f8dc20cea672fb074b442b3ab1d59c7ad93af07aa78274a7af0309d0c6c5d814.css">
+<link type="text/css" rel="stylesheet" href="/assets/general-9c42e77a7702a08a8ec7e5b61199d6e33ac23c4246efc7f20ea7ee3b2cd3067c.css">
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v2.5.0=BGG6eR0wxq">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v2.5.0=BGG6eR0wxq">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v2.5.0=BGG6eR0wxq">
@@ -60,6 +60,180 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-62697169-2', 'auto');
 ga('send', 'pageview');
+</script>
+<script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  tex2jax:
+    {
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+      displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+      processEscapes: true
+    },
+  TeX:
+    {
+      equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"],
+      TagSide: "left",
+      Macros:
+        {
+          b: ['\\overline{#1}',1],
+          h: ['\\widehat{#1}',1],
+          til: ['\\widetilde{#1}',1],
+        bold: ['\\mathbf{#1}',1],
+          sans: ['\\mathsf{#1}',1],
+        vect: ['\\boldsymbol{\\mathbf{#1}}',1],
+        zeros: ['\\mathbf{0}'],
+        ones: ['\\mathbf{1}'],
+        complex: ['\\mathbf{C}'],
+        C: ['\\mathsf{c}'],
+        d: ['\\,d'],
+        expect: ['\\mathbf{E}'],
+        emf: ['\\mathscr{E}'],
+        ft: ['\\mathcal{F}'],
+        Lagrange: ['\\mathscr{L}'],
+        naturals: ['\\mathbf{N}'],
+        normal: ['\\mathcal{N}'],
+        prob: ['\\mathbf{P}'],
+        pset: ['\\mathcal{P}'],
+        rationals: ['\\mathbf{Q}'],
+        reals: ['\\mathbf{R}'],
+        ereals: ['\\overline{\\mathbf{R}}'],
+        risk: ['\\mathcal{R}'],
+        integers: ['\\mathbf{Z}'],
+        symdiff: ['\\,\\Delta\\,'],
+        grad: ['\\nabla'],
+        emptyset: ['\\varnothing'],
+        ortho: ['{\\bot}'],
+        deq: [':='],
+        given: ['\\mid'],
+        midgiven: ['\\;\\middle\\vert\\;'],
+        set: ['\\{\\, #1 \\,\\}', 1],
+        inner: ['\\langle#1,#2\\rangle', 2],
+        ave: ['\\langle #1 \\rangle', 1],
+        innerlr: ['\\left\\langle#1,#2\\right\\rangle', 2],
+        avelr: ['\\left\\langle#1\\right\\rangle', 1],
+        T: ['\\top'],
+        abs: ['\\lvert#1\\rvert', 1],
+        abslr:['\\left\\lvert#1\\right\\rvert', 1],
+        norm: ['\\lVert#1\\rVert', 1],
+        normlr: ['\\left\\lVert#1\\right\\rVert', 1],
+        zeronorm: ['\\norm{#1}_0', 1],
+        zeronormlr: ['\\normlr{#1}_0', 1],
+        onenorm: ['\\norm{#1}_1', 1],
+        onenormlr: ['\\normlr{#1}_1', 1],
+        twonorm: ['\\norm{#1}_2', 1],
+        twonormlr: ['\\normlr{#1}_2', 1],
+        inftynorm: ['\\norm{#1}_\\infty', 1],
+        inftynormlr: ['\\normlr{#1}_\\infty', 1],
+        pnorm: ['\\norm{#1}_p', 1],
+        pnormlr: ['\\normlr{#1}_p', 1],
+        Frobnorm: ['\\norm{#1}_\\mathrm{F}', 1],
+        Frobnormlr: ['\\normlr{#1}_\\mathrm{F}', 1],
+        maxnorm: ['\\norm{#1}_\\mathrm{max}', 1],
+        maxnormlr:  ['\\normlr{#1}_\\mathrm{max}', 1],
+        tvnorm: ['\\norm{#1}_\\mathrm{TV}', 1],
+        tvnormlr: ['\\normlr{#1}_\\mathrm{TV}', 1],
+        ind: ['\\mathbf{I}_{\\{ #1 \\} }', 1],
+        pind: ['\\mathbf{I}(#1)', 1],
+        argmin: ['\\mathop{\\mathrm{arg\\,min}}'],
+        argmax: ['\\mathop{\\mathrm{arg}\\,\\max}'],
+        bdiag: ['\\mathop{\\mathrm{bdiag}}'],
+        bd: ['\\mathop{\\mathrm{bd}}'],
+        comb: ['\\mathop{\\mathrm{comb}}'],
+        codom: ['\\mathop{\\mathrm{codim}}'],
+        diag: ['\\mathop{\\mathrm{diag}}'],
+        dom: ['\\mathop{\\mathrm{dom}}'],
+        epi: ['\\mathop{\\mathrm{epi}}'],
+        hard: ['\\mathop{\\mathrm{hard}}'],
+        interior: ['\\mathop{\\mathrm{int}}'],
+        MSE: ['\\mathop{\\mathrm{MSE}}'],
+        modop: ['\\mathop{\\mathrm{mod}}'],
+        minimize: ['\\mathop{\\mathrm{minimize}}'],
+        maximize: ['\\mathop{\\mathrm{maximize}}'],
+        midop: ['\\mathop{\\mathrm{mid}}'],
+        nint: ['\\mathop{\\mathrm{nint}}'],
+        pen: ['\\mathop{\\mathrm{pen}}'],
+        Poisson: ['\\mathop{\\mathrm{Poisson}}'],
+        rect: ['\\mathop{\\mathrm{rect}}'],
+        RMSE: ['\\mathop{\\mathrm{RMSE}}'],
+        range: ['\\mathop{\\mathrm{range}}'],
+        relint: ['\\mathop{\\mathrm{relint}}'],
+        rank: ['\\mathop{\\mathrm{rank}}'],
+        st: ['\\mathop{\\mathrm{subject\\ to}}'],
+        sinc: ['\\mathop{\\mathrm{sinc}}'],
+        sign: ['\\mathop{\\mathrm{sign}}'],
+        sgn: ['\\mathop{\\mathrm{sgn}}'],
+        soft: ['\\mathop{\\mathrm{soft}}'],
+        skewop: ['\\mathop{\\mathrm{skewop}}'],
+        symop: ['\\mathop{\\mathrm{symop}}'],
+        SNR: ['\\mathop{\\mathrm{SNR}}'],
+        spanop: ['\\mathop{\\mathrm{span}}'],
+        tr: ['\\mathop{\\mathrm{tr}}'],
+        var: ['\\mathop{\\mathrm{var}}'],
+        MinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        MaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        ArgMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4],
+        ArgMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4]
+        }
+    },
+  "HTML-CSS": { availableFonts: ["TeX"] }
+});
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<title>Performance Indicator – Additional ASMA Time - PRU</title>
+<meta property="og:title" content="Performance Indicator – Additional ASMA Time" />
+<meta name="description" content="Performance Review Unit Metadata Definitions." />
+<meta property="og:description" content="Performance Review Unit Metadata Definitions." />
+<link rel="canonical" href="http://ansperformance.eu/references/methodology/additional_asma_time_pi.html" />
+<meta property="og:url" content="http://ansperformance.eu/references/methodology/additional_asma_time_pi.html" />
+<meta property="og:site_name" content="PRU" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Performance Indicator – Additional ASMA Time",
+    "description": "Performance Review Unit Metadata Definitions.",
+    "url": "http://ansperformance.eu/references/methodology/additional_asma_time_pi.html"
+  }
 </script>
 </head>
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
@@ -332,7 +506,7 @@ all flights.</p>
    </tr>
  </tbody>
 </table>
-<p>Table: Acronyms and terminology</p>
+<p class="table-caption">Table: Acronyms and terminology</p>
 <h1 id="conceptual-model">Conceptual model</h1>
 <h2 id="what-we-ideally-would-like-to-measure">What we ideally would like to measure</h2>
 <p>On the conceptual level, the indicator aims to address the operational penalty
@@ -351,8 +525,10 @@ performance)</li>
 and Metering Area or ASMA, using speed control, stacks, holding, extension of
 approach path etc.)</li>
 </ol>
-<p><img src="/assets/adasma-01-92ce4a955b693dbfb1d5bb90d803dcecd6cf34e970767197d678465c1b3d48f1.png" alt="Outbound and Inbound Traffic Queues from a Flight Phase Perspective" width="500" height="384" />
-<em>Outbound and Inbound Traffic Queues from a Flight Phase Perspective</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-01-92ce4a955b693dbfb1d5bb90d803dcecd6cf34e970767197d678465c1b3d48f1.png" alt="Outbound and Inbound Traffic Queues from a Flight Phase Perspective" width="500" height="384" />
+ <figcaption>Outbound and Inbound Traffic Queues from a Flight Phase Perspective</figcaption>
+</figure>
 <p>Uncertainty of approach conditions (e.g. pilot performance, landing clearance
 time, approach speed, wind conditions) makes traffic supply to runways a
 stochastic phenomenon.</p>
@@ -399,8 +575,10 @@ reporting, metrics are derived for the respective reporting month. The current
 measurements are compared to a nominal reference to address the level of
 efficiency. The reference is derived from the statistical analysis of a
 reference period sample.</p>
-<p><img src="/assets/adasma-02-3518e68855beda92d41553ba6658797144c4a87f4a267f2fa516929237ea30f7.png" alt="Performance Measurement Approach" width="650" height="269" />
-<em>Performance Measurement Approach</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-02-3518e68855beda92d41553ba6658797144c4a87f4a267f2fa516929237ea30f7.png" alt="Performance Measurement Approach" width="650" height="269" />
+ <figcaption>Performance Measurement Approach</figcaption>
+</figure>
 <p>The indicator is defined as the difference between the ASMA transit time (actual
 ASMA time) and the unimpeded ASMA time, based on ASMA transit times in periods
 of low traffic.</p>
@@ -423,8 +601,10 @@ i.e. the time elapsing between entering the ASMA area (actual ASMA entry time,
 ET) and the actual landing time of an arriving flight (ALDT). The generalised
 ASMA area is defined by a cylinder of radius 40NM around the airport extending
 to unlimited in terms of altitude.</p>
-<p><img src="/assets/adasma-03-bf6c7019f3a98b9b7c2472fdbccba6d2b19f205cfb32d8e62fac09c3aa64259c.png" alt="Conceptual approach for Additional ASMA Time" width="450" height="301" />
-<em>Conceptual approach for Additional ASMA Time</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-03-bf6c7019f3a98b9b7c2472fdbccba6d2b19f205cfb32d8e62fac09c3aa64259c.png" alt="Conceptual approach for Additional ASMA Time" width="450" height="301" />
+ <figcaption>Conceptual approach for Additional ASMA Time</figcaption>
+</figure>
 <p>Actual ASMA time refers to the period between the point in time when the
 aircraft enters the ASMA cylinder for the last time (‘entry time’) and the
 landing time. This ensures a consistent measurement for the inbound flow in the
@@ -461,8 +641,10 @@ confused with the actual TMA or approach sectors around the airport. Each ASMA
 sector covers a major arrival flow, and the extent of the sector is based on
 visualization of arrival radar tracks (see figure below) and the aforementioned
 entry points.</p>
-<p><img src="/assets/asmasectors-bf6c7019f3a98b9b7c2472fdbccba6d2b19f205cfb32d8e62fac09c3aa64259c.jpg" alt="ASMA sectors and bearing" width="450" height="198" />
-<em>ASMA sectors and bearing</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/asmasectors-bf6c7019f3a98b9b7c2472fdbccba6d2b19f205cfb32d8e62fac09c3aa64259c.jpg" alt="ASMA sectors and bearing" width="450" height="198" />
+ <figcaption>ASMA sectors and bearing</figcaption>
+</figure>
 <p>The indicator is first calculated at disaggregated level, i.e. per comparable
 <strong>grouping</strong> of flights with the same combination of <strong>ASMA sector</strong>, <strong>landing
 runway</strong> and <strong>aircraft class</strong>. Each grouping of flights has an unimpeded
@@ -473,11 +655,15 @@ additional time for the airport.</p>
 <p>This section focuses on the algorithm for the calculation of the additional ASMA
 time indicator from a logical point of view.</p>
 <p>The additional ASMA time calculation is depicted below.</p>
-<p><img src="/assets/adasma-05-a51b590b49fd9f6ee9dd5b24ef0259a0577889e0059c8b650524b15f3be051bd.png" alt="Logical steps of Additional ASMA Time calculation" width="900" height="395" />
-<em>Logical steps of Additional ASMA Time calculation</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-05-a51b590b49fd9f6ee9dd5b24ef0259a0577889e0059c8b650524b15f3be051bd.png" alt="Logical steps of Additional ASMA Time calculation" width="900" height="395" />
+ <figcaption>Logical steps of Additional ASMA Time calculation</figcaption>
+</figure>
 <p>The unimpeded ASMA time is calculated as depicted below.</p>
-<p><img src="/assets/adasma-06-6ef77a85fba74bf8efe15620a9c536d5cb7451b2bd98c39c7feac271afe9ce4a.png" alt="Logical steps of unimpeded ASMA Time calculation" width="1000" height="379" />
-<em>Logical steps of unimpeded ASMA Time calculation</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-06-6ef77a85fba74bf8efe15620a9c536d5cb7451b2bd98c39c7feac271afe9ce4a.png" alt="Logical steps of unimpeded ASMA Time calculation" width="1000" height="379" />
+ <figcaption>Logical steps of unimpeded ASMA Time calculation</figcaption>
+</figure>
 <h2 id="logical-approach-to-additional-asma-time-calculation">Logical approach to Additional ASMA Time calculation</h2>
 <p>The computation of the indicator is based on four consecutive steps:</p>
 <style type="text/css">
@@ -539,8 +725,10 @@ brackets.</p>
 <p>Calculation of the additional ASMA time performance indicator is done with the
 flight data reported by airports as monthly reporting in combination with data
 received from the Network Manager.</p>
-<p><img src="/assets/adasma-stepA-a0ca89ff41100f7f70bb665ff5b8ec92ecf6c8fe213cb8a776cbd28a4f4f79a7.png" alt="Step A" width="750" height="95" />
-<em>Step A</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-stepA-a0ca89ff41100f7f70bb665ff5b8ec92ecf6c8fe213cb8a776cbd28a4f4f79a7.png" alt="Step A" width="750" height="95" />
+ <figcaption>Step A</figcaption>
+</figure>
 <p>The following filter criteria apply:</p>
 <ul>
  <li>
@@ -563,14 +751,18 @@ IR390/2013).</p>
 <p>For example, if there are four aircraft classes landing at the airport <script type="math/tex">j</script>,
 two ASMA sectors and two arrival runways, then there will be <script type="math/tex">16 \, c_j</script>
 groupings of flights.</p>
-<p><img src="/assets/adasma-stepB-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step B" width="700" height="234" />
-<em>Step B</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-stepB-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step B" width="700" height="234" />
+ <figcaption>Step B</figcaption>
+</figure>
 <p><script type="math/tex">{UASMA}(c_i)</script>, the <strong>unimpeded ASMA time</strong>, is a calculated constant for each
 grouping <script type="math/tex">c_i</script> (for calculation see section 4.2) [min]. The unimpeded ASMA
 time is the ASMA transit time in non-congested conditions at arrival airport.</p>
 <h3 id="step-c-calculation-of-additional-asma-time-per-flight">Step C: Calculation of Additional ASMA Time per flight</h3>
-<p><img src="/assets/adasma-stepC-a0ca89ff41100f7f70bb665ff5b8ec92ecf6c8fe213cb8a776cbd28a4f4f79a7.png" alt="Step C" width="750" height="150" />
-<em>Step C</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-stepC-a0ca89ff41100f7f70bb665ff5b8ec92ecf6c8fe213cb8a776cbd28a4f4f79a7.png" alt="Step C" width="750" height="150" />
+ <figcaption>Step C</figcaption>
+</figure>
 <p>Let:</p>
 <ul>
  <li><script type="math/tex">f</script> arrival flight,</li>
@@ -591,8 +783,10 @@ Transit Time <script type="math/tex">{AcASMA}(f_{c_i})</script> of the flight an
 <script type="math/tex">{UASMA}(c_i)</script> for the Grouping <script type="math/tex">c_i</script> to which the flight belongs.</p>
 <script type="math/tex; mode=display">{AdASMA}(f_{c_i}) = {AcASMA}(f_{c_i}) - {UASMA}(c_i), [min]</script>
 <h3 id="step-d-calculation-of-the-additional-asma-time-per-airport">Step D: Calculation of the Additional ASMA Time per airport</h3>
-<p><img src="/assets/adasma-stepD-4806cc30dcfcb9123c7139011182277adc73bca9c159bbd6747697af2226d027.png" alt="Step D" width="600" height="137" />
-<em>Step D</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-stepD-4806cc30dcfcb9123c7139011182277adc73bca9c159bbd6747697af2226d027.png" alt="Step D" width="600" height="137" />
+ <figcaption>Step D</figcaption>
+</figure>
 <ul>
  <li><script type="math/tex">N_j</script> is the total number of IFR arrivals in the data set used for
 calculation of the additional ASMA time performance indicator, [count].</li>
@@ -613,8 +807,10 @@ units for each variable are shown in <strong>[</strong> <strong>]</strong> brack
 <p>Reference sample for calculation of unimpeded times for all airports is one
 year, normally from (and including) January <script type="math/tex">1^{st}</script> until <script type="math/tex">31^{st}</script>
 December. The year depends on the availability of the data.</p>
-<p><img src="/assets/adasma-step1-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 1" width="700" height="128" />
-<em>Step 1</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step1-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 1" width="700" height="128" />
+ <figcaption>Step 1</figcaption>
+</figure>
 <p>A filter is applied so that only flights with <script type="math/tex">% <![CDATA[
 {AcASMA}(f_{c_i}) < 120\, \text{min} %]]></script>
 are taken into account.</p>
@@ -633,15 +829,19 @@ variables: the actual ASMA time (Step 2a) and the congestion level (Step 2b).</p
 <script type="math/tex">f_{c_i}</script> in its ASMA sector [time],</li>
  <li><script type="math/tex">{ALDT}(f_{c_i})</script> Actual Landing Time of flight <script type="math/tex">f_{c_i}</script> [time],</li>
 </ul>
-<p><img src="/assets/adasma-step2a-35620d03a188717db7b70d9d96849c36502baebf847bc0dd809b1de7ae1374dc.png" alt="Step 2a" width="400" height="134" />
-<em>Step 2a</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step2a-35620d03a188717db7b70d9d96849c36502baebf847bc0dd809b1de7ae1374dc.png" alt="Step 2a" width="400" height="134" />
+ <figcaption>Step 2a</figcaption>
+</figure>
 <p>Then, <script type="math/tex">{AcASMA}(f_{c_i})</script>, the Actual ASMA transit time for a flight
 <script type="math/tex">f_{c_i}</script>, is defined as the elapsed time between the time of the last entry
 of the flight <script type="math/tex">f_{c_i}</script> in its ASMA sector, <script type="math/tex">{ET}(f_{c_i})</script> [time], and its
 actual landing time <script type="math/tex">{ALDT}(f_{c_i})</script> [time].</p>
 <h4 id="step-2b-determination-of-congestion-level-per-flight">Step 2b: Determination of Congestion Level per flight</h4>
-<p><img src="/assets/adasma-step2b-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 2b" width="700" height="137" />
-<em>Step 2b</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step2b-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 2b" width="700" height="137" />
+ <figcaption>Step 2b</figcaption>
+</figure>
 <p>For each flight <script type="math/tex">f_{c_i}</script>, a <strong>congestion level</strong> <script type="math/tex">{seq}(f_{c_i})</script> can be
 determined [count]. The congestion level is the number of other landings during
 the time interval:
@@ -658,8 +858,10 @@ airport congestion index (Step 3a) and airport arrival throughput <script type="
 allows the calculation of the first unimpeded time estimate U1 (Step 3d) and
 latter determination of the saturation level based on the results from each one
 of the computations (Step 3e).</p>
-<p><img src="/assets/adasma-step3-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 3" width="700" height="432" />
-<em>Step 3</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step3-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 3" width="700" height="432" />
+ <figcaption>Step 3</figcaption>
+</figure>
 <h4 id="step-3a-determination-of-airport-congestion-index">Step 3a: determination of airport congestion index</h4>
 <p>At airport level, a constant known as the congestion limit <script type="math/tex">{cl}</script> is chosen as:</p>
 <ul>
@@ -673,8 +875,10 @@ determinant of the level of traffic saturation and, thus, the threshold at which
 effects of congestion can be observed.</p>
 <p>For each aircraft landing at airport A, the number of aircraft that landed in
 the previous 20 minutes is counted.</p>
-<p><img src="/assets/adasma-step3b-bf6c7019f3a98b9b7c2472fdbccba6d2b19f205cfb32d8e62fac09c3aa64259c.png" alt="Step 3b" width="450" height="89" />
-<em>Step 3b</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step3b-bf6c7019f3a98b9b7c2472fdbccba6d2b19f205cfb32d8e62fac09c3aa64259c.png" alt="Step 3b" width="450" height="89" />
+ <figcaption>Step 3b</figcaption>
+</figure>
 <p>Let <script type="math/tex">t_i</script> be the arrival time of the aircraft <script type="math/tex">i</script>, <script type="math/tex">n</script> be the number of
 aircraft that have landed in the window <script type="math/tex">[t_i − 20, t_i ]</script> and <script type="math/tex">f_i</script> the
 landing time of the first aircraft in the window. Then, the arrival rate during
@@ -712,8 +916,10 @@ flights.</p>
 grouping of flights <script type="math/tex">c_i</script>, being the <script type="math/tex">20^{th}</script> percentile of all the ASMA
 transit times of the flights belonging to that grouping [min].</p>
 <script type="math/tex; mode=display">U_1(c_i) = 20^{th}\textrm{percentile}({AcASMA}(f_{c_i}))</script>
-<p><img src="/assets/adasma-step3d-8639ac525f71c21e06ce29de3d20ee1a1e04307c5bd79dd5ece146d66a412c73.png" alt="Step 3d" width="350" height="194" />
-<em>Step 3d</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step3d-8639ac525f71c21e06ce29de3d20ee1a1e04307c5bd79dd5ece146d66a412c73.png" alt="Step 3d" width="350" height="194" />
+ <figcaption>Step 3d</figcaption>
+</figure>
 <h4 id="step-3e-determination-of-the-saturation-level-per-grouping">Step 3e: Determination of the Saturation Level per grouping</h4>
 <p>While the congestion level is a measure for the traffic encountered by an
 individual flight, the saturation threshold describes the maximum traffic level
@@ -743,8 +949,10 @@ This limitation is achieved with the definition of the congestion limit
 <p>Based on the previous outputs, the identification of the unimpeded flights is
 done: the saturation level, corrected with the congestion limit, is compared to
 the congestion level.</p>
-<p><img src="/assets/adasma-step4-3518e68855beda92d41553ba6658797144c4a87f4a267f2fa516929237ea30f7.png" alt="Step 4" width="650" height="93" />
-<em>Step 4</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step4-3518e68855beda92d41553ba6658797144c4a87f4a267f2fa516929237ea30f7.png" alt="Step 4" width="650" height="93" />
+ <figcaption>Step 4</figcaption>
+</figure>
 <p>With the aim of designating the unimpeded flights,<script type="math/tex">{fu}_{c_i}</script> is defined as a
 binary variable, denoting that a flight <script type="math/tex">f_{c_i}</script> belonging to the grouping
 <script type="math/tex">c_i</script> is an unimpeded flight. A flight is considered unimpeded if its
@@ -759,8 +967,10 @@ congestion limit <script type="math/tex">{cl}</script> and the flight’s groupi
 \end{cases} %]]></script>
 <p>The unimpeded ASMA time per grouping is computed as the median of the ASMA time
 only for the unimpeded flights.</p>
-<p><img src="/assets/adasma-step5-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 5" width="700" height="111" />
-<em>Step 5</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-step5-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Step 5" width="700" height="111" />
+ <figcaption>Step 5</figcaption>
+</figure>
 <p>The unimpeded ASMA time <script type="math/tex">\text{UASMA}(c_i)</script> for a grouping <script type="math/tex">c_i</script> is a
 calculated constant at the airport <script type="math/tex">j</script>.</p>
 <p>In order to derive statistically meaningful and representative unimpeded times
@@ -807,8 +1017,10 @@ from which the ASMA cylinder is entered. For this reason, the ASMA cylinder is
 divided into so-called ASMA sectors. The ASMA sectors are defined according to a
 statistical cluster analysis of the distribution of the inbound traffic. The
 figure shows the sectorization for Heathrow</p>
-<p><img src="/assets/asmasectors-8639ac525f71c21e06ce29de3d20ee1a1e04307c5bd79dd5ece146d66a412c73.jpg" alt="ASMA sectors and bearing" width="350" height="154" />
-<em>ASMA sectors and bearing</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/asmasectors-8639ac525f71c21e06ce29de3d20ee1a1e04307c5bd79dd5ece146d66a412c73.jpg" alt="ASMA sectors and bearing" width="350" height="154" />
+ <figcaption>ASMA sectors and bearing</figcaption>
+</figure>
 <p>The ASMA entry bearings are checked every month to investigate whether there are
 any changes in the arrival flows directions. In case substantial changes in the
 arrival flow directions are identified, the differences will be investigated
@@ -936,8 +1148,10 @@ compliance with the APDF data specification.</p>
 <p>Several activities are performed in the data flow process, involving different
 actors, until Performance reports are published. As a summary, a high level
 overview of the activities can be found below:</p>
-<p><img src="/assets/adasma-08-fc3fe8e861df168130797d8010a1c3fb2604a5bb1f1f2a5bc9f38d9a152f17a7.png" alt="Airport Data Flow process scheme including activities and actors involved" width="800" height="295" />
-<em>Airport Data Flow process scheme including activities and actors involved.</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-08-fc3fe8e861df168130797d8010a1c3fb2604a5bb1f1f2a5bc9f38d9a152f17a7.png" alt="Airport Data Flow process scheme including activities and actors involved" width="800" height="295" />
+ <figcaption>Airport Data Flow process scheme including activities and actors involved.</figcaption>
+</figure>
 <p>The airport operator data flow can be conceptualised as stages sub-processes:</p>
 <ul>
  <li>APDF_1 – Data Collection</li>
@@ -967,8 +1181,10 @@ and is quality controlled.</p>
 <p>For the APDF the following quality areas have been identified. Quality controls
 in support of these quality areas are implemented and regularly monitored as
 part of the aforementioned APDF sub-processes.</p>
-<p><img src="/assets/adasma-09-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Quality Performance Areas and corresponding Quality Indicators" width="700" height="266" />
-<em>Quality Performance Areas and corresponding Quality Indicators</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/adasma-09-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Quality Performance Areas and corresponding Quality Indicators" width="700" height="266" />
+ <figcaption>Quality Performance Areas and corresponding Quality Indicators</figcaption>
+</figure>
 <p>More detail on these quality checks can be found in the Airport Data Flow Data Specifications (see [3]).</p>
 <h2 id="performance-indicator-quality-checks">Performance Indicator Quality Checks</h2>
 <p>The average additional ASMA time per flight grouped by airport and month

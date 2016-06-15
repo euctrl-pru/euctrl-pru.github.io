@@ -36,7 +36,7 @@
 <link type="text/css" rel="stylesheet" href="/assets/table-0849d8a581c0b5a73867bb9a8fd2c759f4cd2abbe533a5423f7fd1ee6cadf2a2.css">
 <link type="text/css" rel="stylesheet" href="/assets/solarized-e69a0f19a8424b964f64b60a41d6cf9d3c62d127e5519a4dbe9ad596cf0c468f.css">
 <link type="text/css" rel="stylesheet" href="/assets/logo-3a7eb4382971c540181ccedc15fbfa406a3f5c98eed1f4dc401fb9e9c3be5dd0.css">
-<link type="text/css" rel="stylesheet" href="/assets/general-f8dc20cea672fb074b442b3ab1d59c7ad93af07aa78274a7af0309d0c6c5d814.css">
+<link type="text/css" rel="stylesheet" href="/assets/general-9c42e77a7702a08a8ec7e5b61199d6e33ac23c4246efc7f20ea7ee3b2cd3067c.css">
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v2.5.0=BGG6eR0wxq">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v2.5.0=BGG6eR0wxq">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v2.5.0=BGG6eR0wxq">
@@ -60,6 +60,180 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-62697169-2', 'auto');
 ga('send', 'pageview');
+</script>
+<script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  tex2jax:
+    {
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+      displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+      processEscapes: true
+    },
+  TeX:
+    {
+      equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"],
+      TagSide: "left",
+      Macros:
+        {
+          b: ['\\overline{#1}',1],
+          h: ['\\widehat{#1}',1],
+          til: ['\\widetilde{#1}',1],
+        bold: ['\\mathbf{#1}',1],
+          sans: ['\\mathsf{#1}',1],
+        vect: ['\\boldsymbol{\\mathbf{#1}}',1],
+        zeros: ['\\mathbf{0}'],
+        ones: ['\\mathbf{1}'],
+        complex: ['\\mathbf{C}'],
+        C: ['\\mathsf{c}'],
+        d: ['\\,d'],
+        expect: ['\\mathbf{E}'],
+        emf: ['\\mathscr{E}'],
+        ft: ['\\mathcal{F}'],
+        Lagrange: ['\\mathscr{L}'],
+        naturals: ['\\mathbf{N}'],
+        normal: ['\\mathcal{N}'],
+        prob: ['\\mathbf{P}'],
+        pset: ['\\mathcal{P}'],
+        rationals: ['\\mathbf{Q}'],
+        reals: ['\\mathbf{R}'],
+        ereals: ['\\overline{\\mathbf{R}}'],
+        risk: ['\\mathcal{R}'],
+        integers: ['\\mathbf{Z}'],
+        symdiff: ['\\,\\Delta\\,'],
+        grad: ['\\nabla'],
+        emptyset: ['\\varnothing'],
+        ortho: ['{\\bot}'],
+        deq: [':='],
+        given: ['\\mid'],
+        midgiven: ['\\;\\middle\\vert\\;'],
+        set: ['\\{\\, #1 \\,\\}', 1],
+        inner: ['\\langle#1,#2\\rangle', 2],
+        ave: ['\\langle #1 \\rangle', 1],
+        innerlr: ['\\left\\langle#1,#2\\right\\rangle', 2],
+        avelr: ['\\left\\langle#1\\right\\rangle', 1],
+        T: ['\\top'],
+        abs: ['\\lvert#1\\rvert', 1],
+        abslr:['\\left\\lvert#1\\right\\rvert', 1],
+        norm: ['\\lVert#1\\rVert', 1],
+        normlr: ['\\left\\lVert#1\\right\\rVert', 1],
+        zeronorm: ['\\norm{#1}_0', 1],
+        zeronormlr: ['\\normlr{#1}_0', 1],
+        onenorm: ['\\norm{#1}_1', 1],
+        onenormlr: ['\\normlr{#1}_1', 1],
+        twonorm: ['\\norm{#1}_2', 1],
+        twonormlr: ['\\normlr{#1}_2', 1],
+        inftynorm: ['\\norm{#1}_\\infty', 1],
+        inftynormlr: ['\\normlr{#1}_\\infty', 1],
+        pnorm: ['\\norm{#1}_p', 1],
+        pnormlr: ['\\normlr{#1}_p', 1],
+        Frobnorm: ['\\norm{#1}_\\mathrm{F}', 1],
+        Frobnormlr: ['\\normlr{#1}_\\mathrm{F}', 1],
+        maxnorm: ['\\norm{#1}_\\mathrm{max}', 1],
+        maxnormlr:  ['\\normlr{#1}_\\mathrm{max}', 1],
+        tvnorm: ['\\norm{#1}_\\mathrm{TV}', 1],
+        tvnormlr: ['\\normlr{#1}_\\mathrm{TV}', 1],
+        ind: ['\\mathbf{I}_{\\{ #1 \\} }', 1],
+        pind: ['\\mathbf{I}(#1)', 1],
+        argmin: ['\\mathop{\\mathrm{arg\\,min}}'],
+        argmax: ['\\mathop{\\mathrm{arg}\\,\\max}'],
+        bdiag: ['\\mathop{\\mathrm{bdiag}}'],
+        bd: ['\\mathop{\\mathrm{bd}}'],
+        comb: ['\\mathop{\\mathrm{comb}}'],
+        codom: ['\\mathop{\\mathrm{codim}}'],
+        diag: ['\\mathop{\\mathrm{diag}}'],
+        dom: ['\\mathop{\\mathrm{dom}}'],
+        epi: ['\\mathop{\\mathrm{epi}}'],
+        hard: ['\\mathop{\\mathrm{hard}}'],
+        interior: ['\\mathop{\\mathrm{int}}'],
+        MSE: ['\\mathop{\\mathrm{MSE}}'],
+        modop: ['\\mathop{\\mathrm{mod}}'],
+        minimize: ['\\mathop{\\mathrm{minimize}}'],
+        maximize: ['\\mathop{\\mathrm{maximize}}'],
+        midop: ['\\mathop{\\mathrm{mid}}'],
+        nint: ['\\mathop{\\mathrm{nint}}'],
+        pen: ['\\mathop{\\mathrm{pen}}'],
+        Poisson: ['\\mathop{\\mathrm{Poisson}}'],
+        rect: ['\\mathop{\\mathrm{rect}}'],
+        RMSE: ['\\mathop{\\mathrm{RMSE}}'],
+        range: ['\\mathop{\\mathrm{range}}'],
+        relint: ['\\mathop{\\mathrm{relint}}'],
+        rank: ['\\mathop{\\mathrm{rank}}'],
+        st: ['\\mathop{\\mathrm{subject\\ to}}'],
+        sinc: ['\\mathop{\\mathrm{sinc}}'],
+        sign: ['\\mathop{\\mathrm{sign}}'],
+        sgn: ['\\mathop{\\mathrm{sgn}}'],
+        soft: ['\\mathop{\\mathrm{soft}}'],
+        skewop: ['\\mathop{\\mathrm{skewop}}'],
+        symop: ['\\mathop{\\mathrm{symop}}'],
+        SNR: ['\\mathop{\\mathrm{SNR}}'],
+        spanop: ['\\mathop{\\mathrm{span}}'],
+        tr: ['\\mathop{\\mathrm{tr}}'],
+        var: ['\\mathop{\\mathrm{var}}'],
+        MinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        MaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        ArgMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4],
+        ArgMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4]
+        }
+    },
+  "HTML-CSS": { availableFonts: ["TeX"] }
+});
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<title>Performance Indicator – Horizontal Flight Efficiency - PRU</title>
+<meta property="og:title" content="Performance Indicator – Horizontal Flight Efficiency" />
+<meta name="description" content="Performance Review Unit Metadata Definitions." />
+<meta property="og:description" content="Performance Review Unit Metadata Definitions." />
+<link rel="canonical" href="http://ansperformance.eu/references/methodology/horizontal_flight_efficiency_pi.html" />
+<meta property="og:url" content="http://ansperformance.eu/references/methodology/horizontal_flight_efficiency_pi.html" />
+<meta property="og:site_name" content="PRU" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Performance Indicator – Horizontal Flight Efficiency",
+    "description": "Performance Review Unit Metadata Definitions.",
+    "url": "http://ansperformance.eu/references/methodology/horizontal_flight_efficiency_pi.html"
+  }
 </script>
 </head>
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
@@ -140,16 +314,7 @@ ga('send', 'pageview');
 <script type="text/javascript" src="/assets/active_navbar-5391b77aac8e19082c7e73e96326b1901fd82c545f506bcd88233a31bb699385.js"></script>
 <script type="text/javascript" src="/assets/logo-955621820e8c530dcff48e58788fb2e3d0b6568ccd6aa01f1b551b2f54bd1901.js"></script>
  <div class="container main">
-   <style>
-img + em {
-text-align: center;
-}
-img + em:before {
-content: ' ';
-display: block;
-}
-</style>
-<h1 id="performance-indicator----horizontal-flight-efficiency">Performance Indicator – Horizontal Flight Efficiency</h1>
+   <h1 id="performance-indicator----horizontal-flight-efficiency">Performance Indicator – Horizontal Flight Efficiency</h1>
 <h1 id="introduction">Introduction</h1>
 <h2 id="general">General</h2>
 <p>This document describes the conceptual, informational, and implementation
@@ -373,13 +538,15 @@ $f$   is the flight, $j$ is the airspace and $p$ is the portion considered.</p>
    </tr>
  </tbody>
 </table>
-<p>Table 2: Acronyms and terminology</p>
+<p class="table-caption">Table 2: Acronyms and terminology</p>
 <h1 id="conceptual-model-the-horizontal-flight-efficiency">Conceptual model The Horizontal Flight Efficiency</h1>
 <p>Horizontal flight efficiency (HFE) is very simply defined at its highest level:
 the comparison between the length of a trajectory and the shortest distance
 between its endpoints.</p>
-<p><img src="/assets/hfe-01-35620d03a188717db7b70d9d96849c36502baebf847bc0dd809b1de7ae1374dc.png" alt="HFE as comparison of flight length and Great Circle Distance" width="400" height="329" />
-<em>HFE as comparison of flight length and Great Circle Distance</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/hfe-01-35620d03a188717db7b70d9d96849c36502baebf847bc0dd809b1de7ae1374dc.png" alt="HFE as comparison of flight length and Great Circle Distance" width="400" height="329" />
+ <figcaption>HFE as comparison of flight length and Great Circle Distance</figcaption>
+</figure>
 <p>For an entire flight we want to calculate the additional distance flown between
 take-off and landing with respect to the most direct route between the two
 airports (Great Circle Distance). The need of a more detailed definition arises
@@ -391,8 +558,10 @@ efficiency and the need to define the measurement on a portion of the flight
 <p>In addition, there is a specific need which stems from the requirements of
 Reference Period 2 (RP2) <strong>to measure local performance (FAB level) while at the
 same time keeping the network perspective.</strong></p>
-<p><img src="/assets/hfe-02-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Local Performance Requirement" width="700" height="314" />
-<em>Local Performance Requirement</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/hfe-02-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Local Performance Requirement" width="700" height="314" />
+ <figcaption>Local Performance Requirement</figcaption>
+</figure>
 <p>The desired outcome is illustrated in the table above. We are interested in all
 flights which traverse at least in part the Single European Sky (SES) area. A
 flight might traverse several FABs but also areas which are not part of the SES
@@ -421,8 +590,10 @@ difference between</p>
  <li>the great circle distance from the entry point N to the destination D and</li>
  <li>the great circle distance from the exit point X to the destination D.</li>
 </ol>
-<p><img src="/assets/hfe-03-3fedcd80dc3f31cbe792c6cae9fc956762c9736259d66d5293f27906e2b7a204.png" alt="The two Quantities Averaged in the Achieved Distance" width="550" height="371" />
-<em>The two Quantities Averaged in the Achieved Distance</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/hfe-03-3fedcd80dc3f31cbe792c6cae9fc956762c9736259d66d5293f27906e2b7a204.png" alt="The two Quantities Averaged in the Achieved Distance" width="550" height="371" />
+ <figcaption>The two Quantities Averaged in the Achieved Distance</figcaption>
+</figure>
 <p>In the Figure {@fig:avg-and-achieved-distance}, the distance from $N$ to
 $D$ is the radius of the circle centred at $D$ and going through the point of
 entry $N$, while the distance from $X$ to $D$ is the radius of the circle
@@ -451,8 +622,10 @@ local area with the great circle distance between the entry and exit point of
 the same area. Such a measurement would not take into consideration the network
 perspective, as can be seen in the (extreme, for illustration purposes) example
 of the Figure {@fig:local-efficiency}.</p>
-<p><img src="/assets/hfe-04-345ce290aaf5fa6f4b2c97bfd811db851a16fb6bad75313ba48b401ae69ea9f6.png" alt="A case of perfect local efficiency with no network contribution]" width="480" height="322" />
-<em>A case of perfect local efficiency with no network contribution</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/hfe-04-345ce290aaf5fa6f4b2c97bfd811db851a16fb6bad75313ba48b401ae69ea9f6.png" alt="A case of perfect local efficiency with no network contribution]" width="480" height="322" />
+ <figcaption>A case of perfect local efficiency with no network contribution</figcaption>
+</figure>
 <p>The red trajectory between the entry point N and the exit point X is perfectly
 straight and would be considered perfectly efficient from the local point of
 view, while from the network perspective there has been no improvement as the
@@ -471,8 +644,10 @@ than the direct distance between the same two points. This enables a
 decomposition of the inefficiency into a local component (which we call
 extension) and a network contribution (which we call interface) as shown in
 the Figure {@fig:decomposition-inefficiency}.</p>
-<p><img src="/assets/hfe-05-4806cc30dcfcb9123c7139011182277adc73bca9c159bbd6747697af2226d027.png" alt="Decomposition of Inefficiency" width="600" height="182" />
-<em>Decomposition of Inefficiency</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/hfe-05-4806cc30dcfcb9123c7139011182277adc73bca9c159bbd6747697af2226d027.png" alt="Decomposition of Inefficiency" width="600" height="182" />
+ <figcaption>Decomposition of Inefficiency</figcaption>
+</figure>
 <p>In the example of the previous section, the extension is zero (the red line
 corresponds to the direct between entry and exit) and the inefficiency is equal
 to the interface value. The exact interface value would depend on the position
@@ -485,8 +660,10 @@ there is “no improvement” in the goal of getting from origin to destination,
 distance flown between the two points should be considered as additional
 distance.</p>
 <h2 id="independence-of-local-performance-from-performance-outside-the-local-area">Independence of local performance from performance outside the local area</h2>
-<p><img src="/assets/hfe-06-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Independence of local performance from performance outside the local area" width="700" height="210" />
-<em>Independence of local performance from performance outside the local area</em></p>
+<figure class="img-responsive center-block">
+  <img src="/assets/hfe-06-7901f3ebe31f6cae13e98388d847c112907bd35875d9d109adcf273c7b65899b.png" alt="Independence of local performance from performance outside the local area" width="700" height="210" />
+ <figcaption>Independence of local performance from performance outside the local area</figcaption>
+</figure>
 <p>The value of the achieved distance to be considered for a local area depends
 only on the position of the entry and exit points with respect to the origin and
 destination of the trajectory. As a consequence, the value of the local
@@ -574,7 +751,7 @@ courses.</p>
    </tr>
  </tbody>
 </table>
-<p>Table 3: Summary of the different quantities used to compute HFE</p>
+<p class="table-caption">Table 3: Summary of the different quantities used to compute HFE</p>
 <h2 id="aggregation-of-results-to-produce-the-indicator">Aggregation of results to produce the indicator</h2>
 <p>Once the origin and destination of a flight have been set, via the use of
 achieved distances it is possible to compute in a consistent way the value of
@@ -677,7 +854,7 @@ airports with respect to the reference area):</p>
    </tr>
  </tbody>
 </table>
-<p>Table 4: General location of origin, destination and en-route end-points</p>
+<p class="table-caption">Table 4: General location of origin, destination and en-route end-points</p>
 <ol>
  <li>
    <p><strong>What is the difference between reference area and measured area?</strong></p>

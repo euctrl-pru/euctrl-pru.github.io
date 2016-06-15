@@ -16,6 +16,6 @@ Location: Brussels, Belgium
 To the Internet and the Long Tail.
 
 /* SITE */
-Last Update: 2016-05-26
+Last Update: 2016-06-15
 Standards: HTML5, SCSS
 Software: Jekyll, pandoc, MathJax, d3.js, dc.js, crossfilter
