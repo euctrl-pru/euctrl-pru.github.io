@@ -1,1 +1,0 @@
-function buildFilter(t,e,n,i){"use strict";function r(t){n.filterAll(),-1!==t&&n.filter(function(e){return e===l[t].text}),dc.redrawAll()}d3.select(t).append("option").text(e).attr("value","-1");var l=_.pluck(i.top(1/0),"key");l.sort(),l=l.map(function(t,e){return{id:e,text:t}}),$(t).select2({data:l,minimumResultsForSearch:1/0}),$(t).on("change",function(){r(this.value)})}
