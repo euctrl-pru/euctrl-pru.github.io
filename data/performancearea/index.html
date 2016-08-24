@@ -25,9 +25,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.11/crossfilter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript"
@@ -160,24 +160,6 @@ ga('send', 'pageview');
   i.fa.pru {color: #337ab7;}
 </style>
 <h1 id="pan-european-ans-performance-data-repository">Pan-European ANS Performance data repository</h1>
-<div class="well">
- <h2><small>Copyright notice and Disclaimer</small></h2>
- <p><small><span style="text-aligh:left">© 2016 European Organisation for the Safety of Air Navigation (EUROCONTROL).</span></small></p>
- <p>This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit
-in the interest of the exchange of information.
-It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
-The information may not be modified without prior written permission from the
-<small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.</p>
- <p>The information does not necessarily reflect the official views or policy of
-<small style="font-variant: small-caps;">EUROCONTROL</small>,
-which makes no warranty, either implied or express, for the information contained in this document,
-including its accuracy, completeness or usefulness.</p>
- <p>For feedback or questions please contact us at: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#080;&#082;&#085;&#045;&#083;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#101;&#117;&#114;&#111;&#099;&#111;&#110;&#116;&#114;&#111;&#108;&#046;&#105;&#110;&#116;">Performance Review Unit</a> (PRU-Support@eurocontrol.int).</p>
- <div class="container text-center">
-   <p><a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;" class="btn btn-primary btn-sm">
-Subscribe to get informed about updates <i class="fa fa-envelope"></i></a></p>
- </div>
-</div>
 <style>
 td {
   white-space: nowrap;
@@ -210,21 +192,21 @@ width: 8em;
  <tbody>
    <tr>
      <td>En-route IFR flights and ATFM delays <a href="/references/definition/aua.html">(AUA)</a><br /><small>Daily IFR traffic and en-route <a href="/references/definition/atfm_delay.html">ATFM delay</a> by entity and delay cause (AUA based)</small></td>
-     <td>Jan 2011 - Jun 2016</td>
+     <td>Jan 2011 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm" title="ERT-DLY (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_AUA.html" title="ERT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
    </tr>
    <tr>
      <td>En-route IFR flights and ATFM delays <a href="/references/definition/fir.html">(FIR)</a><br /><small>Daily IFR traffic and en-route <a href="/references/definition/atfm_delay.html">ATFM delay</a> by entity and delay cause (FIR based)</small></td>
-     <td>Jan 2013 - Jun 2016</td>
+     <td>Jan 2013 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm" title="ERT-DLY (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html" title="ERT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
    </tr>
    <tr>
      <td>Horizontal en-route flight efficiency <br /><small>Daily <a href="/references/methodology/horizontal_flight_efficiency_pi.html">en-route flight efficiency</a> data by entity (actual trajectory &amp; flight plan)</small></td>
-     <td>Jan 2014 - Jun 2016</td>
+     <td>Jan 2014 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/hfe/Horizontal_Flight_Efficiency.xlsm" title="HFE (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td><a href="http://ansperformance.eu/data/set/hfe/horizontal_flight_efficiency.html" title="HFE (CSV)">csv <i class="fa pru fa-filter"></i> <i class="fa pru fa-flask"></i></a></td>
      <td><a href="http://ansperformance.eu/references/dataset/Horizontal_Flight_Efficiency.html" title="HFE (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
@@ -245,42 +227,42 @@ width: 8em;
  <tbody>
    <tr>
      <td>Airport traffic<br /><small>Daily IFR arrivals and departures by airport</small></td>
-     <td>Jan 2014 - Jun 2016</td>
+     <td>Jan 2014 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/apt_flt/Airport_Traffic.xlsm" title="APT-FLT (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/Airport_Traffic.html" title="APT-FLT (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
    </tr>
    <tr>
      <td>Airport arrival ATFM delays<br /><small>Daily IFR arrivals and airport arrival <a href="/references/definition/atfm_delay.html">ATFM delay</a> by airport and delay category</small></td>
-     <td>Jan 2014 - Jun 2016</td>
+     <td>Jan 2014 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm" title="APT-DLY (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td><a href="http://ansperformance.eu/data/set/apt_dly/airport_arrival_atfm_delay.html" title="APT-DLY (CSV)">csv <i class="fa pru fa-filter"></i> <i class="fa pru fa-flask"></i></a></td>
      <td><a href="http://ansperformance.eu/references/dataset/Airport_Arrival_ATFM_Delay.html" title="APT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
    </tr>
    <tr>
      <td>Arrival Sequencing and Metering (ASMA) additional time<br /><small>Monthly ASMA <a href="/references/definition/additional_asma_time.html">additional</a> and <a href="/references/definition/unimpeded_asma_time.html">unimpeded</a> time</small></td>
-     <td>Jan 2014 - May 2016</td>
+     <td>Jan 2014 - Jun 2016</td>
      <td><a href="http://ansperformance.eu/data/set/asma/ASMA_Additional_Time.xlsm" title="ASMA (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/ASMA_Additional_Time.html" title="ASMA (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
    </tr>
    <tr>
      <td>Taxi-out additional time<br /><small>Monthly taxi out <a href="/references/definition/additional_taxi-out_time.html">additional</a> and <a href="/references/definition/unimpeded_taxi-out_time.html">unimpeded</a> time</small></td>
-     <td>Jan 2014 - May 2016</td>
+     <td>Jan 2014 - Jun 2016</td>
      <td><a href="http://ansperformance.eu/data/set/tx_out/Taxi-Out_Additional_Time.xlsm" title="TX-OUT (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/Taxi-Out_Additional_Time.html" title="TX-OUT (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
    </tr>
    <tr>
      <td>ATC pre-departure delays<br /><small>Daily <a href="/references/definition/atc_pre-departure_delay.html">ATC pre-departure delay</a> by airport</small></td>
-     <td>Jan 2014 - May 2016</td>
+     <td>Jan 2014 - Jun 2016</td>
      <td><a href="http://ansperformance.eu/data/set/atc_pre/ATC_Pre-Departure_Delay.xlsm" title="ATC-PRE (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/ATC_Pre-Departure_Delay.html" title="ATC-PRE (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
    </tr>
    <tr>
      <td>ATFM slot adherence<br /><small>Daily ATFM slot adherence by airport</small></td>
-     <td>Jan 2014 - Jun 2016</td>
+     <td>Jan 2014 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/slt_adh/ATFM_Slot_Adherence.xlsm" title="SLT-ADH (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/ATFM_Slot_Adherence.html" title="SLT-ADH (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
@@ -301,7 +283,7 @@ width: 8em;
  <tbody>
    <tr>
      <td>ACE operational data<br /><small>Monthly ACE operational data</small></td>
-     <td>Jan 2014 - Jun 2016</td>
+     <td>Jan 2014 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/ace_opt/ACE_Monthly_Operational_Data.xls" title="ACE (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://www.eurocontrol.int/documents/economic-information-disclosure-specification" title="ACE specs">specs <i class="fa pru fa-info-circle"></i></a></td>
@@ -322,7 +304,7 @@ width: 8em;
  <tbody>
    <tr>
      <td>Complexity<br /><small>Complexity by ANSP</small></td>
-     <td>Jan 2014 - Jun 2016</td>
+     <td>Jan 2014 - Jul 2016</td>
      <td><a href="http://ansperformance.eu/data/set/cplx/Traffic_Complexity_Scores.xlsm" title="CPLX (Excel)">xls <i class="fa pru fa-download"></i></a></td>
      <td> </td>
      <td><a href="http://ansperformance.eu/references/dataset/Traffic_Complexity_Score.html" title="CPLX (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
@@ -333,8 +315,26 @@ width: 8em;
 <p><i class="fa pru fa-download"></i> = dataset download.<br />
 <i class="fa pru fa-info-circle"></i> = info on dataset.<br />
 <i class="fa pru fa-filter"></i> = filter for dataset and download.<br />
-<i class="fa pru fa-flask"></i> = experimental, <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#080;&#082;&#085;&#045;&#083;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#101;&#117;&#114;&#111;&#099;&#111;&#110;&#116;&#114;&#111;&#108;&#046;&#105;&#110;&#116;">feedback</a> is more than welcome.<br />
+<i class="fa pru fa-flask"></i> = experimental, <a href="mailto:PRU-Support@eurocontrol.int">feedback</a> is more than welcome.<br />
 <i class="fa pru fa-exclamation-triangle"></i> = not (yet?) available.<br /></p>
+<div class="well">
+ <h2><small>Copyright notice and Disclaimer</small></h2>
+ <p><small><span style="text-aligh:left">© 2016 European Organisation for the Safety of Air Navigation (EUROCONTROL).</span></small></p>
+ <p>This data is published by the the <small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit
+in the interest of the exchange of information.
+It may be copied in whole or in part providing that this copyright notice and disclaimer are included.
+The information may not be modified without prior written permission from the
+<small style="font-variant: small-caps;">EUROCONTROL</small> Performance Review Unit.</p>
+ <p>The information does not necessarily reflect the official views or policy of
+<small style="font-variant: small-caps;">EUROCONTROL</small>,
+which makes no warranty, either implied or expressed, for the information contained in this document,
+including its accuracy, completeness or usefulness.</p>
+ <p>For feedback or questions please contact us at: <a href="mailto:PRU-Support@eurocontrol.int">Performance Review Unit</a> (PRU-Support@eurocontrol.int).</p>
+ <div class="container text-center">
+   <p><a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;" class="btn btn-primary btn-sm">
+Subscribe to get informed about updates <i class="fa fa-envelope"></i></a></p>
+ </div>
+</div>
    <div id="footer">
      <div class="container-fluid">
        <p class="muted credit" style="text-align:center; margin-top:3em">
@@ -348,4 +348,18 @@ width: 8em;
    </div>
  </div>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+<script type="text/javascript">
+ (function () {
+   'use strict';
+   anchors.options.placement = 'right';
+   // need to call `add` when DOM is loaded
+   // JQuery `ready` forces it if `add` is not called in a script
+   // after the end of 
+   // Note: you can avoid the call to `ready` if this file is included
+//   $( document ).ready(function() {
+     anchors.add();
+//   });
+ })();
+</script>
 </html>

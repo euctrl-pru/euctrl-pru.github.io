@@ -25,9 +25,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.11/crossfilter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript"
@@ -551,9 +551,11 @@ independent of arrival runway and ASMA Sector.</p>
   <img src="/assets/check3-119cc453b0f1a997623c7359fa6461ceaad86d7b2c51b3d5bb67d0e8313a8c8a.jpg" alt="Evolution of the additional time with the congestion level" width="300" height="197" />
  <figcaption>Evolution of the additional time with the congestion level</figcaption>
 </figure>
-<p>As a function of the congestion index, the <em>additional ASMA times</em> should:
-  * remain close to zero for low level of congestion (congestion index smaller than 100), and 
-  * increase linearly for congestion index greater than 100.</p>
+<p>As a function of the congestion index, the <em>additional ASMA times</em> should:</p>
+<ul>
+ <li>remain close to zero for low level of congestion (congestion index smaller than 100), and</li>
+ <li>increase linearly for congestion index greater than 100.</li>
+</ul>
 <h3 id="unimpeded-asma-times-monitoring">Unimpeded ASMA times Monitoring</h3>
 <p><em>Additional ASMA times</em> for unimpeded flights should remain close to zero. A
 change in the unimpeded time might indicate a change in operational procedures
@@ -593,4 +595,18 @@ and new unimpeded ASMA times are calculated if required.</p>
    </div>
  </div>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+<script type="text/javascript">
+ (function () {
+   'use strict';
+   anchors.options.placement = 'right';
+   // need to call `add` when DOM is loaded
+   // JQuery `ready` forces it if `add` is not called in a script
+   // after the end of 
+   // Note: you can avoid the call to `ready` if this file is included
+//   $( document ).ready(function() {
+     anchors.add();
+//   });
+ })();
+</script>
 </html>

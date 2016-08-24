@@ -25,9 +25,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.11/crossfilter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript"
@@ -891,13 +891,15 @@ the reference area?</strong><br />
 <strong>What happens when part of the trajectory is not available?</strong></p>
    <p>All the above questions relate to the definition of the portions of
 trajectory used for the calculation of the en route indicator for a measured
-area. Four separate and independent aspects have to be considered:
-* A portion has to be within the origin and the destination (for flight
-  efficiency to be defined);
-* A portion has to be en route (i.e., the cylinders around airports have to
-  excluded);
-* A portion has to be within the measured area;
-* The information has to be available.</p>
+area. Four separate and independent aspects have to be considered:</p>
+   <ul>
+     <li>A portion has to be within the origin and the destination (for flight
+efficiency to be defined);</li>
+     <li>A portion has to be en route (i.e., the cylinders around airports have to
+excluded);</li>
+     <li>A portion has to be within the measured area;</li>
+     <li>The information has to be available.</li>
+   </ul>
    <p>The four conditions have to be valid at the same time. This means that in some
 cases the end points of the portion considered for flight efficiency in a
 measured area (the entry N and the exit X in the notation used in previous
@@ -1003,4 +1005,18 @@ the ten worst days are excluded from the computation.</p>
    </div>
  </div>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+<script type="text/javascript">
+ (function () {
+   'use strict';
+   anchors.options.placement = 'right';
+   // need to call `add` when DOM is loaded
+   // JQuery `ready` forces it if `add` is not called in a script
+   // after the end of 
+   // Note: you can avoid the call to `ready` if this file is included
+//   $( document ).ready(function() {
+     anchors.add();
+//   });
+ })();
+</script>
 </html>

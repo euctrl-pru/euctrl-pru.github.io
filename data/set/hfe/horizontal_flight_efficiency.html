@@ -25,9 +25,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.11/crossfilter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <script type="text/javascript"
@@ -219,7 +219,7 @@ ga('send', 'pageview');
 <div class="clearfix"></div>
 <script type="text/javascript" src="/assets/vendor/json2csv-21e26a4cfa675889a9a5762259af606446fc66c5a4490ad9232c4beae2d2bf30.js"></script>
 <script type="text/javascript" src="/assets/vendor/FileSaver.min-5e2ba1d58dc38d8bff310660669fdab0def5fe1ed56a639f98a736d31e19a764.js"></script>
-<script type="text/javascript" src="/assets/filterBy-ab26438fd88082f34a82671f21165a7e8d9d57bd61f3d2009e395da86d24f5ef.js"></script>
+<script type="text/javascript" src="/assets/filterBy-de9203bd4d9cc8eb57e3b76d2d4df942bee9353446f5288c389137e431effb2d.js"></script>
 <script type="text/javascript" src="/assets/vendor/spin.min-618a1bb12779a2d0caba57214b6b741713600015a6fe53a97839479e22bb1c16.js"></script>
 <script type="text/javascript" src="/assets/horizontal_flight_efficiency_download-0bf981ff217986a8e316c298444e2a32dd0ccc36367339187d03382b37a96333.js"></script>
    <div id="footer">
@@ -235,4 +235,18 @@ ga('send', 'pageview');
    </div>
  </div>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+<script type="text/javascript">
+ (function () {
+   'use strict';
+   anchors.options.placement = 'right';
+   // need to call `add` when DOM is loaded
+   // JQuery `ready` forces it if `add` is not called in a script
+   // after the end of 
+   // Note: you can avoid the call to `ready` if this file is included
+//   $( document ).ready(function() {
+     anchors.add();
+//   });
+ })();
+</script>
 </html>
