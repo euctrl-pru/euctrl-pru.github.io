@@ -109,14 +109,11 @@ ga('send', 'pageview');
                  <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
              </ul>
          </li>
-         <li class="dropdown">
-            <a href="http://ansperformance.eu/data/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-              aria-haspopup="true" aria-expanded="false">Data</a>
-           <ul class="dropdown-menu">
-             <li><a href="http://ansperformance.eu/data/performancearea/">by Performance Area</a></li>
-           </ul>
+         <li class="">
+            <a href="http://ansperformance.eu/data/performancearea">Data</a></li>
          </li>
-         <li class=""><a href="http://ansperformance.eu/studies/">Studies</a></li>
+         <li class="">
+          <a href="http://ansperformance.eu/studies/">Studies</a></li>
          <li class="dropdown">
               <a href="http://ansperformance.eu/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
                  aria-haspopup="true" aria-expanded="false">References</a>
@@ -163,17 +160,22 @@ ga('send', 'pageview');
  google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 </script>
 <h2>Capacity</h2>
-   <h3 id="ert_dly">En-route ATFM delays</h3>
+    Please note that software release 20.0 of the Network Manager on 04 April 2016
+introduced a change to improve the accuracy of the ATFM delay calculation for
+operational purposes.
+For more information on the change in methodology
+<a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">click here</a>.
+<h3 id="ert_dly">En-route ATFM delays</h3>
 <div class="row">
    <div class="col-lg-6">
        <h5>EUROCONTROL Area</h5>
        <div id="crt_cap_ert_YY"></div>
        <div id="crt_cap_ert_MM"></div>
-       <h5>En-route ATFM delays by Entity (Jan - Sep 2016)</h5>
+       <h5>En-route ATFM delays by Entity (Jan - Oct 2016)</h5>
        <div id="tbl_cap_ert_YY"></div>
    </div>
    <div class="col-lg-6 offset-10" style="border-style: solid; border-width:thin; border-color: #bfbfbf;">
-     <h5><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html">En-route ATFM delays</a> by <a href="http://ansperformance.eu/references/definition/fab.html">FAB (FIR)</a> (Sep 2016)</h5>
+     <h5><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html">En-route ATFM delays</a> by <a href="http://ansperformance.eu/references/definition/fab.html">FAB (FIR)</a> (Oct 2016)</h5>
        <div id="tbl_cap_fir_ert_YY"></div>
         <br>
        <div id="crt_cap_fir_ert_YY"></div>
@@ -188,7 +190,7 @@ ga('send', 'pageview');
        <div id="crt_cap_apt_MM"></div>
    </div>
    <div class="col-lg-6 offset-10">
-       <h5>Airport Arrival ATFM Delays by Airport (Jan - Sep 2016)</h5>
+       <h5>Airport Arrival ATFM Delays by Airport (Jan - Oct 2016)</h5>
        <div id="tbl_cap_apt_YY"></div>
    </div>
 </div>
