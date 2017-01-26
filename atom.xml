@@ -3,7 +3,7 @@
   <generator uri="http://jekyllrb.com" version="3.1.3">Jekyll</generator>
 <link href="http://ansperformance.eu/atom.xml" rel="self" type="application/atom+xml" />
 <link href="http://ansperformance.eu/" rel="alternate" type="text/html" />
-  <updated>2016-12-16T16:13:45+01:00</updated>
+  <updated>2017-01-26T16:28:34+01:00</updated>
   <id>http://ansperformance.eu/</id>
  <title>PRU</title>
     <subtitle>Performance monitoring data, analyses and visualizations for Eurocontrol&#39;s 41 Member States.
@@ -14,6 +14,27 @@
       <email>PRU-Support@eurocontrol.int</email>
     <uri>http://ansperformance.eu/</uri>
   </author>
+    <entry>
+ <title>Release Notes</title>
+<link href="http://ansperformance.eu/news/rn/2017/01/26/rn.html" rel="alternate" type="text/html" title="Release Notes" />
+ <published>2017-01-26T00:00:00+01:00</published>
+    <updated>2017-01-26T00:00:00+01:00</updated>
+  <id>http://ansperformance.eu/news/rn/2017/01/26/rn</id>
+  <content type="html" xml:base="http://ansperformance.eu/news/rn/2017/01/26/rn.html">
+    &lt;p&gt;Data updates up to Dec 2016.&lt;/p&gt;
+&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: Data download files updated up to &lt;strong&gt;Dec 2016&lt;/strong&gt; (when applicable)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2017/01/26/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <author>
+      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
+      <email>PRU-Support@eurocontrol.int</email>
+    <uri>http://ansperformance.eu/</uri>
+  </author>
+    <summary type="text">Data updates up to Dec 2016.</summary>
+</entry>
     <entry>
  <title>Release Notes</title>
 <link href="http://ansperformance.eu/news/rn/2016/12/16/rn.html" rel="alternate" type="text/html" title="Release Notes" />
@@ -413,29 +434,5 @@ Deadline for receipt of comments is 16:00 on Friday 25 March 2016.&lt;/p&gt;
     <uri>http://ansperformance.eu/</uri>
   </author>
     <summary type="text">Data updates up to Nov 2015, intra-European flight flown study.</summary>
-</entry>
-    <entry>
- <title>Release Notes</title>
-<link href="http://ansperformance.eu/news/rn/2015/11/11/rn.html" rel="alternate" type="text/html" title="Release Notes" />
- <published>2015-11-11T00:00:00+01:00</published>
-    <updated>2015-11-11T00:00:00+01:00</updated>
-  <id>http://ansperformance.eu/news/rn/2015/11/11/rn</id>
-  <content type="html" xml:base="http://ansperformance.eu/news/rn/2015/11/11/rn.html">
-    &lt;p&gt;Data updates up to Oct 2015, extra-European flight flown study, traffic complexity dataset.&lt;/p&gt;
-&lt;p&gt;The following changes have been published in this release:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;October 2015&lt;/strong&gt; (when applicable).&lt;/li&gt;
-  &lt;li&gt;New: Traffic Complexity dataset now available in the &lt;a href=&quot;http://ansperformance.eu/data/&quot;&gt;Data&lt;/a&gt; section.&lt;/li&gt;
-  &lt;li&gt;New: &lt;a href=&quot;http://ansperformance.eu/studies/&quot;&gt;Studies&lt;/a&gt; section for sharing explorations, experiments and relevant results.&lt;/li&gt;
-  &lt;li&gt;New: first study published “&lt;a href=&quot;http://ansperformance.eu/studies/flows-extra/&quot;&gt;Flight flows in/out of Europe&lt;/a&gt;.”&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2015/11/11/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
-  </content>
-  <author>
-      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
-      <email>PRU-Support@eurocontrol.int</email>
-    <uri>http://ansperformance.eu/</uri>
-  </author>
-    <summary type="text">Data updates up to Oct 2015, extra-European flight flown study, traffic complexity dataset.</summary>
 </entry>
 </feed>
