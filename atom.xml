@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <generator uri="http://jekyllrb.com" version="3.1.3">Jekyll</generator>
+  <generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator>
 <link href="http://ansperformance.eu/atom.xml" rel="self" type="application/atom+xml" />
 <link href="http://ansperformance.eu/" rel="alternate" type="text/html" />
-  <updated>2017-02-16T16:44:19+01:00</updated>
+  <updated>2017-02-23T17:27:56+01:00</updated>
   <id>http://ansperformance.eu/</id>
  <title>PRU</title>
-    <subtitle>Performance monitoring data, analyses and visualizations for Eurocontrol&#39;s 41 Member States.
+    <subtitle>Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
 </subtitle>
   <icon>http://ansperformance.eu/apple-touch-icon-precomposed.png</icon>
   <author>
@@ -93,7 +93,7 @@ and the other on vertical flight efficienty during climb and descent
 &lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: Data download files updated up to &lt;strong&gt;Nov 2016&lt;/strong&gt; (when applicable)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Just published&lt;/strong&gt;: &lt;a href=&quot;http://publish.eurocontrol.int/sites/default/files/content/documents/single-sky/pru/publications/other/2006-2014-US-Europe-comparison-ANS-cost-efficiency-trends.pdf&quot;&gt;U.S. – Europe comparison of ANS cost-efficiency trends (2006-2014)&lt;/a&gt;.&lt;br /&gt;
+  &lt;li&gt;&lt;strong&gt;Just published&lt;/strong&gt;: &lt;a href=&quot;http://publish.eurocontrol.int/sites/default/files/content/documents/single-sky/pru/publications/other/2006-2014-US-Europe-comparison-ANS-cost-efficiency-trends.pdf&quot; title=&quot;U.S. – Europe comparison of ANS cost-efficiency trends (2006-2014)&quot;&gt;U.S. – Europe comparison of ANS cost-efficiency trends (2006-2014)&lt;/a&gt;.&lt;br /&gt;
 &lt;em&gt;The report is a factual high-level comparison of Air Navigation Services
 (ANS) provision costs in Europe and the United States of America (US), based
 on comparable data and the well-established ACE economic performance
@@ -122,7 +122,9 @@ European Commission (EC).&lt;/em&gt;&lt;/li&gt;
 &lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;Oct 2016&lt;/strong&gt; (when applicable)&lt;/li&gt;
-  &lt;li&gt;New: ATFM delay data for different versions following &lt;a href=&quot;http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html&quot;&gt;software release 20.0 of the Network Manager&lt;/a&gt; available in the &lt;a href=&quot;http://ansperformance.eu/data/performancearea/&quot;&gt;download area&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;New: ATFM delay data for different versions following
+&lt;a href=&quot;http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html&quot;&gt;software release 20.0 of the Network Manager&lt;/a&gt;
+available in the &lt;a href=&quot;http://ansperformance.eu/data/performancearea/&quot;&gt;download area&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;New: Erfurt (EDDE) airport included in ASMA data&lt;/li&gt;
   &lt;li&gt;New: Erfurt (EDDE) airport and Saarbrucken (EDDR) airport included in Taxi out data&lt;/li&gt;
   &lt;li&gt;Update: ATFM delay due to LFDSNA related ATFM regulations added&lt;/li&gt;
@@ -209,7 +211,9 @@ European Commission (EC).&lt;/em&gt;&lt;/li&gt;
 &lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;Jul 2016&lt;/strong&gt; (when applicable)&lt;/li&gt;
-  &lt;li&gt;Update: &lt;a href=&quot;http://ansperformance.eu/studies/flows-intra/&quot;&gt;Intra&lt;/a&gt; and &lt;a href=&quot;http://ansperformance.eu/studies/flows-extra&quot;&gt;Extra&lt;/a&gt; flows studies have been updated to cover
+  &lt;li&gt;Update: &lt;a href=&quot;http://ansperformance.eu/studies/flows-intra/&quot;&gt;Intra&lt;/a&gt; and
+&lt;a href=&quot;http://ansperformance.eu/studies/flows-extra&quot;&gt;Extra&lt;/a&gt;
+flows studies have been updated to cover
 the 2001 - 2015 period (previously 2007 - 2014)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2016/08/24/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
@@ -361,11 +365,11 @@ see &lt;a href=&quot;http://ansperformance.eu/references/dataset/En-Route_ATFM_D
       &lt;li&gt;Taxi-out Time Performance Indicator.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;New: &lt;a href=&quot;/studies/cco-cdo/&quot;&gt;Vertical Flight Efficiency during Climb and Descend&lt;/a&gt; study.&lt;/li&gt;
+  &lt;li&gt;New: &lt;a href=&quot;http://ansperformance.eu/studies/cco-cdo/&quot;&gt;Vertical Flight Efficiency during Climb and Descend&lt;/a&gt; study.&lt;/li&gt;
   &lt;li&gt;New: added
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bar_chart&quot;&gt;horizontal bar chart&lt;/a&gt; for &lt;a href=&quot;/graphs/traffic/&quot;&gt;‘Flights by entity Year-to-Year’&lt;/a&gt;.&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Choropleth_map&quot;&gt;choropleth map&lt;/a&gt; for &lt;a href=&quot;/graphs/capacity/&quot;&gt;‘En-route ATFM delays by FAB (FIR)’&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bar_chart&quot;&gt;horizontal bar chart&lt;/a&gt; for &lt;a href=&quot;http://ansperformance.eu/graphs/traffic/&quot;&gt;‘Flights by entity Year-to-Year’&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Choropleth_map&quot;&gt;choropleth map&lt;/a&gt; for &lt;a href=&quot;http://ansperformance.eu/graphs/capacity/&quot;&gt;‘En-route ATFM delays by FAB (FIR)’&lt;/a&gt;.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;New: Additional columns in Airport ATFM arrival delay data in the &lt;a href=&quot;http://ansperformance.eu/data/performancearea&quot;&gt;Data&lt;/a&gt; section
@@ -397,12 +401,12 @@ see &lt;a href=&quot;http://ansperformance.eu/references/dataset/En-Route_ATFM_D
   &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;February 2016&lt;/strong&gt; (when applicable).&lt;/li&gt;
   &lt;li&gt;New: The URL for the PRU Website is now &lt;a href=&quot;http://ansperformance.eu&quot;&gt;ansperformance.eu&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;New: Horizontal en-route flight efficiency key performance indicators (KEP/KEA) included in data.&lt;/li&gt;
-  &lt;li&gt;New: added two topics in &lt;a href=&quot;/references/methodology/&quot;&gt;Methodology&lt;/a&gt; section.&lt;/li&gt;
+  &lt;li&gt;New: added two topics in &lt;a href=&quot;http://ansperformance.eu/references/methodology/&quot;&gt;Methodology&lt;/a&gt; section.&lt;/li&gt;
   &lt;li&gt;Update: additions and enhancements in Definitions.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Furthermore, we would like to take the opportunity to inform you that the final draft of the 
-&lt;a href=&quot;//www.eurocontrol.int/publications/draft-performance-review-report-prr-2015&quot;&gt;Performance Review Report 2015&lt;/a&gt; 
-is now available for stakeholder comments and feedback. 
+&lt;p&gt;Furthermore, we would like to take the opportunity to inform you that the final draft of the
+&lt;a href=&quot;//www.eurocontrol.int/publications/draft-performance-review-report-prr-2015&quot;&gt;Performance Review Report 2015&lt;/a&gt;
+is now available for stakeholder comments and feedback.
 Deadline for receipt of comments is 16:00 on Friday 25 March 2016.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2016/03/11/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
   </content>
@@ -424,8 +428,8 @@ Deadline for receipt of comments is 16:00 on Friday 25 March 2016.&lt;/p&gt;
 &lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;January 2016&lt;/strong&gt; (when applicable).&lt;/li&gt;
-  &lt;li&gt;New: The URL for the PRU Website is now &lt;a href=&quot;//ansperformance.eu&quot;&gt;ansperformance.eu&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;New: Started filling the long-awaited &lt;a href=&quot;/references/methodology/&quot;&gt;Methodology&lt;/a&gt; section.&lt;/li&gt;
+  &lt;li&gt;New: The URL for the PRU Website is now &lt;a href=&quot;http://ansperformance.eu//ansperformance.eu&quot;&gt;ansperformance.eu&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;New: Started filling the long-awaited &lt;a href=&quot;http://ansperformance.eu/references/methodology/&quot;&gt;Methodology&lt;/a&gt; section.&lt;/li&gt;
   &lt;li&gt;Update: Little changes/enhancements in Definitions.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2016/02/15/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
@@ -448,7 +452,7 @@ Deadline for receipt of comments is 16:00 on Friday 25 March 2016.&lt;/p&gt;
 &lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;December 2015&lt;/strong&gt; (when applicable).&lt;/li&gt;
-  &lt;li&gt;New: added new definitions in the &lt;a href=&quot;/references/&quot;&gt;References&lt;/a&gt; section.&lt;/li&gt;
+  &lt;li&gt;New: added new definitions in the &lt;a href=&quot;http://ansperformance.eu/references/&quot;&gt;References&lt;/a&gt; section.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2016/01/19/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
   </content>
