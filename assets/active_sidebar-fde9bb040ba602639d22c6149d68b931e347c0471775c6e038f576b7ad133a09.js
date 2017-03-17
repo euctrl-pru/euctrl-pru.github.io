@@ -1,0 +1,1 @@
+!function(){"use strict";$(function(){var a=window.location.pathname;a="/"+a.split("/")[1]+"/",$(".nav li a").each(function(){var n=$(this)[0].pathname;console.log("active = "+a),console.log("current = "+n),a===n&&$(this).parent().addClass("active")})})}();

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<title>ANS Cost-efficiency &#8211; PRU</title>
+<meta name="description" content="Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
+">
+<meta name="keywords" content="">
+<link rel="canonical" href="http://ansperformance.eu/prcq/economics.html">
+<link rel="alternate" href="http://ansperformance.eu/feed.xml" type="application/atom+xml" title="PRU Feed">
+<link type="text/plain" rel="author" href="http://ansperformance.eu/humans.txt" />
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="/assets/table-0849d8a581c0b5a73867bb9a8fd2c759f4cd2abbe533a5423f7fd1ee6cadf2a2.css">
+<link type="text/css" rel="stylesheet" href="/assets/solarized-e69a0f19a8424b964f64b60a41d6cf9d3c62d127e5519a4dbe9ad596cf0c468f.css">
+<link type="text/css" rel="stylesheet" href="/assets/logo-3a7eb4382971c540181ccedc15fbfa406a3f5c98eed1f4dc401fb9e9c3be5dd0.css">
+<link type="text/css" rel="stylesheet" href="/assets/general-cee0fb6d19dfcaa28b3f1aa3a39d59c2055bc8f1c0959c611c50b5966edead70.css">
+<link rel="apple-touch-icon" sizes="57x57" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="60x60" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="72x72" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="76x76" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="114x114" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="120x120" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="144x144" href="http://ansperformance.eu">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="32x32">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="96x96">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="16x16">
+<link rel="manifest" href="http://ansperformance.eu">
+<link rel="mask-icon" href="http://ansperformance.eu" color="#5bbad5">
+<link rel="shortcut icon" href="http://ansperformance.eu">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="http://ansperformance.eu">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript" async>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-62697169-2', 'auto');
+ga('send', 'pageview');
+</script>
+<title>ANS Cost-efficiency - PRU</title>
+<meta property="og:title" content="ANS Cost-efficiency" />
+<meta name="description" content="Performance monitoring data, analyses and visualizations for Eurocontrol’s 41 Member States." />
+<meta property="og:description" content="Performance monitoring data, analyses and visualizations for Eurocontrol’s 41 Member States." />
+<link rel="canonical" href="http://ansperformance.eu/prcq/economics.html" />
+<meta property="og:url" content="http://ansperformance.eu/prcq/economics.html" />
+<meta property="og:site_name" content="PRU" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "ANS Cost-efficiency",
+"description": "Performance monitoring data, analyses and visualizations for Eurocontrol’s 41 Member States.",
+"url": "http://ansperformance.eu/prcq/economics.html"}</script>
+</head>
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+ <nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container-fluid">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <div class="navbar-brand">
+          <a href="http://ansperformance.eu/">
+          <img src="/assets/ec-logo-brand-a37c88531431fd766c40b47e165665c6d9acb0fa97469728f7cc6d0b2260ee74.png" alt=PRU width="41" height="36" alt="ec-logo-brand.png">
+         <div id="logo"></div>
+        </a>
+     </div>
+   </div>
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav">
+         <li class="">
+            <a href="http://ansperformance.eu/prcq/"
+            style="background-color: #4F81BD; color: #fff;">PRC Quarterly</a></li>
+         </li>
+         <li class=""><a href="http://ansperformance.eu/posts/">News</a></li>
+         <li class="dropdown">
+              <a href="http://ansperformance.eu/graphs/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Graphs <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
+             </ul>
+         </li>
+         <li class="">
+            <a href="http://ansperformance.eu/data/performancearea">Data</a></li>
+         </li>
+         <li class="">
+          <a href="http://ansperformance.eu/studies/">Studies</a></li>
+     </ul>
+     <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+              <a href="http://ansperformance.eu/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/references/dataset/">Datasets</a></li>
+                 <li><a href="http://ansperformance.eu/references/acronym/">Acronyms</a></li>
+                 <li><a href="http://ansperformance.eu/references/definition/">Definitions</a></li>
+                 <li><a href="http://ansperformance.eu/references/ANSP/">ANSP's</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/references/methodology/">Methodology</a></li>
+                  <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
+             </ul>
+         </li>
+       <li>
+          <form class="navbar-form" method="get" action="https://duckduckgo.com/">
+              <input type="hidden" name="sites" value="ansperformance.eu"/>
+            <input type="hidden" name="ka" value="h"/>
+            <input type="hidden" name="k7" value="#fafafa"/>
+            <input type="hidden" name="kj" value="#2e86c6"/>
+            <input type="hidden" name="ky" value="#fafafa"/>
+            <input type="hidden" name="kx" value="b"/>
+            <input type="hidden" name="kt" value="Helvetica"/>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search this site" name="q" id="srch-term">
+             <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+             </div>
+           </div>
+          </form>
+       </li>
+       <li class="dropdown">
+          <a href="http://ansperformance.eu/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="http://ansperformance.eu/about/">About us</a></li>
+           <li><a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a></li>
+         </ul>
+       </li>
+     </ul>
+   </div>
+ </div>
+</nav>
+<script type="text/javascript" src="/assets/active_navbar-9f8f305cd6a7229e8509add5dcd499b32ce04c40d52960d04df2a95ddbe3bc4c.js"></script>
+<script type="text/javascript" src="/assets/logo-5bdc490fc2a2183978f842b9cbd4f994c3b0799cbf6785968916fdd6b514b05a.js"></script>
+ <div class="container main">
+   <div class="row">
+  <div class="col-sm-2" id="prcq-sidebar">
+     <nav class="nav-sidebar">
+        <ul class="nav" data-spy="affix" data-offset-top="5">
+           <li><a href="http://ansperformance.eu/prcq/executive-summary.html">Executive Summary</a></li>
+           <li><a href="http://ansperformance.eu/prcq/traffic.html">Traffic</a></li>
+           <li><a href="http://ansperformance.eu/prcq/safety.html">Safety</a></li>
+           <li><a href="http://ansperformance.eu/prcq/ops-en-route.html">Operations En-route</a></li>
+           <li><a href="http://ansperformance.eu/prcq/ops-airport.html">Operations Airport</a></li>
+           <li><a href="http://ansperformance.eu/prcq/economics.html">Economics</a></li>
+        </ul>
+     </nav>
+  </div>
+  <div class="col-sm-10 main" data-spy="scroll" data-target="#prcq-sidebar" data-offset="50">
+      <script type="text/javascript" src="http://www.google.com/jsapi"></script><script type="text/javascript"> // load the visualisation API
+google.load('visualization', '1', { packages: ['corechart', 'controls'] });
+</script>
+<script type="text/javascript">
+function drawVisualization()
+ {
+// ERT A
+  var crt_eco1 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco1',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=eco&range=I1:M7',
+    options:{
+        chartArea: {left: 80, top: 10, width:'70%',height:'80%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {position:'right',textStyle:{color: 'grey', fontSize: 11}},
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 90,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'Euro(2015) per composite flight hour'},
+              1:{ title:'year on year (%)', titleTextStyle : {color: '#B89470', fontSize: 11}, textStyle:{color:'#B89470'}}
+            }
+        },
+    view: {'columns': [0,1,2,3,4]}
+  }); crt_eco1.draw();
+// ERT - CHART -
+ var crt_eco2 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco2',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=eco&range=A1:F6',
+    options: {
+        chartArea: {left: 60, top: 10, width:'60%',height:'80%'},
+        titleTextStyle : {color: '#1F1F2E', fontSize: 12},
+        legend: 'right',
+        //seriesType: 'bars',
+        series: {
+                0: {type:'bars',color:'#003366', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FFC000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#993366', targetAxisIndex: 0},
+              },
+        vAxes:{
+              0:{ title:'% change', format: '0%', titleTextStyle : {color: '#1F1F2E', fontSize: 12}, textStyle:{color: '#1F1F2E'}}
+            },
+        hAxis: {slantedTextAngle: 45,}
+        },
+    view: {columns: [0,3,4,5], rows: [0,1,2,3,4]}
+  }); crt_eco2.draw();
+// ANALYSIS BY ANSP
+  var crt_eco3 = new google.visualization.ChartWrapper({
+    chartType: 'ComboChart',
+    containerId: 'crt_eco3',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=eco&range=A11:H49',
+    options:{
+        height: 380,
+        chartArea: {left: 80, top: 30, width:'80%',height:'50%'},
+          titleTextStyle : {color: 'grey', fontSize: 12},
+          legend: {
+               position: 'top',
+               maxLines: 2,
+               textStyle: {color: 'grey', fontSize: 11 }
+            },
+          isStacked : 'true',
+          series: {
+                0: {type:'bars',color:'#9999FF', targetAxisIndex: 0},
+                1: {type:'bars',color:'#FF0000', targetAxisIndex: 0},
+                2: {type:'bars',color:'#EEE800', targetAxisIndex: 0},
+                3: {type:'lines', color:'#B89470', lineWidth: 0, pointSize: 10, targetAxisIndex: 1}
+              },
+          hAxis: {slantedTextAngle: 45,
+              textStyle: {fontSize: 12}},
+          vAxes:{
+              0:{ title:'EUR(2015) per composite flight hour',titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}},
+              1:{ title:'share of delay costs (%)', titleTextStyle : {color: '#B89470', fontSize: 12}, textStyle:{color:'#B89470', fontSize: 12}}
+            }
+        },
+    view: {'columns': [0,1,2,3,7]}
+  }); crt_eco3.draw();
+}
+google.setOnLoadCallback(drawVisualization)
+</script>
+<h3 class="page-header"><img src="/assets/prcq-economics-08b27c1cb26c21adb544ed4a8fab72ee2a38382136d309380d0e1317022926dc.png" alt="Economics" style="margin-right:3px" width="60" height="51"> ANS Cost-efficiency</h3>
+<table class = "table">
+ <thead>
+     <tr>
+        <th>Period</th>
+        <th>Area</th>
+        <th>Update rate</th>
+        <th>Last update</th>
+        <th>Source(s)</th>
+        <th>Available later</th>
+     </tr>
+  </thead>
+  <tbody>
+     <tr class = "active">
+        <td>Jan-Dec</td>
+        <td><a href='http://ansperformance.eu/references/definition/eurocontrol_area.html'>EUROCONTROL area</a></td>
+        <td>Annually</td>
+        <td>15-March-2017</td>
+         <td>
+          <a href="http://www.eurocontrol.int/documents/economic-information-disclosure-specification" target="_blank">ANSPs submissions</a>
+         </td>
+        <td><button type="button" class="btn btn-primary disabled">ACE Dashboard</button></td>
+     </tr>
+  </tbody>
+</table>
+<table class = "table">
+  <tbody>
+     <tr class = "active">
+        <td><span style="color: rgb(192, 80, 77);">
+          Please note that the 2015 data (the latest year for which actual financial data are available) are still provisional.
+         </span></td>
+     </tr>
+  </tbody>
+</table>
+<h4 class="sub-header">Changes in <a href='http://ansperformance.eu/references/definition/eco_cost_eff.html'>economic cost-effectiveness</a> (37 <a href='http://ansperformance.eu/references/acronym/ansp.html'>ANSPs</a>)</h4>
+<div class="row">
+<div class="col-sm-6 ">
+   <div id="crt_eco1"></div>
+</div>
+<div class="col-sm-6">
+   <div id="crt_eco2"></div>
+</div>
+</div>
+<div class="panel panel-info">
+ <div class="panel-heading">
+    Over the 2010-2014 period, economic costs per composite flight-hour decreased by -5.4% p.a. in real terms, mainly due to the substantial decreases in unit ATFM delay costs (-23.4% p.a.). Over this period, ATM/CNS provision costs remained close to their 2010 level (-0.1% p.a.) while the number of composite flight-hours slightly increased (+1.0% p.a.).<br><br>
+    In 2015, composite flight-hours and ATM/CNS provision costs rose in similar proportions (+1.8% and +1.7%, respectively), resulting in fairly constant unit ATM/CNS provision costs (-0.1%). However, in the meantime, the unit costs of ATFM delays substantially rose by +38.7% leading to a +4.2% increase in unit economic costs compared to 2014. This is the first increase in unit economic costs since 2010.<br><br>
+    In 2015, the economic cost-effectiveness indicator at Pan-European level in 2015 amounts to €505 per composite flight-hour, and, on average, ATFM delays represent 15% of the total economic costs.
+ </div>
+</div>
+<div class="row placeholders">
+<div class="col-sm-12 placeholder">
+   <h4><a href='http://ansperformance.eu/references/definition/eco_cost_eff.html'>Economic gate-to-gate cost effectiveness (2015)</a></h4>
+   <div id="crt_eco3"></div>
+</div>
+</div>
+<div class="panel panel-info">
+ <div class="panel-heading">
+    In 2015 unit economic costs ranged from €865 for Skyguide to €199 for MATS; a factor of more than four.<br><br>
+    It is important to note that, for ANSPs operating outside of the Euro zone (such as Skyguide), substantial changes of the national currency against the Euro may significantly affect the level of 2015 unit economic costs when expressed in Euro. More information on exchange rates variations and their impact on unit costs is provided in the <a href='http://ansperformance.eu/references/acronym/ace.html'>ACE Benchmarking Reports</a>.
+ </div>
+</div>
+  </div>
+</div>
+<script type="text/javascript" src="/assets/active_sidebar-fde9bb040ba602639d22c6149d68b931e347c0471775c6e038f576b7ad133a09.js"></script>
+   <div id="footer">
+     <div class="container-fluid">
+       <p class="muted credit" style="text-align:center; margin-top:3em">
+	<small>
+		<span style="text-aligh:left">&copy; 2017 European Organisation for the Safety of Air Navigation (EUROCONTROL)</span> &nbsp; &mdash; &nbsp;
+		<a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a> &nbsp; &mdash; &nbsp;
+		<span style="text-aligh:right">Subscribe via
+		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="http://ansperformance.eu/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
+	</small>
+</p>
+     </div>
+   </div>
+ </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+<script type="text/javascript">
+ (function () {
+   'use strict';
+   anchors.options.placement = 'right';
+   // need to call `add` when DOM is loaded
+   // JQuery `ready` forces it if `add` is not called in a script
+   // after the end of 
+   // Note: you can avoid the call to `ready` if this file is included
+//   $( document ).ready(function() {
+     anchors.add();
+//   });
+ })();
+</script>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<title>En-route Vertical Flight Efficiency &#8211; PRU</title>
+<meta name="description" content="Performance Review Unit Metadata Definitions.">
+<meta name="keywords" content="">
+<link rel="canonical" href="http://ansperformance.eu/references/methodology/en-route_vertical_flight_efficiency_pi.html">
+<link rel="alternate" href="http://ansperformance.eu/feed.xml" type="application/atom+xml" title="PRU Feed">
+<link type="text/plain" rel="author" href="http://ansperformance.eu/humans.txt" />
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="/assets/table-0849d8a581c0b5a73867bb9a8fd2c759f4cd2abbe533a5423f7fd1ee6cadf2a2.css">
+<link type="text/css" rel="stylesheet" href="/assets/solarized-e69a0f19a8424b964f64b60a41d6cf9d3c62d127e5519a4dbe9ad596cf0c468f.css">
+<link type="text/css" rel="stylesheet" href="/assets/logo-3a7eb4382971c540181ccedc15fbfa406a3f5c98eed1f4dc401fb9e9c3be5dd0.css">
+<link type="text/css" rel="stylesheet" href="/assets/general-cee0fb6d19dfcaa28b3f1aa3a39d59c2055bc8f1c0959c611c50b5966edead70.css">
+<link rel="apple-touch-icon" sizes="57x57" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="60x60" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="72x72" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="76x76" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="114x114" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="120x120" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="144x144" href="http://ansperformance.eu">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="32x32">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="96x96">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="16x16">
+<link rel="manifest" href="http://ansperformance.eu">
+<link rel="mask-icon" href="http://ansperformance.eu" color="#5bbad5">
+<link rel="shortcut icon" href="http://ansperformance.eu">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="http://ansperformance.eu">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript" async>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-62697169-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  tex2jax:
+    {
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+      displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+      processEscapes: true
+    },
+  TeX:
+    {
+      equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"],
+      TagSide: "left",
+      Macros:
+        {
+          b: ['\\overline{#1}',1],
+          h: ['\\widehat{#1}',1],
+          til: ['\\widetilde{#1}',1],
+        bold: ['\\mathbf{#1}',1],
+          sans: ['\\mathsf{#1}',1],
+        vect: ['\\boldsymbol{\\mathbf{#1}}',1],
+        zeros: ['\\mathbf{0}'],
+        ones: ['\\mathbf{1}'],
+        complex: ['\\mathbf{C}'],
+        C: ['\\mathsf{c}'],
+        d: ['\\,d'],
+        expect: ['\\mathbf{E}'],
+        emf: ['\\mathscr{E}'],
+        ft: ['\\mathcal{F}'],
+        Lagrange: ['\\mathscr{L}'],
+        naturals: ['\\mathbf{N}'],
+        normal: ['\\mathcal{N}'],
+        prob: ['\\mathbf{P}'],
+        pset: ['\\mathcal{P}'],
+        rationals: ['\\mathbf{Q}'],
+        reals: ['\\mathbf{R}'],
+        ereals: ['\\overline{\\mathbf{R}}'],
+        risk: ['\\mathcal{R}'],
+        integers: ['\\mathbf{Z}'],
+        symdiff: ['\\,\\Delta\\,'],
+        grad: ['\\nabla'],
+        emptyset: ['\\varnothing'],
+        ortho: ['{\\bot}'],
+        deq: [':='],
+        given: ['\\mid'],
+        midgiven: ['\\;\\middle\\vert\\;'],
+        set: ['\\{\\, #1 \\,\\}', 1],
+        inner: ['\\langle#1,#2\\rangle', 2],
+        ave: ['\\langle #1 \\rangle', 1],
+        innerlr: ['\\left\\langle#1,#2\\right\\rangle', 2],
+        avelr: ['\\left\\langle#1\\right\\rangle', 1],
+        T: ['\\top'],
+        abs: ['\\lvert#1\\rvert', 1],
+        abslr:['\\left\\lvert#1\\right\\rvert', 1],
+        norm: ['\\lVert#1\\rVert', 1],
+        normlr: ['\\left\\lVert#1\\right\\rVert', 1],
+        zeronorm: ['\\norm{#1}_0', 1],
+        zeronormlr: ['\\normlr{#1}_0', 1],
+        onenorm: ['\\norm{#1}_1', 1],
+        onenormlr: ['\\normlr{#1}_1', 1],
+        twonorm: ['\\norm{#1}_2', 1],
+        twonormlr: ['\\normlr{#1}_2', 1],
+        inftynorm: ['\\norm{#1}_\\infty', 1],
+        inftynormlr: ['\\normlr{#1}_\\infty', 1],
+        pnorm: ['\\norm{#1}_p', 1],
+        pnormlr: ['\\normlr{#1}_p', 1],
+        Frobnorm: ['\\norm{#1}_\\mathrm{F}', 1],
+        Frobnormlr: ['\\normlr{#1}_\\mathrm{F}', 1],
+        maxnorm: ['\\norm{#1}_\\mathrm{max}', 1],
+        maxnormlr:  ['\\normlr{#1}_\\mathrm{max}', 1],
+        tvnorm: ['\\norm{#1}_\\mathrm{TV}', 1],
+        tvnormlr: ['\\normlr{#1}_\\mathrm{TV}', 1],
+        ind: ['\\mathbf{I}_{\\{ #1 \\} }', 1],
+        pind: ['\\mathbf{I}(#1)', 1],
+        argmin: ['\\mathop{\\mathrm{arg\\,min}}'],
+        argmax: ['\\mathop{\\mathrm{arg}\\,\\max}'],
+        bdiag: ['\\mathop{\\mathrm{bdiag}}'],
+        bd: ['\\mathop{\\mathrm{bd}}'],
+        comb: ['\\mathop{\\mathrm{comb}}'],
+        codom: ['\\mathop{\\mathrm{codim}}'],
+        diag: ['\\mathop{\\mathrm{diag}}'],
+        dom: ['\\mathop{\\mathrm{dom}}'],
+        epi: ['\\mathop{\\mathrm{epi}}'],
+        hard: ['\\mathop{\\mathrm{hard}}'],
+        interior: ['\\mathop{\\mathrm{int}}'],
+        MSE: ['\\mathop{\\mathrm{MSE}}'],
+        modop: ['\\mathop{\\mathrm{mod}}'],
+        minimize: ['\\mathop{\\mathrm{minimize}}'],
+        maximize: ['\\mathop{\\mathrm{maximize}}'],
+        midop: ['\\mathop{\\mathrm{mid}}'],
+        nint: ['\\mathop{\\mathrm{nint}}'],
+        pen: ['\\mathop{\\mathrm{pen}}'],
+        Poisson: ['\\mathop{\\mathrm{Poisson}}'],
+        rect: ['\\mathop{\\mathrm{rect}}'],
+        RMSE: ['\\mathop{\\mathrm{RMSE}}'],
+        range: ['\\mathop{\\mathrm{range}}'],
+        relint: ['\\mathop{\\mathrm{relint}}'],
+        rank: ['\\mathop{\\mathrm{rank}}'],
+        st: ['\\mathop{\\mathrm{subject\\ to}}'],
+        sinc: ['\\mathop{\\mathrm{sinc}}'],
+        sign: ['\\mathop{\\mathrm{sign}}'],
+        sgn: ['\\mathop{\\mathrm{sgn}}'],
+        soft: ['\\mathop{\\mathrm{soft}}'],
+        skewop: ['\\mathop{\\mathrm{skewop}}'],
+        symop: ['\\mathop{\\mathrm{symop}}'],
+        SNR: ['\\mathop{\\mathrm{SNR}}'],
+        spanop: ['\\mathop{\\mathrm{span}}'],
+        tr: ['\\mathop{\\mathrm{tr}}'],
+        var: ['\\mathop{\\mathrm{var}}'],
+        MinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        MaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        ArgMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4],
+        ArgMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4]
+        }
+    },
+  "HTML-CSS": { availableFonts: ["TeX"] }
+});
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<title>En-route Vertical Flight Efficiency - PRU</title>
+<meta property="og:title" content="En-route Vertical Flight Efficiency" />
+<meta name="description" content="Performance Review Unit Metadata Definitions." />
+<meta property="og:description" content="Performance Review Unit Metadata Definitions." />
+<link rel="canonical" href="http://ansperformance.eu/references/methodology/en-route_vertical_flight_efficiency_pi.html" />
+<meta property="og:url" content="http://ansperformance.eu/references/methodology/en-route_vertical_flight_efficiency_pi.html" />
+<meta property="og:site_name" content="PRU" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "En-route Vertical Flight Efficiency",
+"description": "Performance Review Unit Metadata Definitions.",
+"url": "http://ansperformance.eu/references/methodology/en-route_vertical_flight_efficiency_pi.html"}</script>
+</head>
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+ <nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container-fluid">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <div class="navbar-brand">
+          <a href="http://ansperformance.eu/">
+          <img src="/assets/ec-logo-brand-a37c88531431fd766c40b47e165665c6d9acb0fa97469728f7cc6d0b2260ee74.png" alt=PRU width="41" height="36" alt="ec-logo-brand.png">
+         <div id="logo"></div>
+        </a>
+     </div>
+   </div>
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav">
+         <li class="">
+            <a href="http://ansperformance.eu/prcq/"
+            style="background-color: #4F81BD; color: #fff;">PRC Quarterly</a></li>
+         </li>
+         <li class=""><a href="http://ansperformance.eu/posts/">News</a></li>
+         <li class="dropdown">
+              <a href="http://ansperformance.eu/graphs/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Graphs <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
+             </ul>
+         </li>
+         <li class="">
+            <a href="http://ansperformance.eu/data/performancearea">Data</a></li>
+         </li>
+         <li class="">
+          <a href="http://ansperformance.eu/studies/">Studies</a></li>
+     </ul>
+     <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+              <a href="http://ansperformance.eu/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/references/dataset/">Datasets</a></li>
+                 <li><a href="http://ansperformance.eu/references/acronym/">Acronyms</a></li>
+                 <li><a href="http://ansperformance.eu/references/definition/">Definitions</a></li>
+                 <li><a href="http://ansperformance.eu/references/ANSP/">ANSP's</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/references/methodology/">Methodology</a></li>
+                  <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
+             </ul>
+         </li>
+       <li>
+          <form class="navbar-form" method="get" action="https://duckduckgo.com/">
+              <input type="hidden" name="sites" value="ansperformance.eu"/>
+            <input type="hidden" name="ka" value="h"/>
+            <input type="hidden" name="k7" value="#fafafa"/>
+            <input type="hidden" name="kj" value="#2e86c6"/>
+            <input type="hidden" name="ky" value="#fafafa"/>
+            <input type="hidden" name="kx" value="b"/>
+            <input type="hidden" name="kt" value="Helvetica"/>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search this site" name="q" id="srch-term">
+             <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+             </div>
+           </div>
+          </form>
+       </li>
+       <li class="dropdown">
+          <a href="http://ansperformance.eu/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="http://ansperformance.eu/about/">About us</a></li>
+           <li><a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a></li>
+         </ul>
+       </li>
+     </ul>
+   </div>
+ </div>
+</nav>
+<script type="text/javascript" src="/assets/active_navbar-9f8f305cd6a7229e8509add5dcd499b32ce04c40d52960d04df2a95ddbe3bc4c.js"></script>
+<script type="text/javascript" src="/assets/logo-5bdc490fc2a2183978f842b9cbd4f994c3b0799cbf6785968916fdd6b514b05a.js"></script>
+ <div class="container main">
+   <h1 id="en-route-vertical-flight-efficiency">En-route Vertical Flight Efficiency</h1>
+<p>This document provides a technical description on the methodology used in the analysis of the
+vertical profile of the aircraft’s trajectory during the en-route phase of flight. The objective of
+the methodology is to measure and observe vertical flight efficiency without highlighting specific
+reasons for the observed behaviour. More detailed case studies are needed to find out reasons for
+particular observations.</p>
+<h2 id="acronyms-and-terminology">Acronyms and terminology</h2>
+<table>
+<thead>
+   <tr>
+     <th>Term</th>
+     <th>Definition</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td><a href="http://ansperformance.eu/references/acronym/ftfm.html" title="FTFM">FTFM</a></td>
+     <td>Trajectory information based on the last filed flight plan</td>
+   </tr>
+   <tr>
+     <td><a href="http://ansperformance.eu/references/acronym/gcd.html" title="GCD">GCD</a></td>
+     <td>Great Circle Distance</td>
+   </tr>
+   <tr>
+     <td><a href="http://ansperformance.eu/references/acronym/prisme.html" title="PRISME">PRISME</a></td>
+     <td>Pan-European Repository of Information Supporting the Management of EATM</td>
+   </tr>
+   <tr>
+     <td><a href="http://ansperformance.eu/references/acronym/rad.html" title="RAD">RAD</a></td>
+     <td>Route Availability Document</td>
+   </tr>
+   <tr>
+     <td>VFI</td>
+     <td>Vertical Flight Inefficiency</td>
+   </tr>
+ </tbody>
+</table>
+<p class="table-caption">Table 1: Acronyms and terminology</p>
+<h2 id="methodology">Methodology</h2>
+<h3 id="approach-and-assumptions">Approach and assumptions</h3>
+<p>The general approach of the analysis is to compare the maximum altitudes in the flight plans of
+flights between a specific airport pair with the maximum altitudes of flights between similar
+airport pairs, hereafter called reference flights. Reference flights are flights between
+unconstrained (in terms of RAD restrictions) airport pairs which have a great circle distance close
+to the one of the examined airport pair.</p>
+<p>Since the aircraft type has a significant influence on the nominal cruising altitude, the analysis
+is done using specific aircraft types with similar performance (e.g. only jet aircraft, turboprop
+aircraft …) Currently only Airbus and Boeing aircraft are considered since they account for the
+biggest portion of scheduled commercial flights.</p>
+<p>The use of the maximum altitude in the flight plan leads to an underestimation of the vertical
+flight inefficiency because there can be lower cruise segments before or after the moment the
+maximum altitude is reached. These cruise segments can be even more inefficient since the fuel
+consumption at lower altitudes is in general higher.</p>
+<p>To account for statistical uncertainty, the lowest and highest 10 percent of the flights (when
+sorted according to their maximum altitudes) are excluded.</p>
+<h3 id="general-overview">General overview</h3>
+<p>The analysis is done in 4 major steps. First, the necessary data are extracted from the data source.
+Then the reference distributions are calculated such that they can be used for all the airport pairs
+under investigation. For each considered airport pair, the maximum altitudes in the flight plan are
+processed in order to be compared with the reference. In the last step the different metrics are
+calculated. The process is visualised in Figure 1.</p>
+<figure class="img-responsive center-block">
+  <img src="/assets/vfe-er-figure-001-1dfe22be340f4c9d208d3aa2b256edbe75758489d5be64dc174bbc916154ceb5.png" alt="Different stesp of the analysis" width="800" height="109" />
+ <figcaption>Figure 1: Different steps of the analysis</figcaption>
+</figure>
+<p>The following paragraphs explain these steps in further detail.</p>
+<h3 id="loading-of-the-trajectories-information">Loading of the trajectories information</h3>
+<p>The data used for the analysis are downloaded from the PRISME database. FTFM data is used in order
+to assess the maximum altitudes in the flight plans. The most important data fields for the analysis
+are the altitude and time information.</p>
+<h3 id="definition-of-the-reference-distribution">Definition of the reference distribution</h3>
+<p>Reference airport pairs are airport pairs with a great circle distance (GCD) close to the great
+circle distance of the considered airport pair and which have no constraints in the RAD.</p>
+<p>Reference distributions are calculated for buckets of GCD ranges, e.g. a reference is calculated for
+all airport pairs in the GCD ranges [0,10) NM, [10,20) NM, etc. This approach reduces the
+calculation time significantly since only one calculation is needed and the reference for a specific
+airport pair will be the one of the corresponding bucket.</p>
+<p>The reference distribution is created using a large number of flights with no specific filtering
+except for the aircraft type. This is done in order to get a reference distribution irrespective of
+factors such as aircraft weights, weather phenomena, company policies…</p>
+<p>The reference is based on the assumption that flights between airport pairs with similar GCDs,
+performed with a similar aircraft type, would file for similar maximum altitudes. The
+differentiating factor between the two sets of flights can be the presence of RAD constraints,
+scenarios, airline policy, mistakes in the flight planning system, etc., and if the distribution of
+the maximum altitudes of flights on the chosen airport pair doesn’t follow the reference
+distribution, this could be an indication of inefficiency.</p>
+<h3 id="distribution-of-the-maximum-altitudes">Distribution of the maximum altitudes</h3>
+<p>As is done for the reference, the distribution of the maximum altitudes flown on the considered
+airport pair is determined. Having the distributions of the reference and the considered flow on the
+airport pair allows for plotting a diagram as in the Figure 2.</p>
+<p>Figure 2 shows the histograms of the maximum filed altitudes both for the reference flights and the
+flights on the chosen airport pair. The numbers on the right of the bars indicate the number of
+flights while the length of the bar indicates the percentage of flights. E.g. the large blue bar at
+FL350 represents 260 flights, being 76.2% of the total number of flights on the chosen airport pair.
+The sum of the percentages corresponding to the lengths of the bars is 100% both for the blue and
+for the red bars. As can be seen from the values of the number of flights, there are a lot more
+flights in the reference distribution which makes it a stable reference.</p>
+<figure class="img-responsive center-block">
+  <img src="/assets/vfe-er-figure-002-a51b590b49fd9f6ee9dd5b24ef0259a0577889e0059c8b650524b15f3be051bd.png" alt="Example distribution of maximum altitudes" width="900" height="540" />
+ <figcaption>Figure 2: Example distribution of maximum altitudes</figcaption>
+</figure>
+<p>The data in Figure 2 above can be represented differently, using percentiles as shown in Figure 3.
+To obtain this, the percentages from Figure 2 are simply put successively. E.g. the percentages of
+the chosen airport pair (blue bars: 2.6% at FL310, 21.1% at FL330 and 76.2% at FL350) are plotted at
+their respective altitudes to get the blue line in Figure 3. The same is done for the reference.</p>
+<p>The example represents an airport pair on which, in general, flights are filing higher than the
+reference. There are however some percentiles where reference flights are filing higher than the
+flights on the considered airport pair. Only this part is used in the calculation of vertical flight
+inefficiency (VFI) in order to flag only the inefficiencies. The red shaded area in Figure 3
+indicates the VFI. The dark grey areas on the left and right highlight the percentiles that are
+excluded to account for statistical uncertainty as mentioned before.</p>
+<figure class="img-responsive center-block">
+  <img src="/assets/vfe-er-figure-003-a51b590b49fd9f6ee9dd5b24ef0259a0577889e0059c8b650524b15f3be051bd.png" width="900" height="540" alt="vfe-er-figure-003-a51b590b49fd9f6ee9dd5b24ef0259a0577889e0059c8b650524b15f3be051bd.png" />
+ <figcaption>Figure 3: Example distribution of maximum altitudes</figcaption>
+</figure>
+<h3 id="calculation-of-the-metrics">Calculation of the metrics</h3>
+<p>The VFI is calculated using the percentiles as shown in Figure 3. For each percentile range, the
+altitude value of the airport pair is subtracted from the reference value. When the airport pair
+value is higher than the reference value, the result of the subtraction is negative. This might
+appear as if the flights are more efficient than the reference flights. Nevertheless, the focus is
+put on finding the inefficiencies so negative values are set to 0.</p>
+<p>The result of the percentile range is then multiplied by the number of flights corresponding to the
+percentile range (e.g. if the width of the percentile range is 1%, the number of flights
+corresponding to the percentile range is 1% of the total number of flights on the airport pair).</p>
+<p>Summing up over all percentile ranges gives the total vertical flight inefficiency. The vertical
+flight inefficiency per flight value is then calculated by dividing the total vertical flight
+inefficiency by the number of flights on the considered airport pair (the number of flights for this
+calculation step is 80% of the total number of flights on the airport pair since the lowest 10% and
+highest 10% of the flights are not used).</p>
+<p>Table 3 summarises the formulas used for the calculation of the VFI metrics.</p>
+<table>
+<thead>
+   <tr>
+     <th>Result</th>
+     <th>Formula</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>Total vertical flight inefficiency (Total VFI)</td>
+     <td>\[ VFI_{\mathrm{tot}} = \sum_{i} \max(L_{\mathrm{ref}, i} - L_{\mathrm{act}, i}, 0) \cdot n_{\mathrm{act}, i} \]</td>
+   </tr>
+   <tr>
+     <td>Vertical flight inefficiency per flight (VFI per flight)</td>
+     <td>\[\frac{VFI_{\mathrm{tot}} }{\sum_{i} n_{\textrm{act}, i}}\]</td>
+   </tr>
+ </tbody>
+</table>
+<p class="table-caption">Table 3: Formulas used for the calculation of the results</p>
+<p>With:</p>
+<table>
+ <tbody>
+   <tr>
+     <td>$i$</td>
+     <td>Percentile range</td>
+   </tr>
+   <tr>
+     <td>$L_{ {ref}, i}$</td>
+     <td>Flight level of the $i^{th}$ percentile range over all reference flights in the GCD bucket around the GCD of the considered airport pair.</td>
+   </tr>
+   <tr>
+     <td>$L_{ {act}, i}$</td>
+     <td>Flight level of the $i^{th}$ percentile range over all flights on the considered airport pair.</td>
+   </tr>
+   <tr>
+     <td>$n_{ {act}, i}$</td>
+     <td>Number of flights on the considered airport pair in the percentile range.</td>
+   </tr>
+ </tbody>
+</table>
+   <div id="footer">
+     <div class="container-fluid">
+       <p class="muted credit" style="text-align:center; margin-top:3em">
+	<small>
+		<span style="text-aligh:left">&copy; 2017 European Organisation for the Safety of Air Navigation (EUROCONTROL)</span> &nbsp; &mdash; &nbsp;
+		<a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a> &nbsp; &mdash; &nbsp;
+		<span style="text-aligh:right">Subscribe via
+		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="http://ansperformance.eu/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
+	</small>
+</p>
+     </div>
+   </div>
+ </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+<script type="text/javascript">
+ (function () {
+   'use strict';
+   anchors.options.placement = 'right';
+   // need to call `add` when DOM is loaded
+   // JQuery `ready` forces it if `add` is not called in a script
+   // after the end of 
+   // Note: you can avoid the call to `ready` if this file is included
+//   $( document ).ready(function() {
+     anchors.add();
+//   });
+ })();
+</script>
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<title>Vertical Flight Efficiency during Climb and Descent &#8211; PRU</title>
+<meta name="description" content="Performance Review Unit Metadata Definitions.">
+<meta name="keywords" content="">
+<link rel="canonical" href="http://ansperformance.eu/references/methodology/cd_vertical_flight_efficiency_pi.html">
+<link rel="alternate" href="http://ansperformance.eu/feed.xml" type="application/atom+xml" title="PRU Feed">
+<link type="text/plain" rel="author" href="http://ansperformance.eu/humans.txt" />
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="/assets/table-0849d8a581c0b5a73867bb9a8fd2c759f4cd2abbe533a5423f7fd1ee6cadf2a2.css">
+<link type="text/css" rel="stylesheet" href="/assets/solarized-e69a0f19a8424b964f64b60a41d6cf9d3c62d127e5519a4dbe9ad596cf0c468f.css">
+<link type="text/css" rel="stylesheet" href="/assets/logo-3a7eb4382971c540181ccedc15fbfa406a3f5c98eed1f4dc401fb9e9c3be5dd0.css">
+<link type="text/css" rel="stylesheet" href="/assets/general-cee0fb6d19dfcaa28b3f1aa3a39d59c2055bc8f1c0959c611c50b5966edead70.css">
+<link rel="apple-touch-icon" sizes="57x57" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="60x60" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="72x72" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="76x76" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="114x114" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="120x120" href="http://ansperformance.eu">
+<link rel="apple-touch-icon" sizes="144x144" href="http://ansperformance.eu">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="32x32">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="96x96">
+<link rel="icon" type="image/png" href="http://ansperformance.eu" sizes="16x16">
+<link rel="manifest" href="http://ansperformance.eu">
+<link rel="mask-icon" href="http://ansperformance.eu" color="#5bbad5">
+<link rel="shortcut icon" href="http://ansperformance.eu">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="http://ansperformance.eu">
+<meta name="theme-color" content="#ffffff">
+<script type="text/javascript" async>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-62697169-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  tex2jax:
+    {
+      inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+      displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+      processEscapes: true
+    },
+  TeX:
+    {
+      equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"],
+      TagSide: "left",
+      Macros:
+        {
+          b: ['\\overline{#1}',1],
+          h: ['\\widehat{#1}',1],
+          til: ['\\widetilde{#1}',1],
+        bold: ['\\mathbf{#1}',1],
+          sans: ['\\mathsf{#1}',1],
+        vect: ['\\boldsymbol{\\mathbf{#1}}',1],
+        zeros: ['\\mathbf{0}'],
+        ones: ['\\mathbf{1}'],
+        complex: ['\\mathbf{C}'],
+        C: ['\\mathsf{c}'],
+        d: ['\\,d'],
+        expect: ['\\mathbf{E}'],
+        emf: ['\\mathscr{E}'],
+        ft: ['\\mathcal{F}'],
+        Lagrange: ['\\mathscr{L}'],
+        naturals: ['\\mathbf{N}'],
+        normal: ['\\mathcal{N}'],
+        prob: ['\\mathbf{P}'],
+        pset: ['\\mathcal{P}'],
+        rationals: ['\\mathbf{Q}'],
+        reals: ['\\mathbf{R}'],
+        ereals: ['\\overline{\\mathbf{R}}'],
+        risk: ['\\mathcal{R}'],
+        integers: ['\\mathbf{Z}'],
+        symdiff: ['\\,\\Delta\\,'],
+        grad: ['\\nabla'],
+        emptyset: ['\\varnothing'],
+        ortho: ['{\\bot}'],
+        deq: [':='],
+        given: ['\\mid'],
+        midgiven: ['\\;\\middle\\vert\\;'],
+        set: ['\\{\\, #1 \\,\\}', 1],
+        inner: ['\\langle#1,#2\\rangle', 2],
+        ave: ['\\langle #1 \\rangle', 1],
+        innerlr: ['\\left\\langle#1,#2\\right\\rangle', 2],
+        avelr: ['\\left\\langle#1\\right\\rangle', 1],
+        T: ['\\top'],
+        abs: ['\\lvert#1\\rvert', 1],
+        abslr:['\\left\\lvert#1\\right\\rvert', 1],
+        norm: ['\\lVert#1\\rVert', 1],
+        normlr: ['\\left\\lVert#1\\right\\rVert', 1],
+        zeronorm: ['\\norm{#1}_0', 1],
+        zeronormlr: ['\\normlr{#1}_0', 1],
+        onenorm: ['\\norm{#1}_1', 1],
+        onenormlr: ['\\normlr{#1}_1', 1],
+        twonorm: ['\\norm{#1}_2', 1],
+        twonormlr: ['\\normlr{#1}_2', 1],
+        inftynorm: ['\\norm{#1}_\\infty', 1],
+        inftynormlr: ['\\normlr{#1}_\\infty', 1],
+        pnorm: ['\\norm{#1}_p', 1],
+        pnormlr: ['\\normlr{#1}_p', 1],
+        Frobnorm: ['\\norm{#1}_\\mathrm{F}', 1],
+        Frobnormlr: ['\\normlr{#1}_\\mathrm{F}', 1],
+        maxnorm: ['\\norm{#1}_\\mathrm{max}', 1],
+        maxnormlr:  ['\\normlr{#1}_\\mathrm{max}', 1],
+        tvnorm: ['\\norm{#1}_\\mathrm{TV}', 1],
+        tvnormlr: ['\\normlr{#1}_\\mathrm{TV}', 1],
+        ind: ['\\mathbf{I}_{\\{ #1 \\} }', 1],
+        pind: ['\\mathbf{I}(#1)', 1],
+        argmin: ['\\mathop{\\mathrm{arg\\,min}}'],
+        argmax: ['\\mathop{\\mathrm{arg}\\,\\max}'],
+        bdiag: ['\\mathop{\\mathrm{bdiag}}'],
+        bd: ['\\mathop{\\mathrm{bd}}'],
+        comb: ['\\mathop{\\mathrm{comb}}'],
+        codom: ['\\mathop{\\mathrm{codim}}'],
+        diag: ['\\mathop{\\mathrm{diag}}'],
+        dom: ['\\mathop{\\mathrm{dom}}'],
+        epi: ['\\mathop{\\mathrm{epi}}'],
+        hard: ['\\mathop{\\mathrm{hard}}'],
+        interior: ['\\mathop{\\mathrm{int}}'],
+        MSE: ['\\mathop{\\mathrm{MSE}}'],
+        modop: ['\\mathop{\\mathrm{mod}}'],
+        minimize: ['\\mathop{\\mathrm{minimize}}'],
+        maximize: ['\\mathop{\\mathrm{maximize}}'],
+        midop: ['\\mathop{\\mathrm{mid}}'],
+        nint: ['\\mathop{\\mathrm{nint}}'],
+        pen: ['\\mathop{\\mathrm{pen}}'],
+        Poisson: ['\\mathop{\\mathrm{Poisson}}'],
+        rect: ['\\mathop{\\mathrm{rect}}'],
+        RMSE: ['\\mathop{\\mathrm{RMSE}}'],
+        range: ['\\mathop{\\mathrm{range}}'],
+        relint: ['\\mathop{\\mathrm{relint}}'],
+        rank: ['\\mathop{\\mathrm{rank}}'],
+        st: ['\\mathop{\\mathrm{subject\\ to}}'],
+        sinc: ['\\mathop{\\mathrm{sinc}}'],
+        sign: ['\\mathop{\\mathrm{sign}}'],
+        sgn: ['\\mathop{\\mathrm{sgn}}'],
+        soft: ['\\mathop{\\mathrm{soft}}'],
+        skewop: ['\\mathop{\\mathrm{skewop}}'],
+        symop: ['\\mathop{\\mathrm{symop}}'],
+        SNR: ['\\mathop{\\mathrm{SNR}}'],
+        spanop: ['\\mathop{\\mathrm{span}}'],
+        tr: ['\\mathop{\\mathrm{tr}}'],
+        var: ['\\mathop{\\mathrm{var}}'],
+        MinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMinProb: ['\\begin{aligned}' +
+          '&\\minimize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        MaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & {#2}' +
+          '\\end{aligned}', 2],
+        ConMaxProb: ['\\begin{aligned}' +
+          '&\\maximize_{#1} & & #2 \\\\' +
+          '&\\st & & #3' +
+          '\\end{aligned}', 3],
+        ArgMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMinProb: ['\\begin{aligned}' +
+          '#1 = &\\argmin_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4],
+        ArgMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3}' +
+          '\\end{aligned}', 3],
+        ArgConMaxProb: ['\\begin{aligned}' +
+          '#1 = &\\argmax_{#2} & & {#3} \\\\' +
+          '&\\st & & #4' +
+          '\\end{aligned}', 4]
+        }
+    },
+  "HTML-CSS": { availableFonts: ["TeX"] }
+});
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<title>Vertical Flight Efficiency during Climb and Descent - PRU</title>
+<meta property="og:title" content="Vertical Flight Efficiency during Climb and Descent" />
+<meta name="description" content="Performance Review Unit Metadata Definitions." />
+<meta property="og:description" content="Performance Review Unit Metadata Definitions." />
+<link rel="canonical" href="http://ansperformance.eu/references/methodology/cd_vertical_flight_efficiency_pi.html" />
+<meta property="og:url" content="http://ansperformance.eu/references/methodology/cd_vertical_flight_efficiency_pi.html" />
+<meta property="og:site_name" content="PRU" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Vertical Flight Efficiency during Climb and Descent",
+"description": "Performance Review Unit Metadata Definitions.",
+"url": "http://ansperformance.eu/references/methodology/cd_vertical_flight_efficiency_pi.html"}</script>
+</head>
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+ <nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container-fluid">
+   <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <div class="navbar-brand">
+          <a href="http://ansperformance.eu/">
+          <img src="/assets/ec-logo-brand-a37c88531431fd766c40b47e165665c6d9acb0fa97469728f7cc6d0b2260ee74.png" alt=PRU width="41" height="36" alt="ec-logo-brand.png">
+         <div id="logo"></div>
+        </a>
+     </div>
+   </div>
+   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav">
+         <li class="">
+            <a href="http://ansperformance.eu/prcq/"
+            style="background-color: #4F81BD; color: #fff;">PRC Quarterly</a></li>
+         </li>
+         <li class=""><a href="http://ansperformance.eu/posts/">News</a></li>
+         <li class="dropdown">
+              <a href="http://ansperformance.eu/graphs/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Graphs <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
+                 <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
+             </ul>
+         </li>
+         <li class="">
+            <a href="http://ansperformance.eu/data/performancearea">Data</a></li>
+         </li>
+         <li class="">
+          <a href="http://ansperformance.eu/studies/">Studies</a></li>
+     </ul>
+     <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+              <a href="http://ansperformance.eu/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="http://ansperformance.eu/references/dataset/">Datasets</a></li>
+                 <li><a href="http://ansperformance.eu/references/acronym/">Acronyms</a></li>
+                 <li><a href="http://ansperformance.eu/references/definition/">Definitions</a></li>
+                 <li><a href="http://ansperformance.eu/references/ANSP/">ANSP's</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/references/methodology/">Methodology</a></li>
+                  <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
+             </ul>
+         </li>
+       <li>
+          <form class="navbar-form" method="get" action="https://duckduckgo.com/">
+              <input type="hidden" name="sites" value="ansperformance.eu"/>
+            <input type="hidden" name="ka" value="h"/>
+            <input type="hidden" name="k7" value="#fafafa"/>
+            <input type="hidden" name="kj" value="#2e86c6"/>
+            <input type="hidden" name="ky" value="#fafafa"/>
+            <input type="hidden" name="kx" value="b"/>
+            <input type="hidden" name="kt" value="Helvetica"/>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search this site" name="q" id="srch-term">
+             <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+             </div>
+           </div>
+          </form>
+       </li>
+       <li class="dropdown">
+          <a href="http://ansperformance.eu/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="http://ansperformance.eu/about/">About us</a></li>
+           <li><a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a></li>
+         </ul>
+       </li>
+     </ul>
+   </div>
+ </div>
+</nav>
+<script type="text/javascript" src="/assets/active_navbar-9f8f305cd6a7229e8509add5dcd499b32ce04c40d52960d04df2a95ddbe3bc4c.js"></script>
+<script type="text/javascript" src="/assets/logo-5bdc490fc2a2183978f842b9cbd4f994c3b0799cbf6785968916fdd6b514b05a.js"></script>
+ <div class="container main">
+   <h1 id="vertical-flight-efficiency-during-climb-and-descent">Vertical Flight Efficiency during Climb and Descent</h1>
+<p>This document provides a technical description on the methodology used in the analysis of the
+vertical profile of the aircraft’s trajectory during climb and descent phases of flights.
+The objective of the methodology is to measure and observe vertical flight efficiency without
+highlighting specific reasons for the observed behaviour. More detailed case studies are needed
+to find out reasons for particular observations.</p>
+<h2 id="acronyms-and-terminology">Acronyms and terminology</h2>
+<table>
+<thead>
+   <tr>
+     <th>Term</th>
+     <th>Definition</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td><a href="http://ansperformance.eu/references/acronym/cpf.html" title="CPF">CPF</a></td>
+     <td>Correlated Position reports for a Flight</td>
+   </tr>
+   <tr>
+     <td><a href="http://ansperformance.eu/references/acronym/prisme.html" title="PRISME">PRISME</a></td>
+     <td>Pan-European Repository of Information Supporting the Management of EATM</td>
+   </tr>
+ </tbody>
+</table>
+<p class="table-caption">Table 1: Acronyms and terminology</p>
+<h2 id="methodology">Methodology</h2>
+<p>The main assumption for the analysis of vertical flight efficiency during climb
+and descent is that, all other factors being equal, level flight is considered
+as inefficient.
+The methodology presented here is very similar for the climb and descent phases
+so the results for the climb and descent phases are directly comparable.</p>
+<h3 id="general-overview">General overview</h3>
+<p>The analysis is performed in 5 major steps. First, the trajectory data has to
+be loaded into the analysis software.
+Then the climb or descent part is identified in these trajectories.
+In these parts of the trajectories the level segments are detected and saved
+and additional filters are applied.
+The next step is the determination of the Top of Climb or Top of Descent.
+Finally, the results are calculated and processed for presentation.
+This process is visualised in Figure 1.</p>
+<figure class="img-responsive center-block">
+  <img src="/assets/vfe-cd-figure-001-1dfe22be340f4c9d208d3aa2b256edbe75758489d5be64dc174bbc916154ceb5.png" alt="Different stesp of the analysis" width="800" height="80" />
+ <figcaption>Figure 1: Different steps of the analysis</figcaption>
+</figure>
+<h3 id="loading-of-the-trajectories-information">Loading of the trajectories information</h3>
+<p>The data used for the analysis are downloaded from the PRISME database.
+<a href="http://ansperformance.eu/references/acronym/cpf.html" title="CPF">CPF</a> data is used in order to assess the actually flown trajectories.</p>
+<p>The most important data fields that are of interest for the analysis are
+the altitude, position (latitude and longitude) and time information.</p>
+<h3 id="identification-of-the-climb-or-descent-part-of-the-flight">Identification of the climb or descent part of the flight</h3>
+<p>For each flight, the climb part is defined as the part of the trajectory before
+the Top of Climb (ToC) and the descent part as the part of the trajectory after
+the Top of Descent (ToD).</p>
+<p>Optimal climb and descent parts until/from the cruising altitude generally
+require less than 200NM of track distance from/until the airport, especially
+when the cost index is low or high for respectively the climb and
+descent <a href="#airbus-cost-index">(Airbus 1998)</a>,
+<a href="#sam-thesis">(Peeters 2013)</a>.
+With this in mind, the analysis is limited to the parts of the trajectories
+within a 200NM radius around the departure/arrival airport.
+This is to avoid including into the analysis climbs during the cruise phase
+which are used to optimise the flight altitude to account for the reducing
+weight of the aircraft.</p>
+<p>The identification method of the climb or descent part corresponds strongly
+to the method proposed by the CCO/CDO Task Force and is further detailed below.
+It should be noted that the CCO/CDO Task Force uses a 300NM radius for the
+climbs instead of 200NM as used in this analysis.
+The reasons for choosing a 200NM radius for the climb are threefold:</p>
+<ul>
+ <li>
+   <p>Having the same radius for both the climb and descent analysis enables a
+direct comparison between the climb and descent results; and</p>
+ </li>
+ <li>
+   <p>Examination of aircraft trajectories showed that when a radius of 300NM is
+used, a lot of level flight at slightly lower altitudes than the cruising
+altitude is detected as inefficient, while this could be a consequence of
+the optimisation of the cruising altitude with respect to the aircraft’s
+weight. This type of level flight should not be seen as being inefficient
+and can influence the final results significantly in such a way that the
+results are not representative; and</p>
+ </li>
+ <li>
+   <p>300NM was chosen by the CCO/CDO Task Force because some very heavy aircraft
+could not be able to reach the cruising altitude within a 200NM radius.
+Nevertheless, it is preferred to have a stable methodology that suits best
+the behaviour of most of the flights and provides statistically correct
+results and analyses.</p>
+ </li>
+</ul>
+<h3 id="identification-of-the-climb-part-of-a-flight">Identification of the climb part of a flight</h3>
+<p>For each flight, the 4D point where the flight crosses the 200NM radius around
+the departure airport (for the first time) is determined. This point is defined
+as D200. Within the part of the trajectory from take-off until D200 included,
+the first 4D point at which the aircraft reaches the highest altitude is
+defined as the ToC-D200.
+If the aircraft is still climbing when passing the 200NM radius, D200 and
+ToC-D200 are the same.</p>
+<p>The climb phase is considered to start at 3000 feet AGL since the Noise
+Abatement Departure Procedures (NADP) defined by ICAO end at this altitude
+<a href="#icao:8168">(ICAO 2006)</a>.</p>
+<p>Overall, the part of the trajectory considered for the analysis goes from 3000
+feet AGL (included) until ToC-D200.</p>
+<p>The CCO/CDO Task Force uses 2500 feet as lower limit which is chosen in
+relation to the availability of trajectory data.</p>
+<h3 id="identification-of-the-descent-part-of-a-flight">Identification of the descent part of a flight</h3>
+<p>For each flight, the 4D point where the flight crosses the 200NM radius around
+the destination airport (for the last time) is determined.
+This point is defined as A200. Within the part of the trajectory from A200
+included until touchdown, the last 4D point at which the aircraft leaves
+the highest altitude is defined as the ToD-A200.</p>
+<p>The descent phase is considered to end at 1800 feet AGL because the
+interception altitude for ILS systems is generally at or above this altitude.
+Using 1800 feet AGL as lower limit allows capturing the level segments before
+ILS interception but on the other hand disregarding the trajectory below 1800
+feet AGL where the aircraft are on the ILS glideslope and no level segments
+should occur.</p>
+<p>Overall, the part of the trajectory considered for the analysis goes from
+ToD-A200 until 1800 feet AGL (included).</p>
+<h2 id="detection-of-the-level-segments">Detection of the level segments</h2>
+<p>In the climb or descent parts of the trajectories the level segments should be
+determined. The trajectory part between two points on that trajectory is
+considered as level when the trajectory stays within a fictional window as can
+be seen in Figure 2.</p>
+<figure class="img-responsive center-block">
+  <img src="/assets/vfe-cd-figure-002-1dfe22be340f4c9d208d3aa2b256edbe75758489d5be64dc174bbc916154ceb5.png" alt="Rolling window for level segment detection." width="800" height="321" />
+ <figcaption>Figure 2: Rolling window for level segment detection.</figcaption>
+</figure>
+<p>This window has temporal and altitude dimensions related to a specific vertical
+velocity that is considered to be the limit between level flight and
+climb/descent.
+After consultation in the CCO/CDO Task Force, this vertical velocity is chosen
+to be 300 feet per minute. Consequently, the dimensions of the window have to
+adhere to the following relationship:</p>
+<p>\[\frac{Y}{X} = 300 \  \textrm{feet per minute} \]</p>
+<p>E.g. when a temporal size of 10 seconds is used, the window is 50 feet high.
+In this case the altitude information of the climb or descent trajectory is
+considered at every interval of 10 seconds.
+However, since the CPF data are a discrete representation of the actual
+trajectories, the necessary altitude information is not available for every
+required time instance.
+Because of this and whenever required, a linear interpolation is done to obtain
+the information needed for the analysis.</p>
+<h2 id="toctod-determination">ToC/ToD determination</h2>
+<p>In order to avoid considering level segments that happen slightly below the
+cruising altitude of a flight, an exclusion box is defined.
+The exclusion box ranges from the altitude of ToC-D200 or ToD-A200 down to 90%
+of this altitude. When a level segment is detected inside the exclusion box and
+it lasts longer than 5 minutes, it is not considered in the final results.
+The new top of climb or top of descent is in that case put at the start of
+(the first of) such segment(s) for climbs or at the end of (the last of) such
+segment(s) for descents. This new ToC or ToD is called respectively ToC-CCO or
+ToD-CDO. When no level segments longer than 5 minutes are detected inside the
+exclusion box, ToC-CCO/ToD-CDO coincides with ToC-D200/ToD-A200.</p>
+<p>The determination of the ToC-CCO or ToD-CDO corresponds as well to the CCO/CDO
+Task Force’s approach.</p>
+<h2 id="processing-of-the-results">Processing of the results</h2>
+<p>The final results are calculated taking into account all level segments before
+ToC-CCO for the climbs and after ToD-CDO for the descents.</p>
+<p>The results of the analysis include the total number of flights, the average
+value and median value of the distance flown level, the percentage of distance
+flown level with respect to the total climb or descent distance, the average
+value and median value of the time flown level, the percentage of time flown
+level with respect to the total climb or descent time and the average value
+and median value of the number of level segments.</p>
+<p>An additional metric is the median CDO/CCO altitude. This metric is calculated
+by taking the altitude of the lowest level segment for each flight.
+This information is then aggregated by taking the median value over all
+considered flights.
+The rationale for using the lowest level segment is the following.
+It is best to have no level flight because this increases the fuel burn.
+However, if needed, the higher the level segment occurs, the better because
+the higher the level segment occurs, the lower the fuel burn.
+E.g. a level segment of a fixed duration at FL100 burns more fuel than at
+FL300. So, the lowest level segment is considered since it has the
+highest environmental impact.</p>
+<p>In addition, each flight can be assessed as being CCO (Continuous Climb
+Operations) or CDO (Continuous Descent Operations). The fact whether a
+flight is considered as being CCO or CDO depends on the allowed amount of
+level segments and their allowed lengths or durations.</p>
+<p>The formulas used for the calculation of all these results are shown in Table 3.</p>
+<table>
+<thead>
+   <tr>
+     <th>Result</th>
+     <th>Formula</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <td>Total distance flown by flight $f$ during the climb/descent</td>
+     <td>\[ D_f^+ = \begin{cases} D_{3000, f} - D_{\textrm{TOC} - \textrm{CCO}, f}, &amp; \text{climbs} \\\ D_{\textrm{TOD} - \textrm{CDO}, f} - D_{1800, f}, &amp; \text{descents} \end{cases} \]</td>
+   </tr>
+   <tr>
+     <td>Percentage of distance flown level during the climb/descent</td>
+     <td>\[ D_{\textrm{perc}} = \frac{ \sum_{f} D_f}{\sum_{f} D_f^+} \cdot 100 \]</td>
+   </tr>
+   <tr>
+     <td>Average value of the distance flown level per flight</td>
+     <td>\[ D_{\textrm{avg}} = \frac{ \sum_{f} D_f}{n} \]</td>
+   </tr>
+   <tr>
+     <td>Median value of the level distance</td>
+     <td>\[  D_{med} = \begin{cases} D_m &amp; \text{$n$ is odd, $m = (n+1)/2$} \\\ \frac{D_m + D_{m+1}}{2}, &amp; \text{$n$ is even, $m = n/2$} \end{cases} \]</td>
+   </tr>
+   <tr>
+     <td>Total time flown by flight $f$ during the climb/descent</td>
+     <td>\[ T_f^+ = \begin{cases} T_{3000, f} - T_{\textrm{TOC} - \textrm{CCO}, f}, &amp; \text{climbs} \\\ T_{\textrm{TOD} - \textrm{CDO}, f} - T_{1800, f}, &amp; \text{descents} \end{cases} \]</td>
+   </tr>
+   <tr>
+     <td>Percentage of time flown level during the climb/descent</td>
+     <td>\[ T_{\textrm{perc}} = \frac{\sum_f T_f}{\sum_f T_f^+} \]</td>
+   </tr>
+   <tr>
+     <td>Average time flown level per flight</td>
+     <td>\[ T_{\textrm{avg}} = \frac{\sum_f T_f}{n} \]</td>
+   </tr>
+   <tr>
+     <td>Median value of the level time</td>
+     <td>\[  T_{med} = \begin{cases} T_m &amp; \text{$n$ is odd, $m = (n+1)/2$} \\\ \frac{T_m + T_{m+1}}{2}, &amp; \text{$n$ is even, $m = n/2$} \end{cases} \]</td>
+   </tr>
+   <tr>
+     <td>Average number of level segments per flight</td>
+     <td>\[  L_{\textrm{avg}} = \frac{\sum_f L_f}{n} \]</td>
+   </tr>
+   <tr>
+     <td>Median value of the number of level segments</td>
+     <td>\[  L_{med} = \begin{cases} \displaystyle L_m &amp; \text{$n$ is odd, $m = (n+1)/2$} \\\ \frac{L_m + L_{m+1}}{2}, &amp; \text{$n$ is even, $m = n/2$} \end{cases} \]</td>
+   </tr>
+   <tr>
+     <td>Percentage of flights considered as CCO or CDO</td>
+     <td>\[  P = \frac{n_0}{n} \cdot 100 \]</td>
+   </tr>
+ </tbody>
+</table>
+<p class="table-caption">Table 3: Formulas used for the calculation of the results</p>
+<p>With:</p>
+<table>
+ <tbody>
+   <tr>
+     <td>$n$</td>
+     <td>Total number of flights considered in the analysis</td>
+   </tr>
+   <tr>
+     <td>$n_0$</td>
+     <td>Number of flights considered as CCO or CDO</td>
+   </tr>
+   <tr>
+     <td>$L_f$</td>
+     <td>Number of level segments for flight $f$</td>
+   </tr>
+   <tr>
+     <td>$D_f^{+}$</td>
+     <td>Total distance flown by flight $f$ during the climb/descent</td>
+   </tr>
+   <tr>
+     <td>$D_f$</td>
+     <td>Total distance flown level by flight $f$ during the climb/descent</td>
+   </tr>
+   <tr>
+     <td>$D_{3000, f}$</td>
+     <td>Track distance flown by flight $f$ when passing $3000$ feet AGL</td>
+   </tr>
+   <tr>
+     <td>$D_{\textrm{TOC} - \textrm{CCO}, f}$</td>
+     <td>Track distance flown by flight $f$ when passing TOC-CCO</td>
+   </tr>
+   <tr>
+     <td>$D_{\textrm{TOD} - \textrm{CDO}, f}$</td>
+     <td>Track distance flown by flight $f$ when passing TOD-CDO</td>
+   </tr>
+   <tr>
+     <td>$D_{1800, f}$</td>
+     <td>Track distance flown by flight $f$ when passing 1800 feet AGL</td>
+   </tr>
+   <tr>
+     <td>$T_f^{+}$</td>
+     <td>Total time flown by flight $f$ during the climb/descent</td>
+   </tr>
+   <tr>
+     <td>$T_f$</td>
+     <td>Total time flown level by flight $f$ during the climb/descent</td>
+   </tr>
+   <tr>
+     <td>$T_{3000, f}$</td>
+     <td>Time at which flight $f$ passes $3000$ feet AGL</td>
+   </tr>
+   <tr>
+     <td>$T_{\textrm{TOC} - \textrm{CCO}, f}$</td>
+     <td>Time at which flight $f$ passes TOC-CCO</td>
+   </tr>
+   <tr>
+     <td>$T_{\textrm{TOD} - \textrm{CDO}, f}$</td>
+     <td>Time at which flight $f$ passes TOD-CDO</td>
+   </tr>
+   <tr>
+     <td>$T_{1800, f}$</td>
+     <td>Time at which flight $f$ passes $1800$ feet AGL</td>
+   </tr>
+ </tbody>
+</table>
+<h2 id="references">References</h2>
+<ol class="bibliography"><li><span id="airbus-cost-index">Airbus. 1998. <i>Getting to Grips with the Cost Index</i>. Getting Grips With. Airbus. <a href="https://goo.gl/llIzE6">URL</a>.</span> <a href="/references/library/airbus-cost-index.pdf">PDF</a>.
+</li>
+<li><span id="sam-thesis">Peeters, Sam. 2013. “Adaptation of Continuous Descent and Climb Operational Techniques
+                    at Brussels Airport Aiming at Cost Efficiency.” Master's thesis, Belgium: Vrije Universiteit Brussel.</span> <a href="/references/library/sam-thesis.pdf">PDF</a>.
+</li>
+<li><span id="icao:8168">ICAO. 2006. <i>Doc 8168. Aircraft Operations</i>. Fifth. ICAO. <a href="http://www.aptrac.co.za/file/icao_8168_5th_ed..pdf">PDF</a>.</span>
+</li></ol>
+   <div id="footer">
+     <div class="container-fluid">
+       <p class="muted credit" style="text-align:center; margin-top:3em">
+	<small>
+		<span style="text-aligh:left">&copy; 2017 European Organisation for the Safety of Air Navigation (EUROCONTROL)</span> &nbsp; &mdash; &nbsp;
+		<a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a> &nbsp; &mdash; &nbsp;
+		<span style="text-aligh:right">Subscribe via
+		<a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;">email <i class="fa fa-envelope"></i></a> or <a href="http://ansperformance.eu/feed.xml">RSS <i class="fa fa-rss"></i></a></span>
+	</small>
+</p>
+     </div>
+   </div>
+ </div>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.1/anchor.min.js"></script>
+<script type="text/javascript">
+ (function () {
+   'use strict';
+   anchors.options.placement = 'right';
+   // need to call `add` when DOM is loaded
+   // JQuery `ready` forces it if `add` is not called in a script
+   // after the end of 
+   // Note: you can avoid the call to `ready` if this file is included
+//   $( document ).ready(function() {
+     anchors.add();
+//   });
+ })();
+</script>
+</html>
