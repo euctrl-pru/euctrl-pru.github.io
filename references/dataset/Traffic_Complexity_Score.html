@@ -219,8 +219,9 @@ MathJax.Hub.Config({
     }
 });
 </script>
-<title>Traffic Complexity Score Dataset - PRU</title>
+<title>Traffic Complexity Score Dataset | PRU</title>
 <meta property="og:title" content="Traffic Complexity Score Dataset" />
+<meta property="og:locale" content="en_US" />
 <meta name="description" content="Performance Review Unit MetaData Definitions." />
 <meta property="og:description" content="Performance Review Unit MetaData Definitions." />
 <link rel="canonical" href="http://ansperformance.eu/references/dataset/Traffic_Complexity_Score.html" />
@@ -419,7 +420,7 @@ see <a href="#complexitymetrics">(ACE Working Group on Complexity 2006)</a> in t
      <td>CPLX_INTER</td>
      <td>NM/PRU</td>
      <td>CPLX_INTER</td>
-     <td>Complexity interactions</td>
+     <td>Complexity interactions (hours of interactions)</td>
      <td>9.4</td>
    </tr>
    <tr>
@@ -448,7 +449,7 @@ see <a href="#complexitymetrics">(ACE Working Group on Complexity 2006)</a> in t
 <h3 id="calculated-fields">Calculated Field(s)</h3>
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align*}
-\text{Adjacent Density}        & = \frac{CPLX\_INTER}{CPLX\_FLIGHT\_HRS} 60 \\
+\text{Adjusted Density}        & = \frac{CPLX\_INTER}{CPLX\_FLIGHT\_HRS} 60 \\
 \text{Vertical interactions}   & = \frac{VERTICAL\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
 \text{Horizontal interactions} & = \frac{HORIZ\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
 \text{Speed interactions}      & = \frac{SPEED\_INTER\_HRS}{CPLX\_FLIGHT\_HRS} 60 \\
