@@ -19,25 +19,25 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.4/dc.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.12/dc.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-queue/3.0.5/d3-queue.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.4/dc.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="/assets/table-0849d8a581c0b5a73867bb9a8fd2c759f4cd2abbe533a5423f7fd1ee6cadf2a2.css">
 <link type="text/css" rel="stylesheet" href="/assets/solarized-e69a0f19a8424b964f64b60a41d6cf9d3c62d127e5519a4dbe9ad596cf0c468f.css">
 <link type="text/css" rel="stylesheet" href="/assets/logo-3a7eb4382971c540181ccedc15fbfa406a3f5c98eed1f4dc401fb9e9c3be5dd0.css">
-<link type="text/css" rel="stylesheet" href="/assets/general-cee0fb6d19dfcaa28b3f1aa3a39d59c2055bc8f1c0959c611c50b5966edead70.css">
+<link type="text/css" rel="stylesheet" href="/assets/general-62fb0312ac271be8830ba544434016b1248d1f7b988c5f70a42586f3eefcdbcb.css">
 <link rel="apple-touch-icon" sizes="57x57" href="http://ansperformance.eu">
 <link rel="apple-touch-icon" sizes="60x60" href="http://ansperformance.eu">
 <link rel="apple-touch-icon" sizes="72x72" href="http://ansperformance.eu">
@@ -163,7 +163,7 @@ ga('send', 'pageview');
   <div class="col-sm-2" id="prcq-sidebar">
      <nav class="nav-sidebar">
         <ul class="nav" data-spy="affix" data-offset-top="5">
-           <li><a href="http://ansperformance.eu/prcq/executive-summary.html">Executive Summary</a></li>
+           <li><a href="http://ansperformance.eu/prcq/index.html">1st Quarter 2017</a></li>
            <li><a href="http://ansperformance.eu/prcq/traffic.html">Traffic</a></li>
            <li><a href="http://ansperformance.eu/prcq/safety.html">Safety</a></li>
            <li><a href="http://ansperformance.eu/prcq/ops-en-route.html">Operations En-route</a></li>
@@ -179,14 +179,14 @@ google.load('visualization', '1', { packages: ['corechart', 'controls'] });
 <script type="text/javascript">
 function drawVisualization()
  {
-// ARRIVAL ATFM DELAY
+// ARRIVAL ATFM DELAY (overview)
   var crt_apt4 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt4',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=A1:E4',
     options:{
-        //height: 300,
-          chartArea: {left: 50, top: 10, }, //width:'100%',height:'70%'
+          height: 300,
+          chartArea: {left: 40, top: 10, },
           legend: {position:'none'},
           isStacked : 'true',
           series: {
@@ -196,19 +196,19 @@ function drawVisualization()
                 3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
                 4: {type:'bars',color:'92D050', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 12}},
+          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per arrival', format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1,2,3,4]}
   }); crt_apt4.draw();
-//
+// ARRIVAL ATFM DELAY (T30)
   var crt_apt5 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt5',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=B22:G52',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=A10:F40',
     options:{
         height: 300,
-        chartArea: {left: 50, top: 10, width:'100%', height:'45%'},
+        chartArea: {left: 80, top: 10, width:'100%', height:'40%'},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 12} ,maxLines: 2},
           isStacked : 'true',
           series: {
@@ -216,117 +216,119 @@ function drawVisualization()
                 1: {type:'bars',color:'#FAC090', targetAxisIndex: 0},
                 2: {type:'bars',color:'#92D050', targetAxisIndex: 0},
                 3: {type:'bars',color:'#B9CDE5', targetAxisIndex: 0},
-                4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+                4: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 12}, title: '* A-CDM implemented airport', titleTextStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11},},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
     view: {'columns': [0,1,2,3,4,5]}
   }); crt_apt5.draw();
-// ASMA ADDITIONAL TIME
+// ASMA ADDITIONAL TIME (overview)
   var crt_apt6 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt6',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=H1:I4',
     options:{
-          height: 300, chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          height: 300, chartArea: {left: 40, top: 10,},
           legend: {position:'none'},
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 12}},
+          hAxis: {slantedTextAngle: 90, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per arrival', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
-    view: {'columns': [0,5]}
+    view: {'columns': [0,1]}
   }); crt_apt6.draw();
+// ASMA ADDITIONAL TIME (T30)
   var crt_apt7 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt7',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=J22:O52',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=H10:J40',
     options:{
         height: 300,
-        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+        chartArea: {left: 80, top: 10, width:'100%',height:'45%'},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
       //    isStacked : 'true',
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
-                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 12}, title: '* A-CDM implemented airport', titleTextStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11}, },
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
-    view: {'columns': [0,5,4]}
+    view: {'columns': [0,2,1]}
   }); crt_apt7.draw();
-// ATC-PRE DEPARTURE DELAYS
+// ATC-PRE DEPARTURE DELAYS (overview)
   var crt_apt8 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt8',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=L1:M4',
     options:{
-          height: 300, chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
           legend: {position:'none'},
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 12}},
+          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
-    view: {'columns': [0,6]}
+    view: {'columns': [0,1]}
   }); crt_apt8.draw();
+// ATC-PRE DEPARTURE DELAYS (T30)
   var crt_apt9 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt9',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=S22:AC52',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=L10:N40',
     options:{
         height: 300,
-        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+        chartArea: {left: 80, top: 10, width:'100%',height:'50%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
           isStacked : 'true',
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
-                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 12}, title: '* A-CDM implemented airport', titleTextStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11},},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
-    view: {'columns': [0,5,4]}
+    view: {'columns': [0,2,1]}
   }); crt_apt9.draw();
-// TAXI OUT
+// TAXI OUT (overview)
   var crt_apt10 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt10',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=H65:O70',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=P1:Q4',
     options:{
-          height: 300, chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+          height: 300, chartArea: {left: 40, top: 10, width:'100%',height:'50%'},
           legend: {position:'none'},
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 12}},
+          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11}},
           vAxis: {title: 'minutes per departure', format: '0.0', minValue: 0.0, titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
-    view: {'columns': [0,7]}
+    view: {'columns': [0,1]}
   }); crt_apt10.draw();
-//
+// TAXI OUT (T30)
   var crt_apt11 = new google.visualization.ChartWrapper({
     chartType: 'ComboChart',
     containerId: 'crt_apt11',
-    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1XM8aXwgVrij56pfzWkYs7c9cH0w6HqJF3XzKUU7MHS8/edit?usp=sharing&sheet=apt&range=S22:AC52',
+    dataSourceUrl: 'https://docs.google.com/spreadsheets/d/1LLmxl-dEBtNQEGRjX9wqY2umfMdeO6-rgwYyIGx-J6E/edit?usp=sharing&sheet=apt&range=P10:R40',
     options:{
         height: 300,
-        chartArea: {left: 50, top: 10, width:'100%',height:'50%'},
+        chartArea: {left: 80, top: 10, width:'100%',height:'50%'},
           titleTextStyle : {color: 'grey', fontSize: 12},
           legend: {position:'bottom',textStyle:{color: 'grey', fontSize: 11}},
           isStacked : 'true',
           series: {
                 0: {type:'bars',color:'#95B3D7', targetAxisIndex: 0},
-                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 1}
+                1: {type:'lines',color:'000000', lineWidth: 0.0, pointSize: 5, pointShape: 'diamond', targetAxisIndex: 0}
               },
-          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11}, title: '* A-CDM implemented airport', titleTextStyle: {color: 'grey', fontSize: 11},},
+          hAxis: {slantedTextAngle: 45, textStyle: {color: 'grey', fontSize: 11},},
           vAxis: {format: '0.0', titleTextStyle: {color: 'grey', fontSize: 12}, textStyle : {color: 'grey',fontSize: 12}}
         },
-    view: {'columns': [0,10,9]}
+    view: {'columns': [0,2,1]}
   }); crt_apt11.draw();
 }
 google.setOnLoadCallback(drawVisualization)
@@ -345,10 +347,10 @@ google.setOnLoadCallback(drawVisualization)
   </thead>
   <tbody>
      <tr class = "active">
-        <td>Jan-Dec 2016</td>
+        <td>Jan-Mar</td>
         <td><a href='http://ansperformance.eu/references/definition/eurocontrol_area.html'>EUROCONTROL area</a></td>
         <td>Quarterly</td>
-        <td>15-March-2017</td>
+        <td>28-April-2017</td>
          <td>
           <a href='http://ansperformance.eu/references/acronym/nm-cfmu.html'>NM</a>,
           <a href='http://ansperformance.eu/references/acronym/pru.html'>PRU</a>,
@@ -377,13 +379,13 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
    <div id="crt_apt4"></div>
 </div>
 <div class="col-sm-10">
-   <h5>Airport arrival ATFM delay by airport (2016)</h5>
+   <h5>Airport arrival ATFM delay by airport (Q1-2017 vs. Q1-2016)</h5>
    <div id="crt_apt5"></div>
 </div>
  </div><br>
    <div class="panel panel-info">
          <div class="panel-heading">
-            Average airport arrival ATFM delay decreased slightly in 2016 at the top 30 airports but is still heavily concentrated among a few airports. Five airports (Istanbul Sabiha Gökçen, Istanbul Ataturk, Amsterdam, London Heathrow, and London Gatwick) accounted for 59% of the airport arrival ATFM delay reported for the top 30 airports.
+            In the first quarter 2017, average airport arrival ATFM delay at the top 30 airports was slightly below average airport ATFM arrival delay in Q1 in 2016. Whereas capacity related delays decreased notably, there has been a substantial increase in weather-related delays in Q1 2017. 
          </div>
    </div>
 <h4 class="page-header"><a href='http://ansperformance.eu/references/definition/additional_asma_time.html'>Additional ASMA time</a></h4>
@@ -393,15 +395,10 @@ This section analyses ANS-related inefficiencies on the arrival flow at the top 
    <div id="crt_apt6"></div>
 </div>
 <div class="col-sm-10">
-   <h5><a href='http://ansperformance.eu/references/definition/additional_asma_time.html'>Additional ASMA time by airport (2016)</a></h5>
+   <h5><a href='http://ansperformance.eu/references/definition/additional_asma_time.html'>Additional ASMA time by airport</a></h5>
    <div id="crt_apt7"></div>
 </div>
  </div><br>
-   <div class="panel panel-info">
-         <div class="panel-heading">
-          The main driver for the <a href='http://ansperformance.eu/references/definition/additional_asma_time.html'>additional ASMA time</a> in Europe was London Heathrow which accounted for 25 % of the total minutes of the top 30 airports, while its traffic share was less than 3%. This is a consequence of the mode of operations at Heathrow, ensuring a constant demand to maximise runway throughput.
-         </div>
-   </div>
 <h3 class="sub-header">Departure flow management</h3>
 <div>
 This section analyses ANS-related inefficiencies on the departure flow at the top 30 European airports in terms of <a href='http://ansperformance.eu/references/definition/atc_pre-departure_delay.html'>ATC pre-departure delays</a> at the gate and <a href='http://ansperformance.eu/references/definition/additional_taxi-out_time.html'>additional taxi-out time</a>.
@@ -413,15 +410,10 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
    <div id="crt_apt8"></div>
 </div>
 <div class="col-sm-10">
-   <h5><a href='http://ansperformance.eu/references/definition/atc_pre-departure_delay.html'>ATC pre-departure delays by airport (2016)</a></h5>
+   <h5><a href='http://ansperformance.eu/references/definition/atc_pre-departure_delay.html'>ATC pre-departure delays by airport</a></h5>
    <div id="crt_apt9"></div>
 </div>
  </div><br>
-   <div class="panel panel-info">
-         <div class="panel-heading">
-          ATC-pre departure delays remained unchanged at the top 30 airports in 2016. The two Istanbul airports showed the highest level of ATC-pre departure delays, followed by Rome (FCO) and Amsterdam (AMS).
-         </div>
-   </div>
 <h4 class="page-header"><a href='http://ansperformance.eu/references/definition/additional_taxi-out_time.html'>Additional taxi-out time</a></h4>
 <div class="row placeholders">
 <div class="col-sm-2">
@@ -429,15 +421,10 @@ This section analyses ANS-related inefficiencies on the departure flow at the to
    <div id="crt_apt10"></div>
 </div>
 <div class="col-sm-10">
-   <h5><a href='http://ansperformance.eu/references/definition/additional_taxi-out_time.html'>Additional taxi-out by airport (2016)</a></h5>
+   <h5><a href='http://ansperformance.eu/references/definition/additional_taxi-out_time.html'>Additional taxi-out by airport</a></h5>
    <div id="crt_apt11"></div>
 </div>
  </div><br>
-     <div class="panel panel-info">
-         <div class="panel-heading">
-          Additional taxi-out time increased slightly at the top 30 airports in 2016. London Heathrow (LHR), London Gatwick (LGW) and Rome (FCO) showed the highest levels of additional taxi-out time per departure in 2016.
-         </div>
-   </div>
   </div>
 </div>
 <script type="text/javascript" src="/assets/active_sidebar-fde9bb040ba602639d22c6149d68b931e347c0471775c6e038f576b7ad133a09.js"></script>
