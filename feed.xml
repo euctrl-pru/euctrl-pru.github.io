@@ -6,9 +6,33 @@
 </description>
     <link>http://ansperformance.eu/</link>
     <atom:link href="http://ansperformance.eu/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 May 2017 12:11:59 +0200</pubDate>
-    <lastBuildDate>Tue, 16 May 2017 12:11:59 +0200</lastBuildDate>
+    <pubDate>Tue, 13 Jun 2017 15:00:27 +0200</pubDate>
+    <lastBuildDate>Tue, 13 Jun 2017 15:00:27 +0200</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>Release Notes</title>
+        
+        
+            <description>&lt;p&gt;Data updates up to May 2017.&lt;/p&gt;
+
+</description>
+        
+        
+            <description>&lt;p&gt;Data updates up to May 2017.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 13 Jun 2017 00:00:00 +0200</pubDate>
+        <link>http://ansperformance.eu/news/rn/2017/06/13/rn.html</link>
+        <guid isPermaLink="true">http://ansperformance.eu/news/rn/2017/06/13/rn.html</guid>
+        
+        
+        <category>news</category>
+        
+        <category>rn</category>
+        
+      </item>
     
       <item>
         <title>Release Notes</title>
@@ -218,30 +242,6 @@
         <pubDate>Thu, 15 Sep 2016 00:00:00 +0200</pubDate>
         <link>http://ansperformance.eu/news/rn/2016/09/15/rn.html</link>
         <guid isPermaLink="true">http://ansperformance.eu/news/rn/2016/09/15/rn.html</guid>
-        
-        
-        <category>news</category>
-        
-        <category>rn</category>
-        
-      </item>
-    
-      <item>
-        <title>Release Notes</title>
-        
-        
-            <description>&lt;p&gt;Data updates up to Jul 2016, flow studies updated to 2001-2015 period.&lt;/p&gt;
-
-</description>
-        
-        
-            <description>&lt;p&gt;Data updates up to Jul 2016, flow studies updated to 2001-2015 period.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Wed, 24 Aug 2016 00:00:00 +0200</pubDate>
-        <link>http://ansperformance.eu/news/rn/2016/08/24/rn.html</link>
-        <guid isPermaLink="true">http://ansperformance.eu/news/rn/2016/08/24/rn.html</guid>
         
         
         <category>news</category>
