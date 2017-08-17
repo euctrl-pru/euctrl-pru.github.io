@@ -165,125 +165,244 @@ ga('send', 'pageview');
 <table>
 <thead>
    <tr>
-     <th>Delay code</th>
-     <th>Delay group</th>
-     <th>Description</th>
-     <th> </th>
-     <th> </th>
+     <th>REF LOC</th>
+     <th>REGU REASON CODE</th>
+     <th>REGU REASON NAME</th>
+     <th>REASON GROUP</th>
+     <th>ATTRIBUTE</th>
    </tr>
  </thead>
  <tbody>
    <tr>
-     <td>C - ATC Capacity</td>
-     <td>Capacity (ATC)</td>
-     <td>Demand exceeds declared or expected ATC capacity.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>C</td>
+     <td>ATC Capacity</td>
+     <td>AD Capacity (ATC)</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>S - ATC Staffing</td>
-     <td>Staffing (ATC)</td>
-     <td>Unplanned staff shortage reducing expected capacity.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>S</td>
+     <td>ATC Staffing</td>
+     <td>AD Staffing (ATC)</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>I - Industrial Action (ATC)</td>
-     <td>Disruptions (ATC)</td>
-     <td>Reduction in any capacity due to industrial action by ATC staff</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>I</td>
+     <td>Industrial Action (ATC)</td>
+     <td>AD Disruptions (ATC)</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>T - Equipment (ATC)</td>
-     <td>Disruptions (ATC)</td>
-     <td>Reduction of expected or declared capacity due to the non-availability or degradation of equipment used to provide an ATC service.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>T</td>
+     <td>Equipment (ATC)</td>
+     <td>AD Disruptions (ATC)</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>R - ATC Routeing</td>
-     <td>Capacity/Routing</td>
-     <td>Network solutions / scenarios used to balance demand and capacity</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>G</td>
+     <td>Aerodrome Capacity</td>
+     <td>AD Capacity</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>M - Airspace Management</td>
-     <td>Capacity/Routing</td>
-     <td>Reduction in declared or expected capacity following changes in airspace / route availability due to small scale military activity</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>M</td>
+     <td>Military Activity</td>
+     <td>AD Capacity</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>G - Aerodrome Capacity</td>
-     <td>Capacity/Routing</td>
-     <td>Reduction in declared or expected capacity due to the degradation or non-availability of infrastructure at an airport. e.g. Work in Progress, shortage of aircraft stands etc. or when demand exceeds expected aerodrome capacity.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>R</td>
+     <td>ATC Routeing</td>
+     <td>AD Capacity</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>V - Environmental Issues</td>
-     <td>Capacity/Routing</td>
-     <td>Reduction in any capacity or when demand exceeds any capacity due to agreed local noise, runway usage or similar procedures. This category should only be used with prior agreement in the planning process.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>V</td>
+     <td>Environmental Issues</td>
+     <td>AD Capacity</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>E - Equipment (non-ATC)</td>
-     <td>Disruptions</td>
-     <td>Reduced capacity due to the degradation or non-availability of support equipment at an airport e.g. Fire Service, De-icing / snow removal equipment or other ground handling equipment.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>A</td>
+     <td>Accident/Incident</td>
+     <td>AD Disruptions</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>N - Industrial Action (non-ATC)</td>
-     <td>Disruptions</td>
-     <td>A reduction in expected / planned capacity due to industrial action by non ATC personnel.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>E</td>
+     <td>Aerodrome Services</td>
+     <td>AD Disruptions</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>O - Other</td>
-     <td>Disruptions</td>
-     <td>This should only be used in exceptional circumstances when no other category is sufficient. An explanatory ANM remark MUST be given to allow post ops analysis.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>N</td>
+     <td>Industrial Action (non-ATC)</td>
+     <td>AD Disruptions</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>A - Accident/Incident</td>
-     <td>Disruptions</td>
-     <td>Reduction of expected ATC capacity due to an aircraft accident / incident.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>NA</td>
+     <td>Not regulated/Not specified</td>
+     <td>AD Disruptions</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>NA - Not specified</td>
-     <td>Disruptions</td>
-     <td> </td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>O</td>
+     <td>Other</td>
+     <td>AD Disruptions</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>P - Special Event</td>
-     <td>Events</td>
-     <td>Reduction in planned, declared or expected capacity or when demand exceeds the above capacities as a result of a major sporting, governmental or social event. It may also be used for ATM system upgrades and transitions. Large multinational military exercises may also use this reason. This category should only be used with prior approval during the planning process.</td>
-     <td> </td>
-     <td> </td>
+     <td>Airport</td>
+     <td>P</td>
+     <td>Special Event</td>
+     <td>AD Events</td>
+     <td>Airport / TMA</td>
    </tr>
    <tr>
-     <td>W - Weather</td>
-     <td>Weather</td>
-     <td>Reduction in expected capacity due to any weather phenomena. This includes where weather impacts airport infrastructure capacity, but where aerodrome services are operating as planned / expected.</td>
-     <td> </td>
-     <td> </td>
-   </tr>
-   <tr>
-     <td>D - De-icing</td>
-     <td>Weather</td>
+     <td>Airport</td>
+     <td>D</td>
      <td>De-icing</td>
-     <td> </td>
-     <td> </td>
+     <td>AD Weather</td>
+     <td>Airport / TMA</td>
+   </tr>
+   <tr>
+     <td>Airport</td>
+     <td>W</td>
+     <td>Weather</td>
+     <td>AD Weather</td>
+     <td>Airport / TMA</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>C</td>
+     <td>ATC Capacity</td>
+     <td>ER Capacity (ATC)</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>S</td>
+     <td>ATC Staffing</td>
+     <td>ER Staffing (ATC)</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>I</td>
+     <td>Industrial Action (ATC)</td>
+     <td>ER Disruptions (ATC)</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>T</td>
+     <td>Equipment (ATC)</td>
+     <td>ER Disruptions (ATC)</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>G</td>
+     <td>Aerodrome Capacity</td>
+     <td>ER Capacity</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>M</td>
+     <td>Military Activity</td>
+     <td>ER Capacity</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>R</td>
+     <td>ATC Routeing</td>
+     <td>ER Capacity</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>V</td>
+     <td>Environmental Issues</td>
+     <td>ER Capacity</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>A</td>
+     <td>Accident/Incident</td>
+     <td>ER Disruptions</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>E</td>
+     <td>Aerodrome Services</td>
+     <td>ER Disruptions</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>N</td>
+     <td>Industrial Action (non-ATC)</td>
+     <td>ER Disruptions</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>NA</td>
+     <td>Not regulated/Not specified</td>
+     <td>ER Disruptions</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>O</td>
+     <td>Other</td>
+     <td>ER Disruptions</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>P</td>
+     <td>Special Event</td>
+     <td>ER Events</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>D</td>
+     <td>De-icing</td>
+     <td>ER Weather</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>En route</td>
+     <td>W</td>
+     <td>Weather</td>
+     <td>ER Weather</td>
+     <td>En route</td>
+   </tr>
+   <tr>
+     <td>na</td>
+     <td>NA</td>
+     <td>Not regulated/Not specified</td>
+     <td>ER Disruptions</td>
+     <td>En route</td>
    </tr>
  </tbody>
 </table>

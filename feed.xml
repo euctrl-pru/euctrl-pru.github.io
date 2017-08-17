@@ -6,9 +6,33 @@
 </description>
     <link>http://ansperformance.eu/</link>
     <atom:link href="http://ansperformance.eu/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Jul 2017 15:06:30 +0200</pubDate>
-    <lastBuildDate>Fri, 14 Jul 2017 15:06:30 +0200</lastBuildDate>
+    <pubDate>Thu, 17 Aug 2017 14:54:27 +0200</pubDate>
+    <lastBuildDate>Thu, 17 Aug 2017 14:54:27 +0200</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>Release Notes</title>
+        
+        
+            <description>&lt;p&gt;Data updates up to July 2017.&lt;/p&gt;
+
+</description>
+        
+        
+            <description>&lt;p&gt;Data updates up to July 2017.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 17 Aug 2017 00:00:00 +0200</pubDate>
+        <link>http://ansperformance.eu/news/rn/2017/08/17/rn.html</link>
+        <guid isPermaLink="true">http://ansperformance.eu/news/rn/2017/08/17/rn.html</guid>
+        
+        
+        <category>news</category>
+        
+        <category>rn</category>
+        
+      </item>
     
       <item>
         <title>Release Notes</title>
@@ -218,30 +242,6 @@
         <pubDate>Mon, 21 Nov 2016 00:00:00 +0100</pubDate>
         <link>http://ansperformance.eu/news/rn/2016/11/21/rn.html</link>
         <guid isPermaLink="true">http://ansperformance.eu/news/rn/2016/11/21/rn.html</guid>
-        
-        
-        <category>news</category>
-        
-        <category>rn</category>
-        
-      </item>
-    
-      <item>
-        <title>Release Notes</title>
-        
-        
-            <description>&lt;p&gt;Data updates up to Sep 2016.&lt;/p&gt;
-
-</description>
-        
-        
-            <description>&lt;p&gt;Data updates up to Sep 2016.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Tue, 18 Oct 2016 00:00:00 +0200</pubDate>
-        <link>http://ansperformance.eu/news/rn/2016/10/18/rn.html</link>
-        <guid isPermaLink="true">http://ansperformance.eu/news/rn/2016/10/18/rn.html</guid>
         
         
         <category>news</category>

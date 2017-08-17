@@ -3,7 +3,7 @@
   <generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator>
 <link href="http://ansperformance.eu/atom.xml" rel="self" type="application/atom+xml" />
 <link href="http://ansperformance.eu/" rel="alternate" type="text/html" />
-  <updated>2017-07-14T15:06:30+02:00</updated>
+  <updated>2017-08-17T14:54:27+02:00</updated>
   <id>http://ansperformance.eu/</id>
  <title>PRU</title>
     <subtitle>Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
@@ -14,6 +14,27 @@
       <email>PRU-Support@eurocontrol.int</email>
     <uri>http://ansperformance.eu/</uri>
   </author>
+    <entry>
+ <title>Release Notes</title>
+<link href="http://ansperformance.eu/news/rn/2017/08/17/rn.html" rel="alternate" type="text/html" title="Release Notes" />
+ <published>2017-08-17T00:00:00+02:00</published>
+    <updated>2017-08-17T00:00:00+02:00</updated>
+  <id>http://ansperformance.eu/news/rn/2017/08/17/rn</id>
+  <content type="html" xml:base="http://ansperformance.eu/news/rn/2017/08/17/rn.html">
+    &lt;p&gt;Data updates up to July 2017.&lt;/p&gt;
+&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: The data download files have been updated up to &lt;strong&gt;July 2017&lt;/strong&gt; (when applicable).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2017/08/17/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <author>
+      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
+      <email>PRU-Support@eurocontrol.int</email>
+    <uri>http://ansperformance.eu/</uri>
+  </author>
+    <summary type="text">Data updates up to July 2017.</summary>
+</entry>
     <entry>
  <title>Release Notes</title>
 <link href="http://ansperformance.eu/news/rn/2017/07/14/rn.html" rel="alternate" type="text/html" title="Release Notes" />
@@ -389,57 +410,5 @@ the 2001 - 2015 period (previously 2007 - 2014)&lt;/li&gt;
     <uri>http://ansperformance.eu/</uri>
   </author>
     <summary type="text">Data updates up to Jun 2016</summary>
-</entry>
-    <entry>
- <title>Release Notes</title>
-<link href="http://ansperformance.eu/news/rn/2016/06/15/rn.html" rel="alternate" type="text/html" title="Release Notes" />
- <published>2016-06-15T00:00:00+02:00</published>
-    <updated>2016-06-15T00:00:00+02:00</updated>
-  <id>http://ansperformance.eu/news/rn/2016/06/15/rn</id>
-  <content type="html" xml:base="http://ansperformance.eu/news/rn/2016/06/15/rn.html">
-    &lt;p&gt;Data updates up to May 2016, additional matadata, vertical efficiency article&lt;/p&gt;
-&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;May 2016&lt;/strong&gt; (when applicable)&lt;/li&gt;
-  &lt;li&gt;New: added new article on Vertical Flight Efficiency &lt;a href=&quot;#icns-vfe&quot;&gt;(Peeters et al. 2016)&lt;/a&gt; (below too) in the
-&lt;a href=&quot;http://ansperformance.eu/references/bibliography.html&quot;&gt;Bibliography section&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;New: Reference table of Air Traffic Unit Airspace (AUA) included in ANSP level information,
-see &lt;a href=&quot;http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_AUA.html&quot;&gt;En-Route ATFM Delay Dataset (AUA)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;reference&quot;&gt;Reference&lt;/h4&gt;
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;icns-vfe&quot;&gt;Peeters, S., H. Koelman, R. Koelle, R. Galaviz-Schomisch, J. Gulding, and M. Meekma. 2016. “Towards a Common Analysis of Vertical Flight Efficiency.” In &lt;i&gt;2016 Integrated Communications Navigation and Surveillance (ICNS)&lt;/i&gt;, 7A2-1-7A2-11. IEEE. doi:10.1109/ICNSURV.2016.7486368.&lt;/span&gt; &lt;a href=&quot;/references/library/icns-vfe.pdf&quot;&gt;PDF&lt;/a&gt;.
-&lt;p&gt;&lt;small&gt;Abstract: Significant efforts are underway to modernize global air traffic
-              management systems. Flight efficiency is a major political
-              design criterion. This paper addresses the identification and
-              measurement of ATM related constraints on vertical flight
-              efficiency with a focus on continuous descent operations.
-              Efficiency of flight operations has become a key driver for
-              identifying bottlenecks and constraints imposed by ATM on
-              airspace user preferred flight trajectories. In particular,
-              measures aiming at fuel-efficient operations attract a lot of
-              attention. This paper reports on the work jointly performed by
-              the FAA and EUROCONTROL to address vertical flight efficiency.
-              Based on an empirical study of trajectory data for US and
-              European airports, a vertical profile analysis algorithm has
-              been developed considering research experiences and
-              stakeholder consultations of both teams. This work was
-              performed as the preparatory action of the joint US/Europe
-              comparison report. The results include a joint and harmonized
-              algorithm to describe the vertical trajectory profile and the
-              initial definition of metrics for the performance measurement.
-              This harmonized algorithm will be further be validated and
-              refined as part of the US/Europe comparison report including a
-              wider set of airports. Demonstrating the general feasibility,
-              the algorithm will be further promoted for use in
-              international performance activities under ICAO.&lt;/small&gt;&lt;/p&gt;
-&lt;/li&gt;&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2016/06/15/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
-  </content>
-  <author>
-      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
-      <email>PRU-Support@eurocontrol.int</email>
-    <uri>http://ansperformance.eu/</uri>
-  </author>
-    <summary type="text">Data updates up to May 2016, additional matadata, vertical efficiency article</summary>
 </entry>
 </feed>
