@@ -3,7 +3,7 @@
   <generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator>
 <link href="http://ansperformance.eu/atom.xml" rel="self" type="application/atom+xml" />
 <link href="http://ansperformance.eu/" rel="alternate" type="text/html" />
-  <updated>2017-11-20T09:55:23+01:00</updated>
+  <updated>2017-12-13T14:36:50+01:00</updated>
   <id>http://ansperformance.eu/</id>
  <title>PRU</title>
     <subtitle>Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
@@ -14,6 +14,27 @@
       <email>PRU-Support@eurocontrol.int</email>
     <uri>http://ansperformance.eu/</uri>
   </author>
+    <entry>
+ <title>Release Notes</title>
+<link href="http://ansperformance.eu/news/rn/2017/12/12/rn.html" rel="alternate" type="text/html" title="Release Notes" />
+ <published>2017-12-12T00:00:00+01:00</published>
+    <updated>2017-12-12T00:00:00+01:00</updated>
+  <id>http://ansperformance.eu/news/rn/2017/12/12/rn</id>
+  <content type="html" xml:base="http://ansperformance.eu/news/rn/2017/12/12/rn.html">
+    &lt;p&gt;Data updates up to Nov 2017.&lt;/p&gt;
+&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: Data download files updated up to &lt;strong&gt;Nov 2017&lt;/strong&gt; (when applicable).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2017/12/12/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <author>
+      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
+      <email>PRU-Support@eurocontrol.int</email>
+    <uri>http://ansperformance.eu/</uri>
+  </author>
+    <summary type="text">Data updates up to Nov 2017.</summary>
+</entry>
     <entry>
  <title>Release Notes</title>
 <link href="http://ansperformance.eu/news/rn/2017/11/20/rn.html" rel="alternate" type="text/html" title="Release Notes" />
@@ -362,44 +383,5 @@ available in the &lt;a href=&quot;http://ansperformance.eu/data/performancearea/
     <uri>http://ansperformance.eu/</uri>
   </author>
     <summary type="text">Data updates up to Sep 2016.</summary>
-</entry>
-    <entry>
- <title>Release Notes</title>
-<link href="http://ansperformance.eu/news/rn/2016/09/15/rn.html" rel="alternate" type="text/html" title="Release Notes" />
- <published>2016-09-15T00:00:00+02:00</published>
-    <updated>2016-09-15T00:00:00+02:00</updated>
-  <id>http://ansperformance.eu/news/rn/2016/09/15/rn</id>
-  <content type="html" xml:base="http://ansperformance.eu/news/rn/2016/09/15/rn.html">
-    &lt;p&gt;Data updates up to Aug 2016.&lt;/p&gt;
-&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;Aug 2016&lt;/strong&gt; (when applicable)&lt;/li&gt;
-  &lt;li&gt;Noteworthy: Published &lt;em&gt;2015 Comparison of Air Traffic Management-Related Operational Performance: U.S./Europe&lt;/em&gt;
-&lt;a href=&quot;#eu-us-2015&quot;&gt;(EUROCONTROL and FAA 2016)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&quot;reference&quot;&gt;Reference&lt;/h4&gt;
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;eu-us-2015&quot;&gt;EUROCONTROL, and FAA. 2016. “2015 Comparison of Air Traffic Management-Related Operational Performance: U.S./Europe.” Performance Review Unit. &lt;a href=&quot;http://www.eurocontrol.int/sites/default/files/content/documents/single-sky/pru/publications/other/us-eu-comparison-2015.pdf&quot;&gt;PDF&lt;/a&gt;.&lt;/span&gt;
-&lt;p&gt;&lt;small&gt;Abstract: This report is the 5th in a series of joint ATM operational
-                  performance comparisons between the US and Europe. It
-                  represents the 2nd edition under the Memorandum of Cooperation
-                  between the United States and the European Union. Building on
-                  established operational key performance indicators, the goal
-                  of the joint study conducted by the Federal Aviation
-                  Administration (FAA) and EUROCONTROL on behalf of the European
-                  Union is to understand differences between the two ATM systems
-                  in order to further optimise ATM performance and to identify
-                  best practices for the benefit of the overall air transport
-                  system. The analysis is based on a comparable set of data and
-                  harmonised assessment techniques for developing reference
-                  conditions for assessing ATM performance.&lt;/small&gt;&lt;/p&gt;
-&lt;/li&gt;&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2016/09/15/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
-  </content>
-  <author>
-      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
-      <email>PRU-Support@eurocontrol.int</email>
-    <uri>http://ansperformance.eu/</uri>
-  </author>
-    <summary type="text">Data updates up to Aug 2016.</summary>
 </entry>
 </feed>
