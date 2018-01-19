@@ -3,7 +3,7 @@
   <generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator>
 <link href="http://ansperformance.eu/atom.xml" rel="self" type="application/atom+xml" />
 <link href="http://ansperformance.eu/" rel="alternate" type="text/html" />
-  <updated>2017-12-14T10:18:35+01:00</updated>
+  <updated>2018-01-19T16:13:20+01:00</updated>
   <id>http://ansperformance.eu/</id>
  <title>PRU</title>
     <subtitle>Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
@@ -14,6 +14,29 @@
       <email>PRU-Support@eurocontrol.int</email>
     <uri>http://ansperformance.eu/</uri>
   </author>
+    <entry>
+ <title>Release Notes</title>
+<link href="http://ansperformance.eu/news/rn/2018/01/19/rn.html" rel="alternate" type="text/html" title="Release Notes" />
+ <published>2018-01-19T00:00:00+01:00</published>
+    <updated>2018-01-19T00:00:00+01:00</updated>
+  <id>http://ansperformance.eu/news/rn/2018/01/19/rn</id>
+  <content type="html" xml:base="http://ansperformance.eu/news/rn/2018/01/19/rn.html">
+    &lt;p&gt;Data updates up to Dec 2017.&lt;/p&gt;
+&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: Data download files updated up to &lt;strong&gt;Dec 2017&lt;/strong&gt; (when applicable).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;NEW&lt;/strong&gt;: The interactive &lt;a href=&quot;http://www.eurocontrol.int/ACE/ACE-Home.html&quot; title=&quot;ACE online dashboard&quot;&gt;ACE online dashboard&lt;/a&gt; is now available online.
+ &lt;br /&gt;The new interactive online dashboard enables interested stakeholders to access the latest available ACE data and analysis. Using the interactive functionalities of the dashboard, stakeholders can design and customise specific analyses and presentations covering the 2002-2015 period.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2018/01/19/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <author>
+      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
+      <email>PRU-Support@eurocontrol.int</email>
+    <uri>http://ansperformance.eu/</uri>
+  </author>
+    <summary type="text">Data updates up to Dec 2017.</summary>
+</entry>
     <entry>
  <title>Release Notes</title>
 <link href="http://ansperformance.eu/news/rn/2017/12/12/rn.html" rel="alternate" type="text/html" title="Release Notes" />
@@ -360,28 +383,5 @@ available in the &lt;a href=&quot;http://ansperformance.eu/data/performancearea/
     <uri>http://ansperformance.eu/</uri>
   </author>
     <summary type="text">Data updates up to Oct 2016.</summary>
-</entry>
-    <entry>
- <title>Release Notes</title>
-<link href="http://ansperformance.eu/news/rn/2016/10/18/rn.html" rel="alternate" type="text/html" title="Release Notes" />
- <published>2016-10-18T00:00:00+02:00</published>
-    <updated>2016-10-18T00:00:00+02:00</updated>
-  <id>http://ansperformance.eu/news/rn/2016/10/18/rn</id>
-  <content type="html" xml:base="http://ansperformance.eu/news/rn/2016/10/18/rn.html">
-    &lt;p&gt;Data updates up to Sep 2016.&lt;/p&gt;
-&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Update: Data download files updated up to &lt;strong&gt;Sep 2016&lt;/strong&gt; (when applicable)&lt;/li&gt;
-  &lt;li&gt;Update: “En-Route IFR Flights and ATFM delays (FIR)” - data processing issue for
-         traffic on 9th May and 23rd Aug 2016 has been corrected in this release.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2016/10/18/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
-  </content>
-  <author>
-      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
-      <email>PRU-Support@eurocontrol.int</email>
-    <uri>http://ansperformance.eu/</uri>
-  </author>
-    <summary type="text">Data updates up to Sep 2016.</summary>
 </entry>
 </feed>
