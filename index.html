@@ -73,7 +73,17 @@ ga('send', 'pageview');
 {"name":"PRU","description":"Performance monitoring data, analyses and visualizations for Eurocontrol’s 41 Member States.","url":"http://ansperformance.eu/","headline":"Home","dateModified":null,"datePublished":null,"sameAs":null,"@type":"WebSite","author":null,"image":null,"publisher":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 </head>
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
- <nav class="navbar navbar-default navbar-fixed-top">
+<style type="text/css">
+  .navbar-nav {
+    width: 80%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+</style>
+<nav class="navbar navbar-default navbar-fixed-top">
  <div class="container-fluid">
    <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -91,43 +101,54 @@ ga('send', 'pageview');
    </div>
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      <ul class="nav navbar-nav">
-         <li class="">
-            <a href="http://ansperformance.eu/prcq/"
-            style="background-color: #4F81BD; color: #fff;">PRC Quarterly</a></li>
-         </li>
-         <li class=""><a href="http://ansperformance.eu/posts/">News</a></li>
-         <li class="dropdown">
-              <a href="http://ansperformance.eu/graphs/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">Graphs <span class="caret"></span></a>
-             <ul class="dropdown-menu">
-                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
-             </ul>
-         </li>
-         <li class="">
-            <a href="http://ansperformance.eu/data/performancearea">Data</a></li>
-         </li>
-         <li class="">
-          <a href="http://ansperformance.eu/studies/">Studies</a></li>
-     </ul>
-     <ul class="nav navbar-nav navbar-right">
+     <li class="dropdown">
+          <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="http://ansperformance.eu/about/pru">Performance Review Unit</a></li>
+           <li><a href="http://ansperformance.eu/about/prc">Performance Review Commission</a></li>
+           <li><a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a></li>
+         </ul>
+      </li>
        <li class="dropdown">
-              <a href="http://ansperformance.eu/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Analysis<span class="caret"></span></a>
              <ul class="dropdown-menu">
-                 <li><a href="http://ansperformance.eu/references/dataset/">Datasets</a></li>
+                 <li><a href="http://ansperformance.eu/prcq/" style="background-color: #4F81BD; color: #fff;">PRC Quarterly Review</a></li> 
+                 <li role="separator" class="divider"></li>  
+                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
+                  <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>              
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">Cost-Effectiveness dashboard (ACE)</a></li>  
+                 <li role="separator" class="divider"></li>                 
+                 <li><a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/" target="_blank">Service Unit dashboard</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="https://www.eurocontrol.int/prudata/dashboard/vis/2018/" target="_blank" style="background-color: #2DACE3; color: #fff;">Single European Sky Data Portal (external)</a></li> 
+             </ul>
+        </li>
+       <li class=""><a href="http://ansperformance.eu/data/performancearea">Download area</a></li>
+       <li class="dropdown">
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Reference<span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-0" target="_blank">Annual Performance Review Reports (PRR)</a></li>
+                 <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-1" target="_blank">ATM Cost-Effectiveness (ACE) reports</a></li>                
+                 <li class=""><a href="http://ansperformance.eu/studies/">Ad-hoc studies</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/references/methodology/">Methodologies</a></li>
                  <li><a href="http://ansperformance.eu/references/acronym/">Acronyms</a></li>
                  <li><a href="http://ansperformance.eu/references/definition/">Definitions</a></li>
-                 <li><a href="http://ansperformance.eu/references/ANSP/">ANSP's</a></li>
+                 <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
                  <li role="separator" class="divider"></li>
-                 <li><a href="http://ansperformance.eu/references/methodology/">Methodology</a></li>
-                  <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
+                 <li><a href="https://www4.icao.int/ganpportal/" target="_blank">ICAO Global Air Navigation Plan (GANP) Portal (external)</a></li>
              </ul>
-         </li>
-       <li>
+       </li>
+       <li class="notes pull-right"><a href="http://ansperformance.eu/posts/">Release Notes</a></li>
+       <li class="form pull-right">
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
               <input type="hidden" name="sites" value="ansperformance.eu"/>
             <input type="hidden" name="ka" value="h"/>
@@ -144,13 +165,6 @@ ga('send', 'pageview');
            </div>
           </form>
        </li>
-       <li class="dropdown">
-          <a href="http://ansperformance.eu/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-           <li><a href="http://ansperformance.eu/about/">About us</a></li>
-           <li><a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a></li>
-         </ul>
-       </li>
      </ul>
    </div>
  </div>
@@ -160,7 +174,21 @@ ga('send', 'pageview');
  <div class="container main">
    <style type="text/css">
 .img-responsive {
-    margin: 0 auto; width: 75%;
+    margin: 0 auto;
+    max-width: 75%
+}
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 25.0%;
+}
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    border: 0;
 }
 #main-text.row:after {
 	background-image: url(/assets/wordcloud-6fdefc17c6b4e6f980f198fce163aca8f858e4b0dd07859a3bef4210b4be5eb9.svg);
@@ -177,31 +205,25 @@ ga('send', 'pageview');
 	opacity: 0.2;
 }
 </style>
-<div class="row">
-	<img src="/assets/european-ans-performance-review-288327231b5bd923ac8f2e25840ca97e45741579b0a73caf55a5fbf8ff13c760.jpg" class="img-responsive" alt="European ANS Performance">
-</div>
-<br>
+<br>  
 <div class="row" id="main-text">
-	<h4>Welcome to the European ANS Performance Data Portal</h4>
+<h3>Pan-European ANS Performance Data Portal</h3>
 <p>
-The <a href="http://ansperformance.eu/about/">Performance Review Unit (PRU)</a> has developed 
-an online ANS performance data portal covering all 41 EUROCONTROL Member States:<br>
+Welcome to the <a href="http://ansperformance.eu/about/pru">Performance Review Unit (PRU)</a> ANS performance data portal. <br>
+The web page is updated monthly and aims to:<br>
 <ul>
- <li>to ensure that interested stakeholders in all Member States have relevant high quality information on Pan-European ANS performance readily available in a transparent, accurate, clear, complete and unbiased manner;</li>
+ <li>to ensure that interested stakeholders in all EUROCONTROL Member States have relevant high quality information on Pan-European ANS performance readily available in a transparent, accurate, clear, complete and unbiased manner;</li>
  <li>to stimulate an informed dialogue between all stakeholders for the benefit of the entire aviation network; and,</li>
  <li>to further develop the ANS performance analysis framework and the understanding of key ANS performance issues.</li>
 </ul>
+To get informed about our monthly updates please subscribe to our mailing list by clicking on the blue button below.
 </p>
-<p>
-Within the context of Single European Sky (SES), the PRU has developed a dedicated <a href="http://www.eurocontrol.int/prudata/dashboard/vis/2018/">SES e-dashboard</a>
-for the European Commission which is a formal and official source of data in the context of the SES legislation, supporting NSA’s in their SES monitoring activities.
-The PRU updates this data on behalf of the European Commission on a quarterly basis.
-</p>
-	<p>
-		For feedback or questions please contact us at:
-		<a href="mailto:PRU-Support@eurocontrol.int">Performance Review Unit</a>
-		(PRU-Support@eurocontrol.int).
-	</p>
+</div>
+<div class="resp-container">
+<iframe class="resp-iframe" src="https://datastudio.google.com/embed/reporting/1UKhnPVrpoCufnrVbrRRN8fCue6DY-8W1/page/xHPY" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="row">
+	<img src="/assets/european-ans-performance-review-288327231b5bd923ac8f2e25840ca97e45741579b0a73caf55a5fbf8ff13c760.jpg" class="img-responsive" alt="European ANS Performance">
 </div>
 <br>
 <div class="row text-center">

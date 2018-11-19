@@ -73,7 +73,17 @@ ga('send', 'pageview');
 {"name":null,"description":"Performance Review Unit Data Download (Excel and CSV).","url":"http://ansperformance.eu/data/performancearea/","headline":"Data by Performance Area","dateModified":null,"datePublished":null,"sameAs":null,"@type":"WebPage","author":null,"image":null,"publisher":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
 </head>
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
- <nav class="navbar navbar-default navbar-fixed-top">
+<style type="text/css">
+  .navbar-nav {
+    width: 80%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+</style>
+<nav class="navbar navbar-default navbar-fixed-top">
  <div class="container-fluid">
    <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -91,43 +101,54 @@ ga('send', 'pageview');
    </div>
    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      <ul class="nav navbar-nav">
-         <li class="">
-            <a href="http://ansperformance.eu/prcq/"
-            style="background-color: #4F81BD; color: #fff;">PRC Quarterly</a></li>
-         </li>
-         <li class=""><a href="http://ansperformance.eu/posts/">News</a></li>
-         <li class="dropdown">
-              <a href="http://ansperformance.eu/graphs/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">Graphs <span class="caret"></span></a>
-             <ul class="dropdown-menu">
-                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
-                 <li><a href="http://ansperformance.eu/graphs/cost-efficiency/">Cost Efficiency</a></li>
-             </ul>
-         </li>
-         <li class="">
-            <a href="http://ansperformance.eu/data/performancearea">Data</a></li>
-         </li>
-         <li class="">
-          <a href="http://ansperformance.eu/studies/">Studies</a></li>
-     </ul>
-     <ul class="nav navbar-nav navbar-right">
+     <li class="dropdown">
+          <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="http://ansperformance.eu/about/pru">Performance Review Unit</a></li>
+           <li><a href="http://ansperformance.eu/about/prc">Performance Review Commission</a></li>
+           <li><a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a></li>
+         </ul>
+      </li>
        <li class="dropdown">
-              <a href="http://ansperformance.eu/references/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
-                 aria-haspopup="true" aria-expanded="false">References <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Analysis<span class="caret"></span></a>
              <ul class="dropdown-menu">
-                 <li><a href="http://ansperformance.eu/references/dataset/">Datasets</a></li>
+                 <li><a href="http://ansperformance.eu/prcq/" style="background-color: #4F81BD; color: #fff;">PRC Quarterly Review</a></li> 
+                 <li role="separator" class="divider"></li>  
+                 <li><a href="http://ansperformance.eu/graphs/safety/">Safety</a></li>
+                  <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/graphs/traffic/">Traffic</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/graphs/capacity/">Capacity</a></li>              
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/graphs/environment/">Environment</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="https://www.eurocontrol.int/ACE/ACE-Home.html" target="_blank">Cost-Effectiveness dashboard (ACE)</a></li>  
+                 <li role="separator" class="divider"></li>                 
+                 <li><a href="https://www.eurocontrol.int/ServiceUnits/Dashboard/" target="_blank">Service Unit dashboard</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="https://www.eurocontrol.int/prudata/dashboard/vis/2018/" target="_blank" style="background-color: #2DACE3; color: #fff;">Single European Sky Data Portal (external)</a></li> 
+             </ul>
+        </li>
+       <li class=""><a href="http://ansperformance.eu/data/performancearea">Download area</a></li>
+       <li class="dropdown">
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button"
+                 aria-haspopup="true" aria-expanded="false">Reference<span class="caret"></span></a>
+             <ul class="dropdown-menu">
+                 <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-0" target="_blank">Annual Performance Review Reports (PRR)</a></li>
+                 <li><a href="https://www.eurocontrol.int/prc/publications#field-tabs-tab-1" target="_blank">ATM Cost-Effectiveness (ACE) reports</a></li>                
+                 <li class=""><a href="http://ansperformance.eu/studies/">Ad-hoc studies</a></li>
+                 <li role="separator" class="divider"></li>
+                 <li><a href="http://ansperformance.eu/references/methodology/">Methodologies</a></li>
                  <li><a href="http://ansperformance.eu/references/acronym/">Acronyms</a></li>
                  <li><a href="http://ansperformance.eu/references/definition/">Definitions</a></li>
-                 <li><a href="http://ansperformance.eu/references/ANSP/">ANSP's</a></li>
+                 <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
                  <li role="separator" class="divider"></li>
-                 <li><a href="http://ansperformance.eu/references/methodology/">Methodology</a></li>
-                  <li><a href="http://ansperformance.eu/references/bibliography.html">Bibliography</a></li>
+                 <li><a href="https://www4.icao.int/ganpportal/" target="_blank">ICAO Global Air Navigation Plan (GANP) Portal (external)</a></li>
              </ul>
-         </li>
-       <li>
+       </li>
+       <li class="notes pull-right"><a href="http://ansperformance.eu/posts/">Release Notes</a></li>
+       <li class="form pull-right">
           <form class="navbar-form" method="get" action="https://duckduckgo.com/">
               <input type="hidden" name="sites" value="ansperformance.eu"/>
             <input type="hidden" name="ka" value="h"/>
@@ -143,13 +164,6 @@ ga('send', 'pageview');
              </div>
            </div>
           </form>
-       </li>
-       <li class="dropdown">
-          <a href="http://ansperformance.eu/about/" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-           <li><a href="http://ansperformance.eu/about/">About us</a></li>
-           <li><a href="http://ansperformance.eu/about/disclaimer/">Disclaimer</a></li>
-         </ul>
        </li>
      </ul>
    </div>
@@ -179,186 +193,216 @@ th:nth-child(5) {
 width: 8em;
 }
 </style>
-<h2 id="operations">Operations</h2>
-<p><span style="color: rgb(192, 80, 77);">Please note that software release 20.0 of the Network Manager on 04 April 2016 introduced
-a change to improve the accuracy of the ATFM delay calculation for operational purposes.
-For more information on the the change in methodology
-<a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">click here</a>.</span> <br />
-<br /></p>
+<style>
+.table-responsive {
+        overflow-x: visible; 
+    }
+</style>
 <h3 id="-operations-en-route"><img src="/assets/prcq-operations-enroute-ce8b5a8a1d9d17e1339c81ce3e5eb72c1aa520438409dc97ed6786fa167b7a6f.png" alt="Operations En-route" class="leadimg" width="50" height="46" /> Operations En-route</h3>
-<table>
+<div class="table-responsive">
+ <table class="table table-hover">
 <thead>
    <tr>
-     <th>Data description</th>
-     <th>Period</th>
-     <th>Excel</th>
-     <th>CSV</th>
-     <th>Metadata</th>
+     <th scope="col">Data description</th>
+     <th scope="col">Period</th>
+     <th scope="col">Excel</th>
+     <th scope="col">CSV</th>
+     <th scope="col">Meta</th>
+     <th scope="col"><a href="http://ansperformance.eu/references/acronym/ganp.html">ICAO GANP</a></th>
    </tr>
  </thead>
  <tbody>
    <tr>
-     <td>En-route IFR flights and <a href="http://ansperformance.eu/references/definition/atfm_delay.html" title="ATFM Delay definition">ATFM delays</a> <a href="http://ansperformance.eu/references/acronym/aua.html" title="AUA definition">(AUA)</a> - without post ops adjustments<br /><small>by entity and delay cause (AUA based)</small></td>
-     <td>Jan 2011 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm" title="ERT-DLY (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_AUA.html" title="ERT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">En-route IFR flights and <a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">ATFM delays</a> 
+      <a href="http://ansperformance.eu/references/acronym/aua.html">(AUA)</a> - without post ops adjustments<br /><small>by entity and delay cause (AUA based)</small></th>
+     <td>Jan 2011 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_AUA.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=7" target="_blank">KPI 07</a></td>
    </tr>
-   <tr>
-     <td>En-route IFR flights and <a href="http://ansperformance.eu/references/definition/atfm_delay.html" title="ATFM Delay definition">ATFM delays</a> <a href="http://ansperformance.eu/references/acronym/aua.html" title="AUA definition">(AUA)</a> - <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" title="Post ops adjustment process">incl. post ops adjustments</a> <br /><small>by entity and delay cause (AUA based)</small></td>
+   <tr class="table-info">
+     <th scope="row">En-route IFR flights and <a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">ATFM delays</a> 
+      <a href="http://ansperformance.eu/references/acronym/aua.html">(AUA)</a> - incl. <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">post ops adjustments</a><br /><small>by entity and delay cause (AUA based)</small></th>
      <td>Jan 2016 - Dec 2017</td>
-     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_AUA_post_ops.xlsm" title="ERT-DLY-PO (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_AUA.html" title="ERT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_AUA_post_ops.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_AUA.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=7" target="_blank">KPI 07</a></td>
    </tr>
    <tr>
-     <td>En-route IFR flights and <a href="http://ansperformance.eu/references/definition/atfm_delay.html" title="ATFM Delay definition">ATFM delays</a> <a href="http://ansperformance.eu/references/acronym/fir.html" title="FIR definition">(FIR)</a> - without post ops adjustments<br /><small>by entity and delay cause (FIR based)</small></td>
-     <td>Jan 2013 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm" title="ERT-DLY (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html" title="ERT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">En-route IFR flights and <a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">ATFM delays</a> 
+      <a href="http://ansperformance.eu/references/acronym/fir.html">(FIR)</a> - without post ops adjustments<br /><small>by entity and delay cause (FIR based)</small></th>
+     <td>Jan 2016 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_FIR.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=7" target="_blank">KPI 07</a></td>
    </tr>
-   <tr>
-     <td>En-route IFR flights and <a href="http://ansperformance.eu/references/definition/atfm_delay.html" title="ATFM Delay definition">ATFM delays</a> <a href="http://ansperformance.eu/references/acronym/fir.html" title="FIR definition">(FIR)</a> - <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" title="Post ops adjustment process">incl. post ops adjustments</a><br /><small>by entity and delay cause (FIR based)</small></td>
+   <tr class="table-info">
+     <th scope="row">En-route IFR flights and <a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">ATFM delays</a> 
+      <a href="http://ansperformance.eu/references/acronym/fir.html">(FIR)</a> - incl. <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">post ops adjustments</a><br /><small>by entity and delay cause (FIR based)</small></th>
      <td>Jan 2016 - Dec 2017</td>
-     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_FIR_post_ops.xlsm" title="ERT-DLY-PO (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html" title="ERT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <td><a href="http://ansperformance.eu/data/set/ert_dly/En-Route_ATFM_Delay_FIR_post_ops.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/En-Route_ATFM_Delay_FIR.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=7" target="_blank">KPI 07</a></td>
    </tr>
    <tr>
-     <td><a href="http://ansperformance.eu/references/methodology/horizontal_flight_efficiency_pi.html" title="Flight Efficiency performance indicator">Horizontal en-route flight efficiency</a> <br /><small>by entity (HFE actual trajectory and flight plan, KEP and KEA indicators)</small></td>
-     <td>Jan 2014 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/hfe/Horizontal_Flight_Efficiency.xlsm" title="HFE (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td><a href="http://ansperformance.eu/data/set/hfe/horizontal_flight_efficiency.html" title="HFE (CSV)">csv <i class="fa pru fa-filter"></i> <i class="fa pru fa-flask"></i></a></td>
-     <td><a href="http://ansperformance.eu/references/dataset/Horizontal_Flight_Efficiency.html" title="HFE (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row"><a href="http://ansperformance.eu/references/methodology/horizontal_flight_efficiency_pi.html">Horizontal en-route flight efficiency</a> 
+      <br /><small>by entity (HFE actual trajectory and flight plan, KEP and KEA indicators)</small></th>
+     <td>Jan 2014 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/hfe/Horizontal_Flight_Efficiency.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td><a href="http://ansperformance.eu/data/set/hfe/horizontal_flight_efficiency.html"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Horizontal_Flight_Efficiency.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=4" target="_blank">KPI 04</a>,
+          <a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=5" target="_blank">KPI 05</a></td>
    </tr>
  </tbody>
 </table>
+</div>
 <h3 id="-operations-at-airports"><img src="/assets/prcq-operations-airport-ce8b5a8a1d9d17e1339c81ce3e5eb72c1aa520438409dc97ed6786fa167b7a6f.png" alt="Operations at Airports" class="leadimg" width="50" height="28" /> Operations at Airports</h3>
-<table>
+<div class="table-responsive">
+ <table class="table table-hover">
 <thead>
    <tr>
-     <th>Data description</th>
-     <th>Period</th>
-     <th>Excel</th>
-     <th>CSV</th>
-     <th>Metadata</th>
+     <th scope="col">Data description</th>
+     <th scope="col">Period</th>
+     <th scope="col">Excel</th>
+     <th scope="col">CSV</th>
+     <th scope="col">Meta</th>
+     <th scope="col"><a href="http://ansperformance.eu/references/acronym/ganp.html">ICAO GANP</a></th>
    </tr>
  </thead>
  <tbody>
    <tr>
-     <td>Airport arrival <a href="http://ansperformance.eu/references/definition/atfm_delay.html" title="ATFM Delay definition">ATFM delays</a> - without post ops adjustments<br /><small>by airport and delay category</small></td>
-     <td>Jan 2014 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/apt_dly/Airport_Arrival_ATFM_Delay.xlsm" title="APT-DLY (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td><a href="http://ansperformance.eu/data/set/apt_dly/airport_arrival_atfm_delay.html" title="APT-DLY (CSV)">csv <i class="fa pru fa-filter"></i> <i class="fa pru fa-flask"></i></a></td>
-     <td><a href="http://ansperformance.eu/references/dataset/Airport_Arrival_ATFM_Delay.html" title="APT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
-   </tr>
-   <tr>
-     <td>Airport arrival <a href="http://ansperformance.eu/references/definition/atfm_delay.html" title="ATFM Delay definition">ATFM delays</a> - <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" title="Post ops adjustment process">incl. post ops adjustments</a><br /><small>by airport and delay category</small></td>
+     <th scope="row">Airport arrival <a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">ATFM delays</a> - without post ops adjustments<br /><small>by airport and delay cause</small></th>
+     <td>Jan 2014 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/apt_flt/Airport_Traffic.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td><a href="http://ansperformance.eu/data/set/apt_dly/airport_arrival_atfm_delay.html"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Airport_Arrival_ATFM_Delay.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=12" target="_blank">KPI 12</a></td>
+   </tr>   
+   <tr class="table-info">
+     <th scope="row">Airport arrival <a href="http://ansperformance.eu/references/methodology/ATFM_delay_calculation.html">ATFM delays</a> - incl. <a href="http://www.eurocontrol.int/publications/post-operations-performance-adjustment-process" target="_blank">post ops adjustments</a><br /><small>by airport and delay cause</small></th>
      <td>Jan 2016 - Dec 2017</td>
-     <td><a href="http://ansperformance.eu/data/set/apt_dly/Airport_Arrival_ATFM_Delay_post_ops.xlsm" title="APT-DLY-PO (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/Airport_Arrival_ATFM_Delay.html" title="APT-DLY (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <td><a href="http://ansperformance.eu/data/set/apt_dly/Airport_Arrival_ATFM_Delay_post_ops.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Airport_Arrival_ATFM_Delay.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=12" target="_blank">KPI 12</a></td>
    </tr>
    <tr>
-     <td>Airport traffic<br /><small>Daily IFR arrivals and departures by airport</small></td>
-     <td>Jan 2014 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/apt_flt/Airport_Traffic.xlsm" title="APT-FLT (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/Airport_Traffic.html" title="APT-FLT (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">Airport traffic<br /><small>daily IFR arrivals and departures by airport</small></th>
+     <td>Jan 2014 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/apt_flt/Airport_Traffic.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Airport_Traffic.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td></td>
    </tr>
    <tr>
-     <td>Arrival Sequencing and Metering (ASMA) additional time<br /><small>Monthly ASMA <a href="http://ansperformance.eu/references/definition/additional_asma_time.html" title="ASMA Additional Time definition">additional</a> and <a href="http://ansperformance.eu/references/definition/unimpeded_asma_time.html" title="ASMA Unimpeded Time definition">unimpeded</a> time</small></td>
-     <td>Jan 2014 - Aug 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/asma/ASMA_Additional_Time.xlsm" title="ASMA (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/ASMA_Additional_Time.html" title="ASMA (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">Arrival Sequencing and Metering (ASMA) additional time<br /><small>Monthly ASMA <a href="http://ansperformance.eu/references/definition/additional_asma_time.html">additional</a> and <a href="http://ansperformance.eu/references/definition/unimpeded_asma_time.html">unimpeded</a> time</small></th>
+     <td>Jan 2014- Sep 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/asma/ASMA_Additional_Time.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/ASMA_Additional_Time.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=8" target="_blank">KPI 08</a></td>
    </tr>
    <tr>
-     <td>Vertical flight efficiency - Continuous climb and descent operations<br /><small>Monthly continuous climb and descent data</small></td>
-     <td>Jan 2015 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/cdo_cco/Vertical_Flight_Efficiency_cdo_cco.xlsm" title="CDO/CCO (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/Continuous_Climb_Descent.html" title="CDO/CCO (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">Vertical flight efficiency - Continuous climb and descent operations<br /><small>Monthly continuous climb and descent data</small></th>
+     <td>Jan 2015 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/cdo_cco/Vertical_Flight_Efficiency_cdo_cco.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Continuous_Climb_Descent.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=17" target="_blank">KPI 17</a>,
+          <a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=19" target="_blank">KPI 19</a>
+     </td>
    </tr>
    <tr>
-     <td>Taxi-out additional time<br /><small>Monthly taxi out <a href="http://ansperformance.eu/references/definition/additional_taxi-out_time.html" title="Taxi-out Additional Time definition">additional</a> and <a href="http://ansperformance.eu/references/definition/unimpeded_taxi-out_time.html" title="Taxi-out Unimpeded Time definition">unimpeded</a> time</small></td>
-     <td>Jan 2014 - Aug 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/tx_out/Taxi-Out_Additional_Time.xlsm" title="TX-OUT (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/Taxi-Out_Additional_Time.html" title="TX-OUT (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">Taxi-out additional time<br /><small>Monthly taxi-out <a href="http://ansperformance.eu/references/definition/additional_taxi-out_time.html">additional</a> and <a href="http://ansperformance.eu/references/definition/unimpeded_taxi-out_time.html">unimpeded</a> time</small></th>
+     <td>Jan 2014- Sep 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/tx_out/Taxi-Out_Additional_Time.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Taxi-Out_Additional_Time.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=2" target="_blank">KPI 02</a></td>
    </tr>
    <tr>
-     <td>ATC pre-departure delays<br /><small>Daily <a href="http://ansperformance.eu/references/definition/atc_pre-departure_delay.html" title="ATC Pre-departure Delay definition">ATC pre-departure delay</a> by airport</small></td>
-     <td>Jan 2014 - Aug 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/atc_pre/ATC_Pre-Departure_Delay.xlsm" title="ATC-PRE (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/ATC_Pre-Departure_Delay.html" title="ATC-PRE (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row"> ATC pre-departure delays<br /><small>daily <a href="http://ansperformance.eu/references/definition/atc_pre-departure_delay.html">ATC pre-departure delay</a> by airport</small></th>
+     <td>Jan 2014- Sep 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/atc_pre/ATC_Pre-Departure_Delay.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/ATC_Pre-Departure_Delay.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td></td>
    </tr>
    <tr>
-     <td>ATFM slot adherence<br /><small>Daily ATFM slot adherence by airport</small></td>
-     <td>Jan 2014 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/slt_adh/ATFM_Slot_Adherence.xlsm" title="SLT-ADH (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/ATFM_Slot_Adherence.html" title="SLT-ADH (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">ATFM slot adherence<br /><small>daily ATFM slot adherence by airport</small></th>
+     <td>Jan 2014 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/slt_adh/ATFM_Slot_Adherence.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/ATFM_Slot_Adherence.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td><a href="https://www4.icao.int/ganpportal/ASBU/KPI?IDs=3" target="_blank">KPI 03</a></td>
    </tr>
  </tbody>
 </table>
+</div>
 <h3 id="-traffic"><img src="/assets/prcq-traffic-ce8b5a8a1d9d17e1339c81ce3e5eb72c1aa520438409dc97ed6786fa167b7a6f.png" alt="Traffic" class="leadimg" width="50" height="50" /> Traffic</h3>
-<table>
+<div class="table-responsive">
+ <table class="table table-hover">
 <thead>
    <tr>
-     <th>Data description</th>
-     <th>Period</th>
-     <th>Excel</th>
-     <th>CSV</th>
-     <th>Metadata</th>
+     <th scope="col">Data description</th>
+     <th scope="col">Period</th>
+     <th scope="col">Excel</th>
+     <th scope="col">CSV</th>
+     <th scope="col">Meta</th>
+     <th scope="col"><a href="http://ansperformance.eu/references/acronym/ganp.html">ICAO GANP</a></th>
    </tr>
  </thead>
  <tbody>
    <tr>
-     <td>Complexity (based on <a href="http://ansperformance.eu/references/acronym/bada.html" title="Base of Aircraft Data">BADA</a> version 3.6) <br /><small>Complexity by ANSP</small></td>
+     <th scope="row">Complexity (based on <a href="http://ansperformance.eu/references/acronym/bada.html">BADA</a> version 3.6)<br /><small>Complexity by ANSP</small></th>
      <td>Jan 2014 - Dec 2016</td>
-     <td><a href="http://ansperformance.eu/data/set/cplx/Traffic_Complexity_Scores_1.xlsm" title="CPLX (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/Traffic_Complexity_Score.html" title="CPLX (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
+     <td><a href="http://ansperformance.eu/data/set/cplx/Traffic_Complexity_Scores_1.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Traffic_Complexity_Score.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td></td>
    </tr>
    <tr>
-     <td>Complexity (based on <a href="http://ansperformance.eu/references/acronym/bada.html" title="Base of Aircraft Data">BADA</a> version 3.13.1) <br /><small>Complexity by ANSP</small></td>
-     <td>Jan 2017 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/cplx/Traffic_Complexity_Scores_2.xlsm" title="CPLX (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://ansperformance.eu/references/dataset/Traffic_Complexity_Score.html" title="CPLX (Meta)">meta <i class="fa pru fa-info-circle"></i></a></td>
-   </tr>
+     <th scope="row">Complexity (based on <a href="http://ansperformance.eu/references/acronym/bada.html">BADA</a> version 3.13.1)<br /><small>Complexity by ANSP</small></th>
+     <td>Jan 2017 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/cplx/Traffic_Complexity_Scores_2.xlsm"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/Traffic_Complexity_Score.html"><span class="glyphicon glyphicon-info-sign"></span></a></td>
+     <td></td>
+   </tr> 
  </tbody>
 </table>
+</div>
 <h3 id="-atm-cost-effectiveness-ace-operational-data"><img src="/assets/prcq-economics-ce8b5a8a1d9d17e1339c81ce3e5eb72c1aa520438409dc97ed6786fa167b7a6f.png" alt="ATM Cost-Effectiveness (ACE) operational data" class="leadimg" width="50" height="43" /> ATM Cost-Effectiveness (ACE) operational data</h3>
-<table>
+<div class="table-responsive">
+ <table class="table table-hover">
 <thead>
    <tr>
-     <th>Data description</th>
-     <th>Period</th>
-     <th>Excel</th>
-     <th>CSV</th>
-     <th>Metadata</th>
+     <th scope="col">Data description</th>
+     <th scope="col">Period</th>
+     <th scope="col">Excel</th>
+     <th scope="col">CSV</th>
+     <th scope="col">Meta</th>
+     <th scope="col"><a href="http://ansperformance.eu/references/acronym/ganp.html">ICAO GANP</a></th>
    </tr>
  </thead>
  <tbody>
    <tr>
-     <td>ACE operational data<br /><small>Monthly ACE operational data</small></td>
-     <td>Jan 2017 - Sep 2018</td>
-     <td><a href="http://ansperformance.eu/data/set/ace_opt/ACE_Monthly_Operational_Data.xls" title="ACE (Excel)">xls <i class="fa pru fa-download"></i></a></td>
-     <td> </td>
-     <td><a href="http://www.eurocontrol.int/documents/economic-information-disclosure-specification" title="ACE specs">specs <i class="fa pru fa-info-circle"></i></a></td>
+     <th scope="row">ACE operational data<br /><small>Monthly ACE operational data</small></th>
+     <td>Jan 2017 - Oct 2018</td>
+     <td><a href="http://ansperformance.eu/data/set/ace_opt/ACE_Monthly_Operational_Data.xls"><span class="glyphicon glyphicon-download"></span></a></td>
+     <td></td>
+     <td><a href="http://ansperformance.eu/references/dataset/ACE_Monthly_Operational_Data.html">specs</a></td>
+     <td></td>
    </tr>
  </tbody>
 </table>
+</div>
 <p><br /></p>
-<p><i class="fa pru fa-download"></i> = dataset download.<br />
-<i class="fa pru fa-info-circle"></i> = info on dataset.<br />
-<i class="fa pru fa-filter"></i> = filter for dataset and download.<br />
-<i class="fa pru fa-flask"></i> = experimental, <a href="mailto:PRU-Support@eurocontrol.int">feedback</a> is more than welcome.<br />
-<i class="fa pru fa-exclamation-triangle"></i> = not (yet?) available.<br /></p>
 <div class="container text-center">
  <p><a href="&#x6D;&#x61;&#x69;&#x6C;&#x74;&#x6F;&#x3A;&#x50;&#x52;&#x55;&#x2D;&#x53;&#x75;&#x70;&#x70;&#x6F;&#x72;&#x74;&#x40;&#x65;&#x75;&#x72;&#x6F;&#x63;&#x6F;&#x6E;&#x74;&#x72;&#x6F;&#x6C;&#x2E;&#x69;&#x6E;&#x74;&#x3F;&#x73;&#x75;&#x62;&#x6A;&#x65;&#x63;&#x74;&#x3D;&#x53;&#x75;&#x62;&#x73;&#x63;&#x72;&#x69;&#x62;&#x65;&#x25;&#x33;&#x41;&#x25;&#x32;&#x30;&#x50;&#x52;&#x55;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x70;&#x6F;&#x69;&#x6E;&#x74;&#x26;&#x62;&#x6F;&#x64;&#x79;&#x3D;&#x50;&#x6C;&#x65;&#x61;&#x73;&#x65;&#x25;&#x32;&#x30;&#x61;&#x64;&#x64;&#x25;&#x32;&#x30;&#x6D;&#x65;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x74;&#x68;&#x65;&#x25;&#x32;&#x30;&#x6D;&#x61;&#x69;&#x6C;&#x69;&#x6E;&#x67;&#x25;&#x32;&#x30;&#x6C;&#x69;&#x73;&#x74;&#x25;&#x32;&#x30;&#x74;&#x6F;&#x25;&#x32;&#x30;&#x67;&#x65;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x65;&#x64;&#x25;&#x32;&#x30;&#x61;&#x62;&#x6F;&#x75;&#x74;&#x25;&#x32;&#x30;&#x69;&#x6E;&#x66;&#x6F;&#x72;&#x6D;&#x61;&#x74;&#x69;&#x6F;&#x6E;&#x25;&#x32;&#x30;&#x75;&#x70;&#x64;&#x61;&#x74;&#x65;&#x73;&#x2E;" class="btn btn-primary btn-sm">
 Subscribe to get informed about updates <i class="fa fa-envelope"></i></a></p>
