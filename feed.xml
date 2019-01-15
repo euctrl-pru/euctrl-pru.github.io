@@ -6,9 +6,33 @@
 </description>
     <link>http://ansperformance.eu/</link>
     <atom:link href="http://ansperformance.eu/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Dec 2018 12:23:54 +0100</pubDate>
-    <lastBuildDate>Fri, 14 Dec 2018 12:23:54 +0100</lastBuildDate>
+    <pubDate>Tue, 15 Jan 2019 16:32:00 +0100</pubDate>
+    <lastBuildDate>Tue, 15 Jan 2019 16:32:00 +0100</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>Release Notes</title>
+        
+        
+            <description>&lt;p&gt;Data updates up to December 2018.&lt;/p&gt;
+
+</description>
+        
+        
+            <description>&lt;p&gt;Data updates up to December 2018.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 15 Jan 2019 00:00:00 +0100</pubDate>
+        <link>http://ansperformance.eu/news/rn/2019/01/15/rn.html</link>
+        <guid isPermaLink="true">http://ansperformance.eu/news/rn/2019/01/15/rn.html</guid>
+        
+        
+        <category>news</category>
+        
+        <category>rn</category>
+        
+      </item>
     
       <item>
         <title>Release Notes</title>
@@ -218,30 +242,6 @@
         <pubDate>Wed, 18 Apr 2018 00:00:00 +0200</pubDate>
         <link>http://ansperformance.eu/news/rn/2018/04/18/rn.html</link>
         <guid isPermaLink="true">http://ansperformance.eu/news/rn/2018/04/18/rn.html</guid>
-        
-        
-        <category>news</category>
-        
-        <category>rn</category>
-        
-      </item>
-    
-      <item>
-        <title>Release Notes</title>
-        
-        
-            <description>&lt;p&gt;Data updates up to Feb 2018.&lt;/p&gt;
-
-</description>
-        
-        
-            <description>&lt;p&gt;Data updates up to Feb 2018.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Fri, 16 Mar 2018 00:00:00 +0100</pubDate>
-        <link>http://ansperformance.eu/news/rn/2018/03/16/rn.html</link>
-        <guid isPermaLink="true">http://ansperformance.eu/news/rn/2018/03/16/rn.html</guid>
         
         
         <category>news</category>

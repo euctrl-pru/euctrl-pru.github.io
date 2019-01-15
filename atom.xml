@@ -3,7 +3,7 @@
   <generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator>
 <link href="http://ansperformance.eu/atom.xml" rel="self" type="application/atom+xml" />
 <link href="http://ansperformance.eu/" rel="alternate" type="text/html" />
-  <updated>2018-12-14T12:23:54+01:00</updated>
+  <updated>2019-01-15T16:32:00+01:00</updated>
   <id>http://ansperformance.eu/</id>
  <title>PRU</title>
     <subtitle>Performance monitoring data, analyses and visualizations for Eurocontrol's 41 Member States.
@@ -14,6 +14,27 @@
       <email>PRU-Support@eurocontrol.int</email>
     <uri>http://ansperformance.eu/</uri>
   </author>
+    <entry>
+ <title>Release Notes</title>
+<link href="http://ansperformance.eu/news/rn/2019/01/15/rn.html" rel="alternate" type="text/html" title="Release Notes" />
+ <published>2019-01-15T00:00:00+01:00</published>
+    <updated>2019-01-15T00:00:00+01:00</updated>
+  <id>http://ansperformance.eu/news/rn/2019/01/15/rn</id>
+  <content type="html" xml:base="http://ansperformance.eu/news/rn/2019/01/15/rn.html">
+    &lt;p&gt;Data updates up to December 2018.&lt;/p&gt;
+&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: Data download files updated up to &lt;strong&gt;December 2018&lt;/strong&gt; (when applicable).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2019/01/15/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
+  </content>
+  <author>
+      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
+      <email>PRU-Support@eurocontrol.int</email>
+    <uri>http://ansperformance.eu/</uri>
+  </author>
+    <summary type="text">Data updates up to December 2018.</summary>
+</entry>
     <entry>
  <title>Release Notes</title>
 <link href="http://ansperformance.eu/news/rn/2018/12/12/rn.html" rel="alternate" type="text/html" title="Release Notes" />
@@ -320,27 +341,5 @@
     <uri>http://ansperformance.eu/</uri>
   </author>
     <summary type="text">Data updates up to Oct 2017.</summary>
-</entry>
-    <entry>
- <title>Release Notes</title>
-<link href="http://ansperformance.eu/news/rn/2017/10/18/rn.html" rel="alternate" type="text/html" title="Release Notes" />
- <published>2017-10-18T00:00:00+02:00</published>
-    <updated>2017-10-18T00:00:00+02:00</updated>
-  <id>http://ansperformance.eu/news/rn/2017/10/18/rn</id>
-  <content type="html" xml:base="http://ansperformance.eu/news/rn/2017/10/18/rn.html">
-    &lt;p&gt;Data updates up to Sep 2017.&lt;/p&gt;
-&lt;p&gt;The following changes have been delivered in this release:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: Data download files updated up to &lt;strong&gt;Sep 2017&lt;/strong&gt; (when applicable).&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Update&lt;/strong&gt;: The &lt;a href=&quot;http://ansperformance.eu/prcq/&quot; title=&quot;PRC QUarterly&quot;&gt;Performance Review Commission (PRC) quarterly online review - Q3-2017&lt;/a&gt; is now available.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href=&quot;http://ansperformance.eu/news/rn/2017/10/18/rn.html&quot; rel=&quot;nofollow&quot;&gt;Release Notes&lt;/a&gt; was originally published by &lt;a href=&quot;http://ansperformance.eu/about/&quot; rel=&quot;nofollow&quot;&gt;European Organisation for the Safety of Air Navigation (EUROCONTROL)&lt;/a&gt; on &lt;a href=&quot;http://ansperformance.eu&quot; rel=&quot;nofollow&quot;&gt;PRU&lt;/a&gt;&lt;/p&gt;
-  </content>
-  <author>
-      <name>European Organisation for the Safety of Air Navigation (EUROCONTROL)</name>
-      <email>PRU-Support@eurocontrol.int</email>
-    <uri>http://ansperformance.eu/</uri>
-  </author>
-    <summary type="text">Data updates up to Sep 2017.</summary>
 </entry>
 </feed>
